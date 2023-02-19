@@ -1,0 +1,11 @@
+.vedio-bg{
+    width: 1000px;
+    height: 1000px;
+    
+}
+.vedio-bg video{
+    width: 1000px;
+    height: 1000px;
+    object-fit: cover;
+    border-radius: 50% 50% 50% 50%;
+}
