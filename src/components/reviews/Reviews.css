@@ -1,0 +1,15 @@
+@font-face{
+    font-family: "Gruppo";
+    src: url("../fonts/Gruppo-Regular.ttf");
+}
+
+.star{
+    display: flex;
+    justify-content: center;
+}
+
+.star i{
+    font-size: 20px;
+    margin: 5px;
+    color: gold;
+}

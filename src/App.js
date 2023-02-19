@@ -5,6 +5,7 @@ import Slider from './components/slider/Slider';
 import Card from './components/card/Card';
 import Services from './components/servicee/Services';
 import Vedio from './components/vedio/Vedio';
+import Reviews from './components/reviews/Reviews';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Navbar/>
       <Card/>
       <Services/>
+      <Reviews/>
     </div>
   );
 }
