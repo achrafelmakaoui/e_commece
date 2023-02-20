@@ -8,8 +8,6 @@ import Vedio from './components/vedio/Vedio';
 import Reviews from './components/reviews/Reviews';
 
 
-
-
 function App() {
   return (
     <div className="App">
