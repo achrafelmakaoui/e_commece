@@ -15,7 +15,6 @@ const Navbar = () => {
         menu.current.classList.add("active");
         sidebar.current.classList.add("active");
         setMenuState(true);
-
     };
     const closesideMenu = () => {
           menu.current.classList.remove("active");
