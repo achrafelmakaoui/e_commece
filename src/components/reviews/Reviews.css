@@ -2,10 +2,76 @@
     font-family: "Gruppo";
     src: url("../fonts/Gruppo-Regular.ttf");
 }
-
+.containerr{
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.img-text{
+    width: 100%;
+    height: 310px;
+    display: block;
+    text-align: center;
+    padding: 15% 5%;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}   
+.img-text h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    padding-top: 10px;
+    margin-right: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.img-text h6{
+    font-size: 12px;
+    color: silver;
+    margin-right: 10%;
+}
+blockquote{
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    quotes: "\201C""\201D""\2018""\2019";
+    text-align: justify;
+}
+blockquote p {
+    font-size:15px;
+    padding: 7% 0%;
+    }
+blockquote p:before { 
+    content: open-quote;
+    font-weight: bold;
+    font-size:25px;
+    color:#889c0b;
+    } 
+    blockquote p:after { 
+    content: close-quote;
+    font-weight: bold;
+    font-size:25px;
+    color:#889c0b;
+    }
+.single-box{
+    position: relative; margin-bottom: 30px;
+}
+.img-area{
+    width: 65px;
+    height: 65px; border: 5px solid #000;
+    overflow: hidden;
+    top: 15px;
+    left: 125px;
+    border-radius: 50%;
+    float: left;
+}
+.img-area img{ 
+    width: 100%;
+}
 .star{
+    margin-bottom: -50px;
     display: flex;
-    justify-content: center;
+    padding-left: 5%;
 }
 
 .star i{
