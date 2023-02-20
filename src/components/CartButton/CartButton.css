@@ -1,0 +1,13 @@
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  
+  button:active {
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+  }
+  

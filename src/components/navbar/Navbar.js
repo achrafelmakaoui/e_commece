@@ -3,6 +3,12 @@ import './Navbar.css'
 import Nike from '../pictures/nike.png'
 import AIR_JORADN from '../pictures/airjordan2.png'
 import YEEZY from '../pictures/yeezy.png'
+import MenuCloseIcon  from '../pictures/icon-close.svg';
+import MenuIcon  from '../pictures/icon-menu.svg';
+import CartButton from '../CartButton/CartButton';
+import SneakerLogo from '../pictures/logo.svg';
+import avatar from '../pictures/image-avatar.png';
+import Profil from '../pictures/profil.jpg'
 
 
 const Navbar = () => {
@@ -50,28 +56,42 @@ const Navbar = () => {
   return (
     <>
     <div className="bg">
-    <aside class="" ref={sidebar}>
-      <div class="head__section">
-        <i class="fa-solid fa-bars" ref={menu} onClick={showhideMenu}></i>
-        <i class="fa-solid fa-x"   ref={menu} onClick={closesideMenu}></i>
-      </div>
-      <div class="nav__links">
-        <ul>
-          <li><a href="/#"><i class="fi-rr-apps"></i><span>Home</span></a></li>
-          <li><a href="/#"><i class="fi-rr-comment-alt"></i><span>Product</span></a></li>
-          <li><a href="/#"><i class="fi-rr-browser"></i><span>Service</span></a></li>
-          <li><a href="/#"><i class="fi-rr-document-signed"></i><span>Reviews</span></a></li>
-          <li><a href="/#"><i class="fi-rr-magic-wand"></i><span>About</span></a></li>
-          <li><a href="/#"><i class="fi-rr-play-alt"></i><span>Video</span></a></li>
-          <li><a href="/#"><i class="fi-rr-lock"></i><span>Access</span></a></li>
-          <li><a href="/#"><i class="fi-rr-power"></i><span>Logout</span></a></li>
+    <header>
+    <nav >
+      <div className="headerLogo">
+        <img className='headerMenuIcon' src={MenuIcon} alt='svg' ref={menu} onClick={showhideMenu}/>
+        <img className='header' src={SneakerLogo} alt='svg'/>
+        <ul className="headerLinks">
+          <li>Collection</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
         </ul>
       </div>
-    </aside>
-    {/* <div className="ctr">
-        <span class="parallax-text" text="NIKE">NIKE</span>
-        <img src={Nike} alt="nike"/>
-    </div> */}
+      <ul className="headerProfile">
+        <li>
+          <CartButton/>
+        </li>
+        <li>
+          <img src={Profil} alt="avatar"/>
+        </li>
+      </ul>
+    </nav>
+    <hr className="headerLine" />
+  </header>
+  <div class="nav__links" ref={sidebar}>
+  <img className='headerMenuCloseIcon' src={MenuCloseIcon} alt='svg' ref={menu} onClick={closesideMenu}/>
+        <ul>
+          <li><a ><i class="fi-rr-apps"></i><span>Home</span></a></li>
+          <li><a ><i class="fi-rr-comment-alt"></i><span>Product</span></a></li>
+          <li><a ><i class="fi-rr-browser"></i><span>Service</span></a></li>
+          <li><a ><i class="fi-rr-document-signed"></i><span>Reviews</span></a></li>
+          <li><a ><i class="fi-rr-lock"></i><span>Support</span></a></li>
+          <li><a ><i class="fi-rr-magic-wand"></i><span>About</span></a></li>
+          <li><a ><i class="fi-rr-power"></i><span>Contact</span></a></li>
+        </ul>
+      </div>
     <div className="slider">
       {slides.map((slide, index) => (
         <div

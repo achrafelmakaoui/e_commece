@@ -1,6 +1,8 @@
 import React from 'react'
 import './Reviews.css'
 import Profil from '../pictures/profil.jpg'
+import StarIcon from '@mui/icons-material/Star';
+
 const Reviews = () => {
   return (
     <div className='reviews'>
@@ -10,15 +12,29 @@ const Reviews = () => {
         <br/>
         <div className='containerr'>
             <div className='row'>
-            <div className='col-md-4'>
+            <div className='col-lg-4 col-md-4 col-sm-12'>
                   <div className="single-box">
-                    <span className='star'><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <span className='star'><StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/></span>
                       <div className="img-text">
                         <blockquote><p> Because Immer is itself an abstraction layer, it's important to understand why Redux Toolkit uses Immer, and how to use it correctly.</p></blockquote>
                         <div className="img-area">
                           <img src={Profil} alt=''/>
                           </div>
-                        <h2>client name</h2>
+                        <h2>Mouad Eliidrissi</h2>
+                        <h6>CEO Largest Fintech Company</h6>
+                      </div>
+                  </div>
+                </div>
+
+                <div className='col-lg-4 col-md-4 col-sm-12'>
+                  <div className="single-box">
+                    <span className='star'><StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/></span>
+                      <div className="img-text">
+                        <blockquote><p> Because Immer is itself an abstraction layer, it's important to understand why Redux Toolkit uses Immer, and how to use it correctly.</p></blockquote>
+                        <div className="img-area">
+                          <img src={Profil} alt=''/>
+                          </div>
+                        <h2>Mouad Eliidrissi</h2>
                         <h6>CEO Largest Fintech Company</h6>
                       </div>
                   </div>
@@ -26,27 +42,13 @@ const Reviews = () => {
 
                 <div className='col-md-4'>
                   <div className="single-box">
-                    <span className='star'><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <span className='star'><StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/></span>
                       <div className="img-text">
                         <blockquote><p> Because Immer is itself an abstraction layer, it's important to understand why Redux Toolkit uses Immer, and how to use it correctly.</p></blockquote>
                         <div className="img-area">
                           <img src={Profil} alt=''/>
-                          </div>
-                        <h2>client name</h2>
-                        <h6>CEO Largest Fintech Company</h6>
-                      </div>
-                  </div>
-                </div>
-
-                <div className='col-md-4'>
-                  <div className="single-box">
-                    <span className='star'><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
-                      <div className="img-text">
-                        <blockquote><p> Because Immer is itself an abstraction layer, it's important to understand why Redux Toolkit uses Immer, and how to use it correctly.</p></blockquote>
-                        <div className="img-area">
-                          <img src={Profil} alt=''/>
-                          </div>
-                        <h2>client name</h2>
+                        </div>
+                        <h2>Mouad Eliidrissi</h2>
                         <h6>CEO Largest Fintech Company</h6>
                       </div>
                   </div>
