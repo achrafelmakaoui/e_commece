@@ -6,6 +6,7 @@ import Card from './components/card/Card';
 import Services from './components/servicee/Services';
 import Vedio from './components/vedio/Vedio';
 import Reviews from './components/reviews/Reviews';
+import { Support } from './components/support/Support';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Card/>
       <Services/>
       <Reviews/>
+      <Support/>
     </div>
   );
 }

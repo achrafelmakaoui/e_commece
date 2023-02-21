@@ -62,11 +62,11 @@ const Navbar = () => {
         <img className='headerMenuIcon' src={MenuIcon} alt='svg' ref={menu} onClick={showhideMenu}/>
         <img className='header' src={SneakerLogo} alt='svg'/>
         <ul className="headerLinks">
-          <li>Collection</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>Home</li>
+          <li>Product</li>
+          <li>Service</li>
+          <li>Reviews</li>
+          <li>Support</li>
         </ul>
       </div>
       <ul className="headerProfile">
