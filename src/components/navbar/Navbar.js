@@ -56,8 +56,7 @@ const Navbar = () => {
   return (
     <>
     <div className="bg">
-    <header>
-    <nav >
+    <nav>
       <div className="headerLogo">
         <img className='headerMenuIcon' src={MenuIcon} alt='svg' ref={menu} onClick={showhideMenu}/>
         <img className='header' src={SneakerLogo} alt='svg'/>
@@ -79,7 +78,7 @@ const Navbar = () => {
       </ul>
     </nav>
     <hr className="headerLine" />
-  </header>
+
   <div class="nav__links" ref={sidebar}>
   <img className='headerMenuCloseIcon' src={MenuCloseIcon} alt='svg' ref={menu} onClick={closesideMenu}/>
         <ul>

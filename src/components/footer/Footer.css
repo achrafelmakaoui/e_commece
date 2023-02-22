@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("../fonts/Gilroy-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: "GilroySemiBold";
+    src: url("../fonts/Gilroy-SemiBold.ttf");
+  }
+  @font-face {
+    font-family: "Gruppo";
+    src: url("../fonts/Gruppo-Regular.ttf");
+  }
+.contaiiner{
+    max-width: 1170px;
+    margin:auto;
+  }
+.roaw{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  
+  }
+  ul{
+    list-style: none;
+  }
+  
+  .footer{
+    background-color: #222222;
+    padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col img{
+    margin-top: -30px;
+  }
+  .footer-col p{
+  font-size: 13px;
+  color: white;
+  text-align: justify;
+  font-family: "GilroyMedium";
+  margin-right: 80px;
+  opacity: 0.7;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #6178DC;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    font-family: "GilroyMedium";
+  line-height: 1.7;
+  }
+  .footer-col ul li a:hover{
+    color: #216ce7;
+    padding-left: 8px;
+  }
+  .footer-col .social-links i{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    font-size: 15px;
+  }
+  .footer-col .social-links i:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  hr{
+      width: 70%;
+      border: 0;
+      border-bottom: 1px solid #ccc;
+      margin: 20px auto;
+  }
+  .copyright{
+      text-align: center;
+    color: white;
+    margin: 0px auto;
+    font-size: 18px;
+    font-family: "Gruppo";
+  
+  }
+  .copyright a:hover{
+    color: #0d6efd;
+}
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+#hr{
+    margin-bottom: 40px;
+}
+#hr2{
+    width: 500px;
+}
