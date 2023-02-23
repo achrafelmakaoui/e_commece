@@ -82,13 +82,13 @@ const Navbar = () => {
   <div class="nav__links" ref={sidebar}>
   <img className='headerMenuCloseIcon' src={MenuCloseIcon} alt='svg' ref={menu} onClick={closesideMenu}/>
         <ul>
-          <li><a ><i class="fi-rr-apps"></i><span>Home</span></a></li>
-          <li><a ><i class="fi-rr-comment-alt"></i><span>Product</span></a></li>
-          <li><a ><i class="fi-rr-browser"></i><span>Service</span></a></li>
-          <li><a ><i class="fi-rr-document-signed"></i><span>Reviews</span></a></li>
-          <li><a ><i class="fi-rr-lock"></i><span>Support</span></a></li>
-          <li><a ><i class="fi-rr-magic-wand"></i><span>About</span></a></li>
-          <li><a ><i class="fi-rr-power"></i><span>Contact</span></a></li>
+          <li><a href="/#"><i class="fi-rr-apps"></i><span>Home</span></a></li>
+          <li><a href="/#"><i class="fi-rr-comment-alt"></i><span>Product</span></a></li>
+          <li><a href="/#"><i class="fi-rr-browser"></i><span>Service</span></a></li>
+          <li><a href="/#"><i class="fi-rr-document-signed"></i><span>Reviews</span></a></li>
+          <li><a href="/#"><i class="fi-rr-lock"></i><span>Support</span></a></li>
+          <li><a href="/#"><i class="fi-rr-magic-wand"></i><span>About</span></a></li>
+          <li><a href="/#"><i class="fi-rr-power"></i><span>Contact</span></a></li>
         </ul>
       </div>
     <div className="slider">

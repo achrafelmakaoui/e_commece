@@ -28,7 +28,7 @@ export const Support = () => {
   <h1 className='prd text-center'>Support</h1>
   <h3 className='prdtit text-center'>Our dedicated support team is available 24/7 Support !</h3>
   <span className='supicon d-flex justify-content-center aling-items-center'><SupportAgentIcon className='mtuiicon'/><SupportAgentIcon className='mtuiicon'/><SupportAgentIcon className='mtuiicon'/></span>
-  <div className='contraint'>
+  <div className='contraint' data-aos='fade'>
     <div className='row' id='sect'>
         <div className='col-lg-6 col-md-6 col-sm-12' id='imgs'>
             <img src={Supportshield} alt='cnt'/>

@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Card.css'
 import NIKELG from '../pictures/nike-white.png'
 import img1 from '../pictures/image_1.png'
 import img2 from '../pictures/image_2.png'
 import img3 from '../pictures/image_3.png'
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 function Card() {
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  },[]);
   return (<>
   <br/><br/>
   <h1 className='prd text-center '>PRODUCTS</h1>
@@ -14,7 +19,7 @@ function Card() {
   <br/>
     <div class="container">
         
-    <div className="card card-yellow">
+    <div className="card card-yellow" data-aos='fade'>
       <img className="logo" src={NIKELG} alt=''/>
       <h2 className="title">Just <br/> do <br/> it</h2>
       <img className="product" src={img1} alt=''/>
@@ -27,7 +32,7 @@ function Card() {
       </div>
     </div>
 
-    <div className="card card-blue">
+    <div className="card card-blue" data-aos='fade'>
       <img className="logo" src={NIKELG}  alt=''/>
       <h2 className="title">Just <br/> do <br/> it</h2>
       <img className="product" src={img2}  alt=''/>
@@ -40,7 +45,7 @@ function Card() {
       </div>
     </div>
 
-    <div className="card card-red">
+    <div className="card card-red" data-aos='fade'>
       <img className="logo" src={NIKELG}  alt=''/>
       <h2 className="title">Just <br/> do <br/> it</h2>
       <img className="product" src={img3}  alt=''/>

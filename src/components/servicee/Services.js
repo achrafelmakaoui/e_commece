@@ -29,7 +29,7 @@ const services = [
 ];
 
 const Services = () => (
-  <div className="services" id="services">
+  <div className="services" id="services" data-aos='fade'>
      <br/><br/>
   <h1 className='prd text-center '>SERVICES</h1>
   <h3 className='prdtit text-center'>We provide more than shoes products !</h3>

@@ -5,7 +5,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 const Reviews = () => {
   return (
-    <div className='reviews'>
+    <div className='reviews' data-aos='fade'>
         <br/><br/>
         <h1 className='prd text-center '>Over 500<sup>+</sup> people trust us</h1>
         <h3 className='prdtit text-center'>Some reviews from our clients about our products</h3>
