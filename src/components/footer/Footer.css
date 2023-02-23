@@ -62,9 +62,11 @@
     box-sizing: border-box;
     width: 50px;
   }
+
   .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
   }
+
   .footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
@@ -75,8 +77,9 @@
     display: block;
     transition: all 0.3s ease;
     font-family: "GilroyMedium";
-  line-height: 1.7;
+    line-height: 1.7;
   }
+
   .footer-col ul li a:hover{
     color: #216ce7;
     padding-left: 8px;
@@ -105,28 +108,27 @@
       margin: 20px auto;
   }
   .copyright{
-      text-align: center;
+    text-align: center;
     color: white;
     margin: 0px auto;
     font-size: 18px;
     font-family: "Gruppo";
-  
   }
   .copyright a:hover{
     color: #0d6efd;
-}
+  }
   
   /*responsive*/
   @media(max-width: 767px){
     .footer-col{
       width: 50%;
       margin-bottom: 30px;
-  }
+    }
   }
   @media(max-width: 574px){
     .footer-col{
       width: 100%;
-  }
+    }
   }
 
 #hr{
