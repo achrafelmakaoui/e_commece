@@ -30,11 +30,23 @@ const services = [
   },
 ];
 function Services(){
+  useEffect(() => {
+
+    // Get the element with id "elementId"
+    const element = document.getElementById('Services');
+
+    // If the element exists, scroll to it
+    if (element) {
+      element.scrollIntoView(1000, 0);
+      window.scrollTo(0, 0);
+    }
+  }, []); // Run this effect only once
+
   useEffect(()=>{
     Aos.init({duration:2000});
  },[]);
   return(
-  <div className="services" id="services">
+  <div className="services" id="Services">
      <br/><br/>
   <h1 className='prd text-center '>SERVICES</h1>
   <h3 className='prdtit text-center'>We provide more than shoes products !</h3>

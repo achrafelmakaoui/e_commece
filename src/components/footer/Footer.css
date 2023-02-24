@@ -80,7 +80,7 @@
     line-height: 1.7;
   }
 
-  .footer-col ul li a:hover{
+  .footer-col ul li .link:hover{
     color: #216ce7;
     padding-left: 8px;
   }

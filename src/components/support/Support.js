@@ -25,12 +25,27 @@ export const Support = () => {
           console.log(error.text);
       });
   };
+
+
+  useEffect(() => {
+
+    // Get the element with id "elementId"
+    const element = document.getElementById('Support');
+
+    // If the element exists, scroll to it
+    if (element) {
+      element.scrollIntoView(1000, 0);
+      window.scrollTo(0, 0);
+    }
+  }, []); // Run this effect only once
+
+
   useEffect(()=>{
     Aos.init({duration:2000});
  },[]);
   return (<>
-  <br/><br/><br/><br/>
-  <h1 className='prd text-center'>Support</h1>
+  <br id='Support'/><br/><br/><br/>
+  <h1 className='prd text-center' >Support</h1>
   <h3 className='prdtit text-center'>Our dedicated support team is available 24/7 Support !</h3>
   <span className='supicon d-flex justify-content-center aling-items-center'><SupportAgentIcon className='mtuiicon'/><SupportAgentIcon className='mtuiicon'/><SupportAgentIcon className='mtuiicon'/></span>
   <div className='contraint' data-aos='fade'>

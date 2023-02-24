@@ -1,4 +1,4 @@
-import React,{ useState,useRef } from "react";
+import React,{ useState,useRef, useEffect } from "react";
 import './Navbar.css'
 import MenuCloseIcon  from '../pictures/icon-close.svg';
 import MenuIcon  from '../pictures/icon-menu.svg';
@@ -6,9 +6,28 @@ import CartButton from '../CartButton/CartButton';
 import SneakerLogo from '../pictures/logo.svg';
 // import avatar from '../pictures/image-avatar.png';
 import Profil from '../pictures/profil.jpg'
-
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
+
+  useEffect(() => {
+    // Get the element with id "elementId"
+    const element = document.getElementById('Home');
+    
+    // If the element exists, scroll to it
+    if (element) {
+      element.scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
+      window.scrollTo(0, 0);
+    }
+  }, []); // Run this effect only once
+  
+  const handleClick = (event) => {
+    event.preventDefault();
+    const element = document.querySelector(event.target.hash);
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
+
     const [ setMenuState] = useState(false);
     const menu = useRef(null);
     const sidebar = useRef(null);
@@ -26,17 +45,18 @@ const Navbar = () => {
       
   return (
     <>
-    <div className="bg">
+    <div className="Home" id="Home">
     <nav>
       <div className="headerLogo">
         <img className='headerMenuIcon' src={MenuIcon} alt='svg' ref={menu} onClick={showhideMenu}/>
-        <img className='header' src={SneakerLogo} alt='svg'/>
+        <Link to='/'><img className='header' src={SneakerLogo} alt='svg'/></Link>
         <ul className="headerLinks">
-          <li>Home</li>
-          <li>Product</li>
-          <li>Service</li>
-          <li>Reviews</li>
-          <li>Support</li>
+          <li><Link className="nav-link" to='/'><HashLink className="nav-link" to='/#Home' onClick={handleClick}>Home</HashLink></Link></li>
+          <li><Link className="nav-link" to="/"><HashLink className="nav-link" to='/#Products' onClick={handleClick}>Product</HashLink></Link></li>
+          <li><Link className="nav-link" to="/"><HashLink className="nav-link" to='/#Services' onClick={handleClick}>Service</HashLink></Link></li>
+          <li><Link className="nav-link" to="/"><HashLink className="nav-link" to='/#Reviews' onClick={handleClick}>Reviews</HashLink></Link></li>
+          <li><Link className="nav-link" to="/"><HashLink className="nav-link" to='/#Support' onClick={handleClick}>Support</HashLink></Link></li>
+          <li><Link className="nav-link" to="/"><HashLink className="nav-link" to='/#Contact' onClick={handleClick}>Contact</HashLink></Link></li>
         </ul>
       </div>
       <ul className="headerProfile">
@@ -52,16 +72,14 @@ const Navbar = () => {
 
   <div class="nav__links" ref={sidebar}>
     <img className='headerMenuCloseIcon' src={MenuCloseIcon} alt='svg' ref={menu} onClick={closesideMenu}/>
-    <img className='smnavlogo' src={SneakerLogo} alt='svg'/>
-  
+    <Link to='/'><img className='smnavlogo' src={SneakerLogo} alt='svg'/></Link>
         <ul>
-          <li><a href="/#"><i class="fi-rr-apps"></i><span>Home</span></a></li>
-          <li><a href="/#"><i class="fi-rr-comment-alt"></i><span>Product</span></a></li>
-          <li><a href="/#"><i class="fi-rr-browser"></i><span>Service</span></a></li>
-          <li><a href="/#"><i class="fi-rr-document-signed"></i><span>Reviews</span></a></li>
-          <li><a href="/#"><i class="fi-rr-lock"></i><span>Support</span></a></li>
-          <li><a href="/#"><i class="fi-rr-magic-wand"></i><span>About</span></a></li>
-          <li><a href="/#"><i class="fi-rr-power"></i><span>Contact</span></a></li>
+          <li><Link to="/"><HashLink to='/#Home' onClick={handleClick}><i class="fi-rr-apps"></i><span>Home</span></HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Products' onClick={handleClick}><i class="fi-rr-comment-alt"></i><span>Product</span></HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Services' onClick={handleClick}><i class="fi-rr-browser"></i><span>Service</span></HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Reviews' onClick={handleClick}><i class="fi-rr-document-signed"></i><span>Reviews</span></HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Support' onClick={handleClick}><i class="fi-rr-lock"></i><span>Support</span></HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Contact' onClick={handleClick}><i class="fi-rr-power"></i><span>Contact</span></HashLink></Link></li>
         </ul>
       </div>
     </div>

@@ -6,12 +6,25 @@ import Aos from "aos";
 import "aos/dist/aos.css"
 
 const Reviews = () => {
+
+  useEffect(() => {
+
+    // Get the element with id "elementId"
+    const element = document.getElementById('Reviews');
+
+    // If the element exists, scroll to it
+    if (element) {
+      element.scrollIntoView(1000, 0);
+      window.scrollTo(0, 0);
+    }
+  }, []); // Run this effect only once
+
   useEffect(()=>{
     Aos.init({duration:2000});
  },[]);
   return (
-    <div className='reviews'>
-        <br/><br/>
+    <div className='reviews' id='Reviews'>
+        <br/><br/><br/><br/>
         <h1 className='prd text-center '>Over 500<sup>+</sup><br/>trust us</h1>
         <h3 className='prdtit text-center'>Some reviews from our clients about our products</h3>
         <br/>

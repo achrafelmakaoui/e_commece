@@ -1,14 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Footer.css'
 import logowhite from '../pictures/logowhite.svg'
+import { HashLink } from "react-router-hash-link";
 
 
 
 export default function Footer(){
+  useEffect(() => {
+
+    // Get the element with id "elementId"
+    const element = document.getElementById('Contact');
+
+    // If the element exists, scroll to it
+    if (element) {
+      element.scrollIntoView(1000, 0);
+      window.scrollTo(0, 0);
+    }
+  }, []); // Run this effect only once
+
+
+  const handleClick = (event) => {
+    event.preventDefault();
+    const element = document.querySelector(event.target.hash);
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return(
     <div>
         <br/><br/><br/><br/><br/><br/>
-    <footer className="footer">
+    <footer className="footer" id='Contact'>
         <hr style={{color:'white'}} id='hr'/>
             <div className="contaiiner">
                 
@@ -20,17 +40,17 @@ export default function Footer(){
                 <div className="footer-col">
                   <h4>Liens utiles</h4>
                   <ul>
-                    <li><a  className='link' href='/#'>Product</a></li>
-                    <li><a  className='link' href='/#'>Service</a></li>
-                    <li><a  className='link' href='/#'>Reviews</a></li>
-                    <li><a  className='link' href='/#'>Support</a></li>
+                    <li><HashLink to='/#Products' className='link' onClick={handleClick}>Product</HashLink></li>
+                    <li><HashLink to='/#Services' className='link' onClick={handleClick}>Service</HashLink></li>
+                    <li><HashLink to='/#Reviews' className='link' onClick={handleClick}>Reviews</HashLink></li>
+                    <li><HashLink to='/#Support' className='link' onClick={handleClick}>Support</HashLink></li>
                   </ul>
                 </div>
                 <div className="footer-col">
                   <h4>Liens utiles</h4>
                   <ul>
-                    <li><a  className='link' href='/#'>Sing-up</a></li>
-                    <li><a  className='link' href='/#'>Sign-in</a></li>   
+                    <li><HashLink to='/#' className='link' >Sing-up</HashLink></li>
+                    <li><HashLink to='/#' className='link' >Sign-in</HashLink></li>   
                   </ul>
                 </div>
                 <div className="footer-col">
