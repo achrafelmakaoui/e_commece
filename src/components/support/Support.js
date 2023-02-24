@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import './Support.css'
@@ -7,6 +7,9 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 
 export const Support = () => {
   const form = useRef();
@@ -22,7 +25,9 @@ export const Support = () => {
           console.log(error.text);
       });
   };
-
+  useEffect(()=>{
+    Aos.init({duration:2000});
+ },[]);
   return (<>
   <br/><br/><br/><br/>
   <h1 className='prd text-center'>Support</h1>
@@ -31,7 +36,7 @@ export const Support = () => {
   <div className='contraint' data-aos='fade'>
     <div className='row' id='sect'>
         <div className='col-lg-6 col-md-6 col-sm-12' id='imgs'>
-            <img src={Supportshield} alt='cnt'/>
+            <img src={Supportshield} alt='cnt' />
         </div>
         <div className='col-lg-6 col-md-6 col-sm-12' id='formsup'>
         <form ref={form} onSubmit={sendEmail}>

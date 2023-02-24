@@ -141,18 +141,23 @@
 }
 @media (max-width:542px) {
     #sect #imgs img{
-        width: 400px;
+        width: 390px;
+    }
+}
+@media (max-width:412px) {
+    #sect #imgs img{
+        width: 340px;
     }
 }
 @media (max-width:442px) {
     #sect #imgs img{
-        width: 330px;
+        width: 315px;
     }
 }
 
 @media (max-width:342px) {
     #sect #imgs img{
-        width: 230px;
+        width: 215px;
     }
 }
 @media (max-width:242px) {

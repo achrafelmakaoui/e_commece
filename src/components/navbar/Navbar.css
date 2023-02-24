@@ -14,37 +14,45 @@ a{
     text-decoration: none;
 }
 .bg{
-    height: 100vh;
+    
     width: 100%;
     background-color: white;
 }
 nav {
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 10px 10px;
-  /* position: fixed;
+  position: fixed;
   width: 100%;
   position: -webkit-sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
-  background-color: white; */
+  background-color: white;
 
 
 }
 
 
 
+.headerLogo .header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: -20px;
+  
+}
 .headerLogo {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
+  
 }
-
 .headerLogo .headerMenuIcon {
   color: #69707d;
   margin: 3px 0 0 0;
@@ -53,11 +61,19 @@ nav {
 .headerLinks {
   display: none;
 }
-
+.headerLinks li{
+  cursor: pointer;
+  transition: 0.4s;
+}
+.headerLinks li:hover{
+  cursor: pointer;
+  color: #000;
+}
 .headerProfile {
   display: flex;
   align-items: center;
   gap: 15px;
+  
 }
 
 .headerProfile > li > img {
@@ -65,7 +81,28 @@ nav {
   height: 22px;
   border-radius: 50%;
 }
-
+@media screen and (max-width: 700px) {
+  .headerLogo .header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+    
+  }
+  .headerLogo .headerMenuIcon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 9px;
+    
+  }
+  .headerProfile {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    
+  }
+}
 @media screen and (min-width: 700px) {
   nav {
     width: 95%;
@@ -73,7 +110,7 @@ nav {
     justify-content: space-between;
     align-items: center;
   }
-
+  
   .headerProfile > li > img {
     width: 44px;
     height: 44px;
@@ -93,6 +130,7 @@ nav {
 
   .headerLogo {
     gap: 40px;
+    /* margin-top: 15px; */
   }
 
   .headerMenuIcon {
@@ -101,6 +139,7 @@ nav {
 
   .headerProfile {
     align-self: flex-end !important;
+
   }
 
   .headerLinks {
@@ -134,7 +173,7 @@ nav {
 
 @media screen and (min-width: 1400px) {
   nav {
-    width: 60%;
+    width: 100%;
   }
 
   hr.headerLine {
@@ -144,14 +183,15 @@ nav {
     display: none;
  }
 }
+
 .nav__links{
-    position: absolute;
+    position: fixed;
     top:0;
     margin-left: -220px;
     transition: 0.5s;
     background-color: white;
     height: 100vh;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 0px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 11.0px );
     -webkit-backdrop-filter: blur( 11.0px );
     z-index: 999;
@@ -161,17 +201,20 @@ nav {
     
    
 }
+.nav__links .smnavlogo{
+  width: 120px;
+}
 .nav__links img{
     margin-left: 8.5px;
     margin-top: 23px;
     margin-bottom: 20px;
-    width: 19px;
+    width: 17px;
 }
 .nav__links ul {
-    margin-right: 30px;
+    margin-right: 50px;
 }
 .nav__links ul li{
-    padding: 10px 0px 12px  0px;
+    padding: 40px 0px 12px  0px;
     width: 100%;
     border-radius: 10px;
     transition: 0.5s;
@@ -196,115 +239,3 @@ nav {
     color: #3781DE;
 }
 
-@keyframes sneakerAnimation {
-    0%, 10%{
-        transform: translate(100vw,0) rotate(-15deg);
-    }
-    90%, 100%{
-        transform: translate(-5vw,-5vw) rotate(-30deg);
-    }
-}
-
-.slider {
-
-    height: 100vh;
-    position: relative;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 0px;
-    overflow: hidden;
-  }
-  
-  .slide {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-  
-  .slide .shoes {
-    width: 45vw;
-    animation: sneakerAnimation 3s cubic-bezier(0.25, 1, 0.5, 1) infinite  alternate;
-    z-index: 99;
-    transform: translate(-5vw,-5vw) rotate(-30deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* aspect-ratio: 3/2;
-    object-fit: contain; */
-  }
-  
-  .slide span{
-    position: absolute;
-    font-family: 'Montserrat',sans-serif;
-    font-size: 15vw;
-    font-style: italic;
-    color: #000;
-    text-align: center;
-  }
-  .slide span::after{
-    content: attr(text);
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    color: transparent;
-    -webkit-text-stroke: 0.15vw black;
- }
-  
-  .slide.active {
-    opacity: 1;
-  }
-  
-  .dots {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    margin-top: 450px;
-  }
-  
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: gray;
-    margin: 0 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .dot.active {
-    background-color: black;
-  }
-
-
-  @media (max-width:800px) {
-    .slide .shoes {
-      width: 85vw;
-      animation: sneakerAnimation 3s cubic-bezier(0.25, 1, 0.5, 1) infinite  alternate;
-      z-index: 99;
-      transform: translate(-5vw,-5vw) rotate(-30deg);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* aspect-ratio: 3/2;
-      object-fit: contain; */
-    }
-    
-    .slide span{
-      position: absolute;
-      font-family: 'Montserrat',sans-serif;
-      font-size: 25vw;
-      font-style: italic;
-      color: #000;
-      text-align: center;
-    }
-}
