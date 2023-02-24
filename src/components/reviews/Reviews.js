@@ -10,12 +10,12 @@ const Reviews = () => {
     Aos.init({duration:2000});
  },[]);
   return (
-    <div className='reviews' data-aos='fade'>
+    <div className='reviews'>
         <br/><br/>
         <h1 className='prd text-center '>Over 500<sup>+</sup><br/>trust us</h1>
         <h3 className='prdtit text-center'>Some reviews from our clients about our products</h3>
         <br/>
-        <div className='containerr'>
+        <div className='containerr' data-aos='fade'>
             <div className='row' >
             <div className='col-lg-4 col-md-4 col-sm-12'>
                   <div className="single-box">
