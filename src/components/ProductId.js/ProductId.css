@@ -1,0 +1,276 @@
+@media screen and (max-width: 700px) {
+    #prdid{
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+      }
+}
+@media screen and (min-width: 700px) {
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: #fff; */
+      }
+    #prdid .cardDesktop > img {
+      border-radius: 30px;
+    }
+    #prdid .cardDesktop > img {
+      outline: none;
+      border-radius: 20px;
+    }
+    #prdid .cardDesktop {
+      border-radius: 30px;
+    }
+  }
+  #prdid .cardDesktop {
+    height: auto;
+  }
+  #prdid .cardDesktop > img {
+    max-height: inherit;
+    max-width: 40vw;
+  }
+  
+  
+  /* #prdid .cardDesktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height:  50vh;
+    border-radius: 20px;
+  } */
+  #prdid .cardDesktop{
+    transform: rotate(-30deg);
+  }
+  .productDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 60px 20px;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+  }
+  
+  .productY {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 700px) {
+    .productDescription {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      height: auto;
+      padding: 0;
+    }
+  
+    .productDescription > .productY > .productQuantity > .quantityBtn {
+      max-width: 125px;
+      border-radius: 2px;
+    }
+  
+    .productDescription > .productY > .productButton {
+      max-width: 230px;
+      border-radius: 30px;
+    }
+  
+    .productDescription > h4 {
+      font-size: 0.9rem !important;
+      font-weight: bolder !important;
+    }
+  
+    .productDescription > h2 {
+      font-size: 2.5rem !important;
+    }
+  
+    .productY {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .productDescription {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      height: auto;
+      padding: 40px 0;
+    }
+  
+    .productY {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .productDescription {
+        display: flex;
+      flex-direction: column;
+      max-width: 381px;
+      gap: 30px;
+      padding: 40px 0;
+    }
+    
+  }
+  @media screen and (max-width: 1024px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 25% 0% 25%;
+        max-width: 40vw;
+      }
+    #prdid{
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+      }
+    
+  }
+  .productDescription > h4 {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font: 500 1rem 'Kumbh Sans', sans-serif;
+    color: rgb(29, 87, 233);
+  }
+  
+  .productDescription > h2 {
+    align-self: flex-start;
+    text-transform: capitalize;
+    font: 700 2rem 'Kumbh Sans', sans-serif;
+    text-align: left;
+    color: #dfdadac3;
+  }
+  
+  .productDescription > p {
+    align-self: flex-start;
+    font: 400 1rem 'Kumbh Sans', sans-serif;
+    text-align: left;
+    color: #717982;
+  }
+  
+  .productDescription > .productPrice {
+    display: flex;
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .productPrice > .productPriceNew {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .productPrice > .productPriceNew > .newPrice {
+    font: 700 2rem 'Kumbh Sans', sans-serif;
+    color: #dfdadac3;
+  }
+  
+  .productPrice > .productPriceNew > .pricePercentage {
+    font: 700 1rem 'Kumbh Sans', sans-serif;
+    background-color: rgb(29, 87, 233);
+    color: #dfdadac3;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .productPrice > .productPriceOld > .oldPrice {
+    font: 700 1rem 'Kumbh Sans', sans-serif;
+    color: #71798291;
+    text-decoration: line-through;
+  }
+  
+  .productDescription > .productY > .productQuantity {
+    display: flex;
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(29, 87, 233);
+    border-radius: 5px;
+
+  }
+  
+  button > span {
+    background-color: transparent;
+  }
+  
+  .productDescription > .productY > .productQuantity > span {
+    width: 90%;
+    height: 60px;
+    padding: 20px 10px;
+    font: 400 1rem 'Kumbh Sans', sans-serif;
+    color: #717982;
+    border: none;
+    outline: none;
+    background-color: #222222;
+    text-align: center;
+  }
+  
+  .productDescription > .productY > .productQuantity > .quantityBtn {
+    background-color: #222222;
+    padding: 0 10px;
+    height: 60px;
+    border: none;
+    outline: none;
+  }
+  
+  .productDescription > .productY > .productQuantity > .quantityValue {
+    font-weight: bolder;
+  }
+  
+  .productDescription > .productY > .productQuantity > .quantityBtnPlus {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .productDescription > .productY > .productQuantity > .quantityBtnMinus {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  .productDescription > .productY > .productButton {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .productButton > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: rgb(29, 87, 233);
+    color: #fff;
+    font: 700 1rem 'Kumbh Sans', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: -2px 24px 43px -19px rgb(29, 87, 233);
+  }
+  
+  .productButton > button:hover {
+    opacity: 70%;
+    transition: all 0.25s;
+  }
+  
+  button > #cartBtn {
+    background-color: transparent;
+    color: #fff;
+  }
+  

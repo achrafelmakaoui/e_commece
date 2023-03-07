@@ -1,0 +1,57 @@
+import React from "react";
+import './ProductId.css';
+import { ReactComponent as IconMinus } from '../pictures/icon-minus.svg';
+import { ReactComponent as IconPlus } from '../pictures/icon-plus.svg';
+import { ReactComponent as IconCart } from '../pictures/icon-cart.svg';
+import product from '../pictures/airjordan.png';
+
+const ProductId=()=>{
+ 
+  return (
+    <><br/><br/><br/><br/>
+    <div className="container" id="prdid">
+        <div className="cardDesktop">
+            <img src={product} alt='imgid'/>
+        </div>
+        <div className="productDescription">
+            <h4>sneaker company</h4>
+            <h2>Fall Limited Edition Trainers</h2>
+            <p>
+                These low-profile sneakers are your perfect
+                casual wear companion. Featuring a durable rubber
+                outer sole, they will withstand everything the
+                weather can offer.
+            </p>
+            <div className="productPrice">
+                <div className="productPriceNew">
+                    <span className="newPrice">$125.00</span>
+                    <span className="pricePercentage">50%</span>
+                </div>
+                <div className="productPriceOld">
+                    <span className="oldPrice">$250.00</span>
+                </div>
+            </div>
+            <div className="productY">
+                <div className="productQuantity">
+                    <button type="button" className="quantityBtn quantityBtnMinus">
+                        <IconMinus  className="quantityBtnMinus" />
+                    </button>
+                    <span className="quantityValue">0</span>
+                    <button type="button" className="quantityBtn quantityBtnPlus">
+                        <IconPlus  className="quantityBtnPlus" />
+                    </button>
+                </div>
+                <div className="productButton">
+                    <button  className="productButton" type="button">
+                        <IconCart id="cartBtn"/>
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </>
+  );
+};
+
+export default ProductId;

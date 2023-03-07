@@ -62,6 +62,7 @@ nav {
 .headerLogo .headerMenuIcon {
   color: #69707d;
   margin: 3px 0 0 0;
+  cursor: pointer;
 }
 
 .headerLinks {
@@ -104,12 +105,14 @@ nav {
     display: flex;
     align-items: center;
     margin-top: -10px;
-    
+  }
+  .headerMenuCloseIcon{
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 700px) {
   nav {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -122,10 +125,12 @@ nav {
   }
   .headerMenuCloseIcon{
     display: none;
+    cursor: pointer;
+
  }
   hr.headerLine {
     display: block;
-    width: 92%;
+    width: 50%;
     margin: 0 auto;
     height: 1px;
     border: none;
@@ -164,7 +169,10 @@ nav {
   }
 
   nav {
-    width: 85%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
   }
 
   hr.headerLine {
@@ -172,12 +180,16 @@ nav {
   }
   .headerMenuCloseIcon{
     display: none;
+    cursor: pointer;
+
  }
 }
-
 @media screen and (min-width: 1400px) {
   nav {
     width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
   }
 
   hr.headerLine {
@@ -185,6 +197,7 @@ nav {
   }
   .headerMenuCloseIcon{
     display: none;
+    cursor: pointer;
  }
 }
 
@@ -227,7 +240,7 @@ nav {
 .nav__links ul li:not(li:last-child){
     margin-bottom: 22px;
 }
-.nav__links ul li a span{
+.nav__links ul li a {
     color: #000;
     font-size: 18px;
     font-family: 'Gruppo';
@@ -238,8 +251,11 @@ nav {
     color: #A4A4A4;
     transition: 0.5s;
 }
-
+.nav__links ul li:hover a{
+  color: #3781DE;
+}
 .nav__links ul li:hover i{
     color: #3781DE;
 }
+
 

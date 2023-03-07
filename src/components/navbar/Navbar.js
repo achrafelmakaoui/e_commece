@@ -74,12 +74,12 @@ const Navbar = () => {
     <img className='headerMenuCloseIcon' src={MenuCloseIcon} alt='svg' ref={menu} onClick={closesideMenu}/>
     <Link to='/'><img className='smnavlogo' src={SneakerLogo} alt='svg'/></Link>
         <ul>
-          <li><Link to="/"><HashLink to='/#Home' onClick={handleClick}><i class="fi-rr-apps"></i><span>Home</span></HashLink></Link></li>
-          <li><Link to="/"><HashLink to='/#Products' onClick={handleClick}><i class="fi-rr-comment-alt"></i><span>Product</span></HashLink></Link></li>
-          <li><Link to="/"><HashLink to='/#Services' onClick={handleClick}><i class="fi-rr-browser"></i><span>Service</span></HashLink></Link></li>
-          <li><Link to="/"><HashLink to='/#Reviews' onClick={handleClick}><i class="fi-rr-document-signed"></i><span>Reviews</span></HashLink></Link></li>
-          <li><Link to="/"><HashLink to='/#Support' onClick={handleClick}><i class="fi-rr-lock"></i><span>Support</span></HashLink></Link></li>
-          <li><Link to="/"><HashLink to='/#Contact' onClick={handleClick}><i class="fi-rr-power"></i><span>Contact</span></HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Home' onClick={handleClick}><i class="fi-rr-apps"></i>Home</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Products' onClick={handleClick}><i class="fi-rr-comment-alt"></i>Product</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Services' onClick={handleClick}><i class="fi-rr-browser"></i>Service</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Reviews' onClick={handleClick}><i class="fi-rr-document-signed"></i>Reviews</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Support' onClick={handleClick}><i class="fi-rr-lock"></i>Support</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Contact' onClick={handleClick}><i class="fi-rr-power"></i>Contact</HashLink></Link></li>
         </ul>
       </div>
     </div>
