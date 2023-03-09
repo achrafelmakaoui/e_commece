@@ -25,7 +25,7 @@ function Card() {
   },[]);
   return (<>
   <br id='Products'/><br/><br/><br/>
-  <h1 className='prd text-center' >PRODUCTS</h1>
+  <h1 className='prd text-center' id='tit'>PRODUCTS</h1>
   <h3 className='prdtit text-center'>Which type of shoes are you looking for ?</h3>
   <span className='spn'><a className='vmp text- center' href='/#'>View More <i class="fi-rr-arrow-right"></i></a></span>
   <br/>
