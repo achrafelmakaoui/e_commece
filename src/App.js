@@ -1,4 +1,3 @@
-
 import './App.css';
 import {BrowserRouter,Routes,Route } from "react-router-dom";
 import Navbar from './components/navbar/Navbar';
@@ -9,7 +8,10 @@ import { Support } from './components/support/Support';
 import Footer from './components/footer/Footer';
 import  Slider  from './components/Firstpg/Slider';
 import ScrollToTop from './Scrolltotop';
-import ProductId from './components/ProductId.js/ProductId';
+// import ProductId from './components/ProductId/ProductId';
+import Product from './Product';
+// import SlideBanner from './components/banner/SlideBanner';
+// import Filter from './components/filter/Filter';
 
 
 function App() {
@@ -18,10 +20,13 @@ function App() {
       <BrowserRouter>
         <ScrollToTop/>
         <Navbar/>
+        {/* <SlideBanner /> */}
+        {/* <Filter/> */}
           <Routes>
-            <Route path="/" element={<><Slider/><Card/><Services/><Reviews/><Support/></>}/>
+            <Route path="/" exact element={<><Slider/><Card/><Services/><Reviews/><Support/></>}/>
+            <Route exact path='/product'  element={<> <Product/></> }/>
           </Routes>
-        <ProductId/>
+        {/* <ProductId/> */}
         <Footer/>
       </BrowserRouter>
     </div>

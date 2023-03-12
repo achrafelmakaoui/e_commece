@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Card.css'
+import { Link } from 'react-router-dom';
 import NIKELG from '../pictures/nike-white.png'
 import img1 from '../pictures/image_1.png'
 import img2 from '../pictures/image_2.png'
@@ -27,7 +28,7 @@ function Card() {
   <br id='Products'/><br/><br/><br/>
   <h1 className='prd text-center' id='tit'>PRODUCTS</h1>
   <h3 className='prdtit text-center'>Which type of shoes are you looking for ?</h3>
-  <span className='spn'><a className='vmp text- center' href='/#'>View More <i class="fi-rr-arrow-right"></i></a></span>
+  <span className='spn'><Link to="/product" className='vmp text- center'>View More <i class="fi-rr-arrow-right"></i></Link></span>
   <br/>
     <div class="container">
         
