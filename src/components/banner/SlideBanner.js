@@ -1,20 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './SlideBanner.css';
 
 const SlideBanner = () => {
     const [active, setActive] = useState(0);
-    const slides = [
-      { title: 'Devoluciones y entregas gratuitas.', subtitle: ' Como Member, tienes envíos gratuitos y devoluciones gratuitas en un plazo de 30 días. Obtén más información y únete' },
-      { title: 'Más deporte', subtitle: 'Ahorra un 20 % si gastas 100 € y un 25 % si gastas 150 €. Utiliza el código SCORE23 para productos sin rebaja. Se aplican exclusiones.*Comprar * Términos de la promoción' },
-    ];
-    
+    const slides = useMemo(() => [  { title: 'Step into Ramadan with Style: Get Your Shoes!', subtitle: 'Get ready for Ramadan with our exclusive shoe collection! We have everything you need to step into the month with confidence and style.' },  { title: 'Get 20% off on Air Jordan 1: Exclusive Offer!', subtitle: 'Upgrade your sneaker collection with Air Jordan 1 - now at an exclusive 20% discount! Choose from a variety of styles and colors and step up your sneaker.' },], []);
+
     useEffect(() => {
-        const timer = setInterval(() => {
-          setActive(active === slides.length - 1 ? 0 : active + 1);
-        }, 5000);
-    
-        return () => clearInterval(timer);
-      }, [active, slides]);
+    const timer = setInterval(() => {
+       setActive(active => active === slides.length - 1 ? 0 : active + 1);
+    }, 5000);
+
+    return () => clearInterval(timer);
+    }, [slides]);
+
 
       return (
         <div className="slide-banner">
@@ -23,6 +21,7 @@ const SlideBanner = () => {
               key={index}
               className={`slide ${index === active ? 'active' : ''}`}
             >
+              
               <h1>{slide.title}</h1>
               <p>{slide.subtitle}</p>
             </div>

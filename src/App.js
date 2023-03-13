@@ -20,11 +20,9 @@ function App() {
       <BrowserRouter>
         <ScrollToTop/>
         <Navbar/>
-        {/* <SlideBanner /> */}
-        {/* <Filter/> */}
           <Routes>
             <Route path="/" exact element={<><Slider/><Card/><Services/><Reviews/><Support/></>}/>
-            <Route exact path='/product'  element={<> <Product/></> }/>
+            <Route exact path='/product'  element={<><Product/></> }/>
           </Routes>
         {/* <ProductId/> */}
         <Footer/>

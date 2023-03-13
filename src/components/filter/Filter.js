@@ -9,10 +9,9 @@ const Filter =()=>{
     return(
         <div className="form">
             <form>
-                
                 <div className="search">
-                    <h2>Find your product</h2>
-                    <input type='search' placeholder="Search Product name here..."></input>
+                    <h2>Find Your Product</h2>
+                    <input type='search' placeholder="Search For Product..."></input>
                     <SearchIcon className="icon-search" fontSize="small"/>
                     {/* <button id="Search">Search <SearchIcon fontSize="small"/></button> */}
                 </div>
@@ -23,8 +22,8 @@ const Filter =()=>{
                         </div>
                         <div className="filter-button">
                             <button className="button" id="button-focus">All</button>
-                            <button className="button">male</button>
-                            <button className="button">female</button>
+                            <button className="button">Men</button>
+                            <button className="button">Women</button>
                         </div>
                     </div>
                     <div className="sort">
@@ -35,7 +34,7 @@ const Filter =()=>{
                             <button className="button" id="button-focus">Featured</button>
                             <button className="button">Newest</button>
                             <button className="button">High-price</button>
-                            <button className="button">low-price</button>
+                            <button className="button">Low-price</button>
                         </div>
                     </div>
                 </div>
