@@ -357,10 +357,10 @@ form{
 
 @media (max-width:613px) {
     .search input{
-        width: 400px;
+        width: 420px;
         height: 45px;
         padding: 1em 0.3em;
-        margin-left: 100px;    
+        margin-left: 70px;
     }
     .filter-button{
         padding-left: 70px;
@@ -379,7 +379,7 @@ form{
         width: 400px;
         height: 45px;
         padding: 1em 0.3em;
-        margin-left: 100px;    
+        margin-left: 70px;    
     }
     .filter-button{
         padding-left: 70px;
@@ -396,10 +396,10 @@ form{
 
 @media (max-width:555px) {
     .search input{
-        width: 350px;
+        width: 400px;
         height: 45px;
         padding: 1em 0.3em;
-        margin-left: 100px;    
+        margin-left: 50px;    
     }
     .filter-button{
         padding-left: 50px;
@@ -416,10 +416,10 @@ form{
 
 @media (max-width:529px) {
     .search input{
-        width: 300px;
+        width: 400px;
         height: 45px;
         padding: 1em 0.3em;
-        margin-left: 100px;    
+        margin-left: 50px;    
     }
     .filter-button{
         padding-left: 50px;
@@ -439,24 +439,64 @@ form{
     }
 }
 
-@media (max-width:449px) {
+@media (max-width:501px) {
     .search input{
-        width: 250px;
+        width: 380px;
         height: 45px;
         padding: 1em 0.3em;
-        margin-left: 100px;    
+        margin-left: 50px;    
+    }
+    .filter-button{
+        padding-left: 50px;
+        column-gap: 10px;
+        flex-wrap: wrap;
+    }
+    .filter-button .button{
+       margin-bottom: 15px;
+    }
+    .sort-button{
+        padding-left: 50px;
+        column-gap: 10px;
+        flex-wrap: wrap;
+    }
+    .sort-button .button{
+       margin-bottom: 15px;
+    }
+}
+
+@media (max-width:484px) {
+    .search input{
+        width: 290px;
+        height: 45px;
+        padding: 1em 0.3em;
+        margin-left: 50px;    
+    }
+}
+@media (max-width:449px) {
+    .search input{
+        width: 290px;
+        height: 45px;
+        padding: 1em 0.3em;
+        margin-left: 50px;    
     }
 }
 
 @media (max-width:397px) {
     .search input{
-        width: 200px;
+        width: 275px;
         height: 45px;
         padding: 1em 0.3em;
-        margin-left: 100px;    
+        margin-left: 50px;    
     }
 }
-
+@media (max-width:374px) {
+    .search input{
+        width: 220px;
+        height: 45px;
+        padding: 1em 0.3em;
+        margin-left: 50px;    
+    }
+}
 @media (max-width:345px) {
     .search input{
         width: 200px;
@@ -467,7 +507,12 @@ form{
 }
 
 @media (max-width:310px) {
-    
+    .search input{
+        width: 200px;
+        height: 45px;
+        padding: 1em 0.3em;
+        margin-left: 30px;    
+    }
     .filter-button{
         padding-left: 30px;
         column-gap: 10px;
@@ -487,7 +532,7 @@ form{
         width: 200px;
         height: 45px;
         padding: 1em 0.3em;
-        margin-left: 30px;    
+        margin-left: 15px;    
     }
 }
 
@@ -511,7 +556,7 @@ form{
         width: 200px;
         height: 45px;
         padding: 1em 0.3em;
-        margin-left: 15px;    
+        margin-left: 8px;    
     }
     .filter{
         padding-left: 8px;
@@ -522,9 +567,9 @@ form{
 }
 @media (max-width:255px) {
     .search input{
-        width: 200px;
+        width: 190px;
         height: 45px;
         padding: 1em 0.3em;
-        margin-left: 5px;
+        margin-left: 8px;
     }
 }
