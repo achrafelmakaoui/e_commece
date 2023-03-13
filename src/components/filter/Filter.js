@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Filter.css';
 import SearchIcon from '@mui/icons-material/Search';
 import SortIcon from '@mui/icons-material/Sort';
 import FilterListIcon from '@mui/icons-material/FilterList';
-
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const Filter =()=>{
+    useEffect(()=>{
+        Aos.init({duration:2000});
+      },[]);
     return(
         <div className="form">
             <form>
@@ -20,7 +24,7 @@ const Filter =()=>{
                         <div className="title">
                             <h5>Filter <FilterListIcon fontSize="small"/></h5>
                         </div>
-                        <div className="filter-button">
+                        <div className="filter-button" data-aos="fade-right">
                             <button className="button" id="button-focus">All</button>
                             <button className="button">Men</button>
                             <button className="button">Women</button>
@@ -30,7 +34,7 @@ const Filter =()=>{
                         <div className="title">
                             <h5>Sort <SortIcon fontSize="small"/></h5>
                         </div>
-                        <div className="sort-button">
+                        <div className="sort-button" data-aos="fade-right">
                             <button className="button" id="button-focus">Featured</button>
                             <button className="button">Newest</button>
                             <button className="button">High-price</button>

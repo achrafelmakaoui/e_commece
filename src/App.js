@@ -22,7 +22,7 @@ function App() {
         <Navbar/>
           <Routes>
             <Route path="/" exact element={<><Slider/><Card/><Services/><Reviews/><Support/></>}/>
-            <Route exact path='/product'  element={<><Product/></> }/>
+            <Route path='/product'  element={<><Product/></> }/>
           </Routes>
         {/* <ProductId/> */}
         <Footer/>
