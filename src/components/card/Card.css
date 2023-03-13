@@ -127,17 +127,17 @@
   }
   .card.card-yellow .price h4 {
     background: linear-gradient(170deg, #d97904, #f2b705);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .card.card-blue .price h4 {
     background: linear-gradient(170deg, #235b8c, #03a696);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .card.card-red .price h4 {
     background: linear-gradient(170deg, #d9042b, #f13a5c);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .card .button-right {
