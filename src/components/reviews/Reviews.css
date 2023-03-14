@@ -24,7 +24,7 @@
     padding-top: 20px;
     padding-right: 10%;
     padding-bottom: 20px;
-    color: rgb(209, 209, 209);
+    color: #000;
 }   
 .img-text h2{
     font-size: 15px;
@@ -36,7 +36,7 @@
 }
 .img-text h6{
     font-size: 12px;
-    color: #707070;
+    color: #222;
     font-family: 'GilroyMedium';
     padding-left: 70px;
     position: absolute;
@@ -48,7 +48,7 @@ blockquote{
     text-align: justify;
 }
 blockquote p {
-    color: rgb(217, 210, 210);
+    color: #000;
     font-size:14px;
     font-family: 'GilroyMedium';
 }
@@ -68,13 +68,13 @@ blockquote p:before {
     position: relative;
     margin-bottom: 30px;
     border-radius: 15px;
-    background-color: #393939;
+    background-color: #e2e2e2;
 
 }
 .img-area{
     width: 50px;
     height: 50px;
-    border: 2px solid white;
+    border: 3px solid white;
     overflow: hidden;
     border-radius: 50%;
     float: left;

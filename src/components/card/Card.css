@@ -25,15 +25,22 @@
    .prd{
     font-size: 55px;
     letter-spacing: 3px;
-    opacity: 0.6;
-    font-family: 'Myriad Bold Italic';
-    color: #16A1D8;
+    opacity: 1;
+    font-family: '"Nike Futura","Helvetica Neue",Helvetica,Arial,sans-serif;';
+    font-weight: 900;
+    color: #000;
     
+    font-family: 'Montserrat',sans-serif;
+    font-size: 5vw;
+    font-style: italic;
+    color: #000;
+    text-align: center;
    }
    .prdtit{
-    font-family: 'Gruppo';
+    font-family: 'Montserrat',sans-serif;
     font-weight: bolder;
-    color: whitesmoke;
+    color: #111;
+    opacity: .6;
     text-transform: capitalize;
    }
    .vmp{
@@ -56,6 +63,7 @@
   .card {
     background-color: #ffffff;
     border-radius: 24px;
+    border: #fff solid ;
     padding: 16px;
     overflow: hidden;
     transform: translate(0);
@@ -127,17 +135,17 @@
   }
   .card.card-yellow .price h4 {
     background: linear-gradient(170deg, #d97904, #f2b705);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .card.card-blue .price h4 {
     background: linear-gradient(170deg, #235b8c, #03a696);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .card.card-red .price h4 {
     background: linear-gradient(170deg, #d9042b, #f13a5c);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .card .button-right {

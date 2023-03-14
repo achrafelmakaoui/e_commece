@@ -35,9 +35,10 @@ const Reviews = () => {
                     <span className='star'><StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/></span>
                       <div className="img-text">
                         <blockquote><p> Because Immer is itself an abstraction layer, it's important to understand why Redux Toolkit uses Immer, and how to use it correctly.</p></blockquote>
+                        
                         <div className="img-area">
                           <img src={Profil} alt=''/>
-                          </div>
+                        </div>
                         <h2>Mouad Eliidrissi</h2>
                         <h6>CEO Largest Fintech Company</h6>
                       </div>

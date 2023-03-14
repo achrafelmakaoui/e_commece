@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* filter: grayscale(50%); */
+    /* filter: grayscale(100%); */
   }
   
   .slide span{

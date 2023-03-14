@@ -56,13 +56,13 @@ export const Support = () => {
         <div className='col-lg-6 col-md-6 col-sm-12' id='formsup'>
         <form ref={form} onSubmit={sendEmail}>
             <label>Name</label>
-            <input type="text" name="user_name" />
+            <input type="text" placeholder='your name...' name="user_name" />
             <AccountCircleOutlinedIcon  className='formicon'/>
             <label>Email</label>
-            <input type="email" name="user_email" />
+            <input type="email" placeholder='your email...' name="user_email" />
             <EmailOutlinedIcon   className='formicon'/>
             <label>Message</label>
-            <textarea name="message" />
+            <textarea placeholder='your massage...' name="message" />
             <MessageOutlinedIcon  className='formiconmess'/>
             <button type='submit'>
                 Send
