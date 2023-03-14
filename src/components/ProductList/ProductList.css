@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("../fonts/Gilroy-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: "GilroySemiBold";
+    src: url("../fonts/Gilroy-SemiBold.ttf");
+  }
+  @font-face {
+    font-family: "Myriad Semibold";
+    src: url("../fonts/MYRIADPRO-SEMIBOLD.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Myriad Bold";
+    src: url("../fonts/MYRIADPRO-BOLD.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Myriad Bold Italic";
+    src: url("../fonts/MYRIADPRO-BOLDIT.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Gruppo";
+    src: url("../fonts/Gruppo-Regular.ttf");
+  }
+
+.containerproduct{
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.containerproduct .productrows{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.containerproduct .productrows .imgbann{
+    width: 400px;
+    height: 520px;
+}
+.containerproduct .productrows .imgbann .productimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 520px;
+}
+
+.containerproduct .productrows .reviewproduct {
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+.containerproduct .productrows .reviewproduct .starrow{
+    width: 400px;
+    top: 0;
+    right: 0;
+    
+}
+.containerproduct .productrows .reviewproduct .rvproductstar{
+    color: gold;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+.containerproduct .productrows .reviewproduct .rvproductstar .iconui{
+    width: 30px;
+    height: 30px;
+    /* letter-spacing: 2px; */
+}
+.containerproduct .productrows .reviewproduct .logonike{
+    width: 400px;
+    top: 0;
+    left: 0;
+}
+.containerproduct .productrows .reviewproduct .logonike img{
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 25px;
+
+}
+
+.containerproduct .productrows .productinfo{
+    width: 400px;
+    align-self: start;
+}
+.containerproduct .productrows .productinfo h3{
+    font-family: 'GilroyMedium';
+}
+.containerproduct .productrows .productinfo h5{
+    font-family: 'GilroyMedium';
+}
