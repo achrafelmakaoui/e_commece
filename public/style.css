@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 body{
     background-color: #fff;
 }
+=======
+/* body{
+    background-color: #222222;
+} */
+>>>>>>> 7f10a1b5d192e67126155ed47e17a79796fdb901
 ::-webkit-scrollbar {
     width: 10px;
   }

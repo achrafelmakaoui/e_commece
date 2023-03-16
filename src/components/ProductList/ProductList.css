@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("../fonts/Gilroy-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: "GilroySemiBold";
+    src: url("../fonts/Gilroy-SemiBold.ttf");
+  }
+  @font-face {
+    font-family: "Myriad Semibold";
+    src: url("../fonts/MYRIADPRO-SEMIBOLD.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Myriad Bold";
+    src: url("../fonts/MYRIADPRO-BOLD.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Myriad Bold Italic";
+    src: url("../fonts/MYRIADPRO-BOLDIT.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Gruppo";
+    src: url("../fonts/Gruppo-Regular.ttf");
+  }
+
+.containerproduct{
+    margin: 0;
+    padding: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productrows{
+    width: 33.33333333333333%;
+    /* width: 25%; */
+    display: inline-block;
+}
+
+.card{
+    background-color: rgb(245, 245, 245);
+}
+.imgbann{
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 0;
+    justify-items: center;
+    justify-content: center;
+}
+
+.productimg{
+    width: 70%;
+    position: relative;
+}
+
+.productinfo{
+    position: relative;
+}
+/* .eyebox{
+    padding: 15px;
+    background: transparent;
+} */
+/* .eyediv{
+    
+    border: 1px solid #000;
+    border-radius: 50px;
+    background-color: #000;
+} */
+.eye{
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    float: left;
+}
+.eye:hover{
+    cursor: pointer;
+}
+.basket:hover{
+    cursor: pointer;
+}
+.eyebox{
+    padding: 15px;
+    max-height: 50px;
+    display: flex;
+}
+.show{
+    color: #000;
+    opacity: 0;
+    margin-top: 5px;
+    float: left;
+    margin-left: -20px;
+    transition: 1s;
+    padding-right: 20px;
+}
+.add{
+    color: #000;
+    opacity: 1;
+    float: right;
+    margin-top: 5px;
+    margin-right: -20px;
+    transition: 1s;
+    padding-left: 20px;
+}
+/* .add{
+    color: #000;
+    opacity: 1;
+    float: right;
+    margin-top: -20px;
+    margin-right: 50px;
+    transition: 1s;
+    padding-left: 20px;
+} */
+.hover-button:hover + .content .show{
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+    margin-left: 50px;
+    transition: 1s;
+}
+.hover-button:hover + .content .add{
+    position: absolute;
+    z-index: 2;
+    padding-left: 0px;
+    margin-right: 0px;
+}
+.button-hoverr:hover + .content .add{
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+    margin-right: 50px;
+    transition: 1s;
+}
+.button-hoverr:hover + .content .show{
+    position: absolute;
+    z-index: 2;
+    padding-right: 0px;
+    margin-left: 0px;
+}
+.button-hover{
+    float: right;
+}
+.basket{
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    float: right;
+}
+.add:hover{
+    cursor: pointer;
+}
+.content{
+    padding: 0 12%;
+}
+/* .containerproduct .productrows{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+} */
+/* .containerproduct .productrows .imgbann{
+    width: 50%;
+    height: 50%;
+} */
+/* .containerproduct .productrows .imgbann .productimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 520px;
+} */
+
+/* .containerproduct .productrows .reviewproduct {
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+} */
+/* .containerproduct .productrows .reviewproduct .starrow{
+    width: 400px;
+    top: 0;
+    right: 0;
+    
+} */
+/* .containerproduct .productrows .reviewproduct .rvproductstar{
+    color: gold;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-top: 25px;
+} */
+/* .containerproduct .productrows .reviewproduct .rvproductstar .iconui{
+    width: 30px;
+    height: 30px;
+    letter-spacing: 2px; 
+*/
+/* .containerproduct .productrows .reviewproduct .logonike{
+    width: 400px;
+    top: 0;
+    left: 0;
+} */
+/* .containerproduct .productrows .reviewproduct .logonike img{
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 25px;
+
+} */
+
+/* .containerproduct .productrows .productinfo{
+    width: 400px;
+    align-self: start;
+}
+.containerproduct .productrows .productinfo h3{
+    font-family: 'GilroyMedium';
+}
+.containerproduct .productrows .productinfo h5{
+    font-family: 'GilroyMedium';
+} */

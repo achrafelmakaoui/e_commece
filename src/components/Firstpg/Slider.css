@@ -98,15 +98,13 @@
 
   @media (max-width:800px) {
     .slide .shoes {
-      width: 85vw;
+      width: 90vw;
       animation: sneakerAnimation 3s cubic-bezier(0.25, 1, 0.5, 1) infinite  alternate;
       z-index: 99;
       transform: translate(-5vw,-5vw) rotate(-30deg);
       display: flex;
       justify-content: center;
       align-items: center;
-      /* aspect-ratio: 3/2;
-      object-fit: contain; */
     }
     
     .slide span{
@@ -117,4 +115,15 @@
       color: #000;
       text-align: center;
     }
+}
+
+@media (max-width:666px) {
+  .slider{
+    width: 110%;
+  }
+}
+@media (max-width:273px) {
+  .slider{
+    width: 120%;
+  }
 }
