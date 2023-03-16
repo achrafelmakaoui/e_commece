@@ -5,7 +5,8 @@ import Img2 from '../pictures/product img/ezgif-5-ad539e6ae3.jpg'
 import Img3 from '../pictures/product img/ezgif-5-570acf00d8.jpg'
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlined';
-
+import StarOutlineOutlinedIcon from '@mui/icons-material/StarOutlineOutlined';
+import Rating from '../rating starts/Rating';
 
 import NIKELGBl from '../pictures/nike-black.png'
 import StarIcon from '@mui/icons-material/Star';
@@ -16,113 +17,102 @@ const ProductList=()=>{
     <>
         <div className="containerproduct">
             <div className="productrows">
-                {/* <div className="reviewproduct">
-                    <div className="logonike">
-                        <img src={NIKELGBl}  alt="nikelg"/>  
+                <article class="carddd">
+                    <div className="content_card">
+                        <div className="discont">
+                            <span>- 50 %</span>
+                        </div>
+                        <div className="rating">
+                            <Rating />
+                        </div>
                     </div>
-                    <div className="starrow">
-                        <span className="rvproductstar">
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                        </span>
-                    </div>
-                </div> */}
-                <div className="card">
-                    <div className="imgbann">
+                    <div class="img-div">
                         <img src={Img1} className="productimg" alt="Product1"/>
                     </div>
-                    <div className="productinfo">
-                        <h3 className="producttitle">Air Jordan 1</h3>
-                        <h5 className="productprice">$$80</h5>
-                        <div className="eyebox">
-                            <div className="hover-button">
-                                <VisibilityOutlinedIcon fontSize="large" className="eye"/>
-                            </div>
-                            <div className="content">
-                                <div className="show">SHOW PRODUCT</div>
-                                <div className="add">ADD TO CARD</div>
-                            </div>
-                            <ShoppingBasketOutlinedIcon fontSize="large" className="basket"/>
+                    <div class="card_content">
+                        <div className="title-price">
+                            <span class="card_title">This is a Title</span>
+                            <span className="price">160 $</span>
+                        </div>
+                        <span class="card_subtitle">chi 9alwa hla lproduct copyha mn store dyal nike 'star wa7ad...!'.</span>
+                        <div className="botton-icon">
+                            <button className="SHOW">
+                                SHOW PRODUCT
+                                <VisibilityOutlinedIcon className="eye"/>
+                            </button>
+                            <button className="ADD">
+                                ADD TO CARD
+                                <ShoppingBasketOutlinedIcon className="basket"/>
+                            </button>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
 
             <div className="productrows">
-                {/* <div className="reviewproduct">
-                    <div className="logonike">
-                        <img src={NIKELGBl}  alt="nikelg"/>  
+                <article class="carddd">
+                <div className="content_card">
+                        <div className="discont">
+                            <span>- 50 %</span>
+                        </div>
+                        <div className="rating">
+                            <Rating />
+                        </div>
                     </div>
-                    <div className="starrow">
-                        <span className="rvproductstar">
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                        </span>
-                    </div>
-                </div> */}
-                <div className="card">
-                    <div className="imgbann">
+                    <div class="img-div">
                         <img src={Img2} className="productimg" alt="Product1"/>
                     </div>
-                    <div className="productinfo">
-                        <h3 className="producttitle">Air Jordan 1</h3>
-                        <h5 className="productprice">$$80</h5>
-                        <div className="eyebox">
-                            <div className="hover-button">
-                                <VisibilityOutlinedIcon fontSize="large" className="eye"/>
-                            </div>
-                            <div className="content">
-                                <div className="show">SHOW PRODUCT</div>
-                                <div className="add">ADD TO CARD</div>
-                            </div>
-                            <div className="button-hoverr">
-                                <ShoppingBasketOutlinedIcon fontSize="large" className="basket"/>
-                            </div>
+                    <div class="card_content">
+                        <div className="title-price">
+                            <span class="card_title">This is a Title</span>
+                            <span className="price">160 $</span>
+                        </div>
+                        <span class="card_subtitle">chi 9alwa hla lproduct copyha mn store dyal nike 'star wa7ad...!'.</span>
+                        <div className="botton-icon">
+                            <button className="SHOW">
+                                SHOW PRODUCT
+                                <VisibilityOutlinedIcon className="eye"/>
+                            </button>
+                            <button className="ADD">
+                                ADD TO CARD
+                                <ShoppingBasketOutlinedIcon className="basket"/>
+                            </button>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
 
             <div className="productrows">
-                {/* <div className="reviewproduct">
-                    <div className="logonike">
-                        <img src={NIKELGBl}  alt="nikelg"/>  
-                    </div>
-                    <div className="starrow">
-                        <span className="rvproductstar">
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                            <StarIcon className="iconui"/>
-                        </span>
-                    </div>
-                </div> */}
-                <div className="card">
-                    <div className="imgbann">
-                        <img src={Img3} className="productimg" alt="Product1"/>
-                    </div>
-                    <div className="productinfo">
-                        <h3 className="producttitle">Air Jordan 1</h3>
-                        <h5 className="productprice">$$80</h5>
-                        <div className="eyebox">
-                            <div className="hover-button">
-                                <VisibilityOutlinedIcon fontSize="large" className="eye"/>
-                            </div>
-                            <div className="content">
-                                <div className="show">SHOW PRODUCT</div>
-                                <div className="add">ADD TO CARD</div>
-                            </div>
-                            <ShoppingBasketOutlinedIcon fontSize="large" className="basket"/>
+                <article class="carddd">
+                    <div className="content_card">
+                        <div className="discont">
+                            <span>- 50 %</span>
+                        </div>
+                        <div className="rating">
+                            <Rating />
                         </div>
                     </div>
-                </div>
+                    <div class="img-div">
+                        <img src={Img3} className="productimg" alt="Product1"/>
+                    </div>
+                    <div class="card_content">
+                        <div className="title-price">
+                            <span class="card_title">This is a Title</span>
+                            <span className="price">160 $</span>
+                        </div>
+                        <span class="card_subtitle">chi 9alwa hla lproduct copyha mn store dyal nike 'star wa7ad...!'.</span>
+                        <div className="botton-icon">
+                            <button className="SHOW">
+                                SHOW PRODUCT
+                                <VisibilityOutlinedIcon className="eye"/>
+                            </button>
+                            <button className="ADD">
+                                ADD TO CARD
+                                <ShoppingBasketOutlinedIcon className="basket"/>
+                            </button>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </>

@@ -93,11 +93,12 @@ form{
     padding-left: 15px;
     padding-right: 300px;
 }
+
 .sort{
     float: left;
     padding-left: 15px;
-
 }
+
 .search button:hover{
     border-color:rgb(88, 88, 88);
     background: #e5e5e5;

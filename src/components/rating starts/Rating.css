@@ -1,0 +1,15 @@
+input[type="radio"]{
+    display: none;
+}
+.on{
+    color: #ffc104;
+    cursor: pointer;
+    z-index: -100;
+    transition: color .4s;
+}
+.off{
+    color: #b5b5b8;
+    cursor: pointer;
+    z-index: -100;
+    transition: color .4s;
+}
