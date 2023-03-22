@@ -119,11 +119,11 @@
 
 @media (max-width:666px) {
   .slider{
-    width: 110%;
+    width: 100%;
   }
 }
 @media (max-width:273px) {
   .slider{
-    width: 120%;
+    width: 100%;
   }
 }

@@ -16,7 +16,7 @@
     align-items: center;
 }
 #sect #imgs img{
-    filter: drop-shadow(0px 20px 0px rgba(0, 0, 0, 0.076));
+    filter: drop-shadow(0px 15px 5px rgba(0, 0, 0, 0.076));
     width: 450px;
     animation-name: floating;
     animation-duration: 4s;

@@ -23,9 +23,7 @@
   font-family: "Gruppo";
   src: url("../fonts/Gruppo-Regular.ttf");
 }
-*{
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+
 
 .containerproduct{
   margin: 0;
@@ -47,7 +45,7 @@
   position: relative;
   width: 100%;
   height: 350px;
-  background: #f5f5f5ff;
+  background: #F6F6F6;
   overflow: hidden;
   border-radius: 20px;
   transition: .6s;
@@ -85,6 +83,11 @@
   font-weight: 700;
   padding: 0 5px;
 }
+.discont p{
+  font-size: 15px;
+  color: rgb(0, 255, 98);
+  font-family: 'Montserrat',sans-serif;
+}
 .rating{
   float: right;
   padding: 0 5px;
@@ -92,6 +95,7 @@
 .card_title {
   font-weight: 500;
   font-size: 16px;
+  font-family: 'Montserrat',sans-serif;
 }  
 .card_content p{
   font: inherit;
@@ -103,24 +107,12 @@
   bottom: 0;
   width: 100%;
   padding: 20px;
-  background: #f5f5f5ff;
+  background: #F6F6F6;
   color: #131313;
   border-top-left-radius: 20px;
   transform: translateY(0);
   transition: transform .25s;
 }  
-/* .card_content::before {
-  content: '';
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  z-index: -2000;
-  box-shadow: inset 48px 48px #131313;
-} */
 .title-price{
   width: 100%;
   padding: 2%;
@@ -135,8 +127,9 @@
   display: inline;
   float: right;
   color: #131313;
-  margin-top: -10px;
-  font-size: 20px;
+  margin-top: -4px;
+  font-size: 17px;
+  font-family: 'Montserrat',sans-serif;
 }
 .card_subtitle {
   display: inline-block;
@@ -152,67 +145,61 @@
 }
 .SHOW{
   border: 1px solid  #131313;
-  color: #131313;
   width: 45%;
   font-size: 13px;
   text-align: center;
   background: #f5f5f5ff;
-  border-radius: 25px;
+  border-radius: 4px;
   height: 25px;
   padding: 2px 5px;
-  /* width: 40%; */
+  float: left;
   transition: .6s;
+  font-family: 'Montserrat',sans-serif;
 }
 .SHOW:hover{
   color: #f5f5f5ff;
   background: #131313;
   transition: .6s;
 }
-.eye{
+.SHOW span{
+  font-family: 'Montserrat',sans-serif;
+}
+.SHOW #eye{
   float: left;
+  font-size: 17px;
+  padding: 2px 5px;
 }
 .ADD{
   border: 1px solid  #131313;
-  color: #131313;
   font-size: 13px;
   width: 45%;
   text-align: center;
   background: #f5f5f5ff;
-  border-radius: 25px;
+  border-radius: 4px;
   padding: 2px 5px;
   height: 25px;
   float: right;
-  padding: 2px 5px;
-  /* width: 40%; */
   transition: .6s;
+  font-family: 'Montserrat',sans-serif;
+  
 }
 .ADD:hover{
   color: #f5f5f5ff;
   background: #131313;
   transition: .6s;
 }
-.basket{
+
+.ADD span{
+  font-family: 'Montserrat',sans-serif;
+}
+.ADD #basket{
   float: right;
+  font-size: 17px;
+  padding: 2px 5px;
 }
 .content-button{
   padding: 5px;
 }
-
-
-/* .content_card::before {
-  content: '';
-  position: absolute;
-  top: 1px;
-  right: 360px;
-  width: 70px;
-  height: 100px;
-  transform: rotate(23deg);
-  border-radius: 50%;
-  z-index: -3000;
-  box-shadow: inset 30px 30px #131313;
-}   */
-
-
 
 @media (max-width: 1211px){
   .productimg{
@@ -261,36 +248,6 @@
   .productimg{
     width: 110%;
   }
-}
-@media (max-width: 768px){
-  /* .content-button{
-    display: none;
-  }
-  .basket{
-    border-radius: 25px;
-    padding: 0 px;
-    color: #000;
-  }
-  .eye{
-    border-radius: 50px;
-    padding: 0px;
-    color: #000;
-  } */
-  /* .botton-icon{
-    justify-content: center;
-    justify-items: center;
-  }
-  .SHOW{
-    width: 100%;
-    margin-bottom: 5px;
-  }
-  .ADD{
-    width: 100%;
-  }
-  .basket{
-    float: left;
-  } */
-
 }
 
 @media (max-width: 768px){
@@ -344,6 +301,12 @@
   .productimg{
     width: 95%;
   }
+  .SHOW .show{
+    padding-left: 30px;
+  }
+  .SHOW #eye{
+    margin-top: -20px;
+  }
 }
 @media (max-width: 486px){
   .ADD{
@@ -351,6 +314,12 @@
   }
   .SHOW{
     width: 48%;
+  }
+  .SHOW .show{
+    padding-left: 25px;
+  }
+  .SHOW #eye{
+    margin-top: 0px;
   }
 }
 @media (max-width: 459px){
@@ -440,22 +409,7 @@
   .productimg{
     margin-top: 20px;
   }
+  .SHOW #eye{
+    margin-top: -20px;
+  }
 }
-
-
-
-  /* .SHOW{
-    width: 25%;
-  }
-  .ADD{
-    width: 25%;
-  }
-  .content-button{
-    display: none;
-  }
-  .show{
-    display: inline-block;
-  }
-  .add{
-    display: inline-block;
-  } */
