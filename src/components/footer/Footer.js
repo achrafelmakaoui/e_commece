@@ -65,7 +65,7 @@ export default function Footer(){
               </div>
             </div>
             {/* <hr id='hr2'/> */}
-            <p className="copyright">All Rights Reserved ©</p>
+            <p className="copyright">© All Rights Reserved ©</p>
          </footer>
          </div>
   )

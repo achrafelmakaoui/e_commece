@@ -8,7 +8,7 @@ import { Support } from './components/support/Support';
 import Footer from './components/footer/Footer';
 import  Slider  from './components/Firstpg/Slider';
 import ScrollToTop from './Scrolltotop';
-// import ProductId from './components/ProductId/ProductId';
+import ProductId from './components/ProductId/ProductId';
 import Product from './Product';
 // import SlideBanner from './components/banner/SlideBanner';
 // import Filter from './components/filter/Filter';
@@ -23,8 +23,8 @@ function App() {
           <Routes>
             <Route path="/" exact element={<><Slider/><Card/><Services/><Reviews/><Support/></>}/>
             <Route path='/product'  element={<><Product/></> }/>
+            <Route path='/productid'  element={<><ProductId/></> }/>
           </Routes>
-        {/* <ProductId/> */}
         <Footer/>
       </BrowserRouter>
     </div>

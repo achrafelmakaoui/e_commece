@@ -3,6 +3,7 @@ input[type="radio"]{
 }
 .on{
     color: #ffc104;
+    /* color: #2BAD72; */
     cursor: pointer;
     z-index: -100;
     transition: color .4s;

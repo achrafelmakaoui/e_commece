@@ -82,6 +82,11 @@ form{
     border-bottom: 1px solid black;
     transition: 1s;
 }
+
+.search input:focus ~ .icon-search{
+    color:black;
+    transition: 1s;
+}
 .icon-search:hover{
     color: black;
     transition: 1s;
@@ -124,15 +129,15 @@ form{
 }
 .button{
     border: 1px solid rgb(179, 179, 179);
-    background: #f5f5f5ff;
-    border-radius: 25px;
+    background: #F6F6F6;
+    border-radius: 18px;
     padding: 2px 11px;
     transition: .5s;
 }
 
 .button:hover{
     border-color:rgb(88, 88, 88);
-    background: #e5e5e5;
+    background: #F6F6F6;
     transition: .5s;
 }
 .button:active{

@@ -15,7 +15,7 @@ const Filter =()=>{
             <form>
                 <div className="search">
                     <h2>Find Your Product</h2>
-                    <input type='search' placeholder="Search For Product..."></input>
+                    <input type='search' placeholder="Search For Product..."/>
                     <SearchIcon className="icon-search" fontSize="small"/>
                     {/* <button id="Search">Search <SearchIcon fontSize="small"/></button> */}
                 </div>

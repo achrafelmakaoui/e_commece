@@ -4,24 +4,16 @@
         justify-content: space-around;
         align-items: center;
       }
-      
 }
 @media screen and (min-width: 700px) {
     #prdid{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        /* background-color: #fff; */
       }
-    #prdid .cardDesktop > img {
-      border-radius: 30px;
-    }
     #prdid .cardDesktop > img {
       outline: none;
       border-radius: 20px;
-    }
-    #prdid .cardDesktop {
-      border-radius: 30px;
     }
   }
   #prdid .cardDesktop {
@@ -29,21 +21,12 @@
   }
   #prdid .cardDesktop > img {
     max-height: inherit;
-    max-width: 40vw;
+    max-width: 30vw;
+    filter: brightness(104%);
+    /* border: 1px dashed black; */
   }
   
   
-  /* #prdid .cardDesktop{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-    height:  50vh;
-    border-radius: 20px;
-  } */
-  #prdid .cardDesktop{
-    transform: rotate(-30deg);
-  }
   .productDescription {
     display: flex;
     flex-direction: column;
@@ -87,7 +70,7 @@
     }
   
     .productDescription > h2 {
-      font-size: 2.5rem !important;
+      font-size: 2rem !important;
     }
   
     .productY {
@@ -133,19 +116,22 @@
       }
     
   }
+  /* .productDescription {
+   padding: 20px;
+  } */
   .productDescription > h4 {
     align-self: flex-start;
     text-transform: uppercase;
     font: 500 1rem 'Kumbh Sans', sans-serif;
-    color: rgb(29, 87, 233);
+    color: rgb(28, 28, 31);
   }
   
   .productDescription > h2 {
     align-self: flex-start;
     text-transform: capitalize;
-    font: 700 2rem 'Kumbh Sans', sans-serif;
+    font-family: 'Montserrat',sans-serif;
     text-align: left;
-    color: #dfdadac3;
+    color: rgb(28, 28, 31);
   }
   
   .productDescription > p {
@@ -154,7 +140,85 @@
     text-align: left;
     color: #717982;
   }
-  
+  .productDescription > .productColor {
+    display: flex;
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .productDescription > .productColor > .productColorH3 {
+    display: flex;
+    align-items: center;
+  }
+  .productDescription > .productColor h3 {
+    font-family: 'Montserrat',sans-serif;
+    color: #1c1c1f;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .productColor > .productCircleColor {
+    display: flex;
+    align-items: center;
+  }
+  .productColor > .productCircleColor > .CircleColor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+
+
+  .productDescription > .productSize {
+    display: flex;
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .productDescription > .productSize > .productSizeH3 {
+    display: flex;
+    align-items: center;
+  }
+  .productDescription > .productSize h3 {
+    font-family: 'Montserrat',sans-serif;
+    color: rgb(28, 28, 31);
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .productSize > .productButtonSize {
+    display: flex;
+    align-items: center;
+  }
+  .productSize > .productButtonSize > .buttonSize {
+    width: 50px;
+    height: 30px;
+    margin: 5px;
+    color: rgb(28, 28, 31);
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    border: 1PX solid rgba(0, 0, 0, 0.263);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font: 500 1rem 'Kumbh Sans', sans-serif;
+  }
+  .productSize > .productButtonSize > .buttonSize:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(28, 28, 31);
+    border: 1PX solid rgba(0, 0, 0, 0.263);
+  }
   .productDescription > .productPrice {
     display: flex;
     align-self: flex-start;
@@ -163,7 +227,9 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+  .productDescription{
+    /* border: 2px solid #000; */
+  }
   .productPrice > .productPriceNew {
     display: flex;
     align-items: center;
@@ -171,21 +237,22 @@
   }
   
   .productPrice > .productPriceNew > .newPrice {
-    font: 700 2rem 'Kumbh Sans', sans-serif;
-    color: #dfdadac3;
+    font-family: 'Montserrat',sans-serif;
+    color: rgb(28, 28, 31);
+    font-size: 2rem;
   }
   
   .productPrice > .productPriceNew > .pricePercentage {
-    font: 700 1rem 'Kumbh Sans', sans-serif;
-    background-color: rgb(29, 87, 233);
-    color: #dfdadac3;
+    font-family: 'Montserrat',sans-serif;
+    background-color: rgb(28, 28, 31);
+    color: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
   }
   
   .productPrice > .productPriceOld > .oldPrice {
-    font: 700 1rem 'Kumbh Sans', sans-serif;
-    color: #71798291;
+    font-family: 'Montserrat',sans-serif;
+    color: rgb(28, 28, 31);
     text-decoration: line-through;
   }
   
@@ -196,7 +263,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid rgb(29, 87, 233);
+    border: 1px solid rgb(28, 28, 31);
     border-radius: 5px;
 
   }
@@ -209,16 +276,16 @@
     width: 90%;
     height: 60px;
     padding: 20px 10px;
-    font: 400 1rem 'Kumbh Sans', sans-serif;
+    font-family: 'Montserrat',sans-serif;
     color: #717982;
     border: none;
     outline: none;
-    background-color: #222222;
+    background-color: #F5F5F5;
     text-align: center;
   }
   
   .productDescription > .productY > .productQuantity > .quantityBtn {
-    background-color: #222222;
+    background-color: #F5F5F5;
     padding: 0 10px;
     height: 60px;
     border: none;
@@ -227,6 +294,8 @@
   
   .productDescription > .productY > .productQuantity > .quantityValue {
     font-weight: bolder;
+    font: 700 1.25rem 'Kumbh Sans', sans-serif;
+
   }
   
   .productDescription > .productY > .productQuantity > .quantityBtnPlus {
@@ -246,6 +315,8 @@
     text-align: center;
     width: 100%;
     gap: 10px;
+    font-family: 'Montserrat',sans-serif;
+
   }
   
   .productButton > button {
@@ -257,14 +328,18 @@
     height: 60px;
     border: none;
     outline: none;
-    background-color: rgb(29, 87, 233);
+    background-color: rgb(28, 28, 31);
     color: #fff;
-    font: 700 1rem 'Kumbh Sans', sans-serif;
+    font-family: 'Montserrat',sans-serif;
     cursor: pointer;
     border-radius: 5px;
-    box-shadow: -2px 24px 43px -19px rgb(29, 87, 233);
+    box-shadow: -2px 24px 43px -19px rgba(28, 28, 31, 0.431);
+
   }
-  
+  .productButton button .btnbroductadd{
+    font-family: 'Montserrat',sans-serif;
+    
+  }
   .productButton > button:hover {
     opacity: 70%;
     transition: all 0.25s;
