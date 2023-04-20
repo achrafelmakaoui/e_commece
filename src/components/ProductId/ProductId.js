@@ -5,16 +5,16 @@ import { ReactComponent as IconPlus } from '../pictures/icon-plus.svg';
 import { ReactComponent as IconCart } from '../pictures/icon-cart.svg';
 import product from '../pictures/shoes/Air Jordan 1/air-jordan-1-elevate-low.png';
 // import product2 from '../pictures/shoes/Air Jordan 1 Elevate High/air-jordan-1-elevate-high-womens-shoes-0Fw6bf (1).png';
-import product3 from '../pictures/shoes/air-jordan-1-zoom/air-jordan-1-retro-high-og-womens-shoes-LcJVSj.png';
-import { FaCheck } from 'react-icons/fa';
-
+// import product3 from '../pictures/shoes/air-jordan-1-zoom/air-jordan-1-retro-high-og-womens-shoes-LcJVSj.png';
+// import { FaCheck } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 const ProductId=()=>{
 
     const [selectedColor, setSelectedColor] = useState('');
 
     function handleColorOptionClick(color) {
       setSelectedColor(color);
-      // Store the selected color in a database or send it to the server to be stored
     }
     const [quantity, setQuantity] = useState(0);
 
@@ -28,10 +28,10 @@ const ProductId=()=>{
     }
   };
   return (
-    <><br/><br/><br/><br/>
+    <>
     <div className="container" id="prdid">
         <div className="cardDesktop">
-            <img src={product3} alt='imgid'/>
+            <img src={product} alt='imgid'/>
         </div>
         <div className="productDescription">
             <h2>Air Jordan 1 Elevate High</h2>
@@ -46,9 +46,18 @@ const ProductId=()=>{
                     <h3>Color</h3>
                 </div>
                 <div className="productCircleColor">
-                    <span className="CircleColor" style={{ backgroundColor:'#3EBB80' }} onClick={() => handleColorOptionClick('yellowgreen')}>{selectedColor === 'yellowgreen' && <FaCheck style={{ color:'white' }} />}</span>
-                    <span className="CircleColor" style={{ backgroundColor:'red' }} onClick={() => handleColorOptionClick('red')}>{selectedColor === 'red' && <FaCheck style={{ color:'white' }} />}</span>
-                    <span className="CircleColor" style={{ backgroundColor:'pink' }} onClick={() => handleColorOptionClick('pink')}>{selectedColor === 'pink' && <FaCheck style={{ color:'white' }} />}</span>
+                    <span className="CircleColor" style={{ backgroundColor:'#3EBB80' }} onClick={() => handleColorOptionClick('yellowgreen')}>
+                        {selectedColor === 'yellowgreen' && <FontAwesomeIcon icon={faCheck} style={{ color:'white' }} className="check"/>}
+                    </span>
+                    <span className="CircleColor" style={{ backgroundColor:'red' }} onClick={() => handleColorOptionClick('red')}>
+                        {selectedColor === 'red' && <FontAwesomeIcon icon={faCheck} style={{ color:'white' }} className="check"/>}
+                    </span>
+                    <span className="CircleColor" style={{ backgroundColor:'pink' }} onClick={() => handleColorOptionClick('pink')}>
+                        {selectedColor === 'pink' && <FontAwesomeIcon icon={faCheck} style={{ color:'white' }} className="check"/>}
+                    </span>
+                    <span className="CircleColor" style={{ backgroundColor:'black' }} onClick={() => handleColorOptionClick('black')}>
+                        {selectedColor === 'black' && <FontAwesomeIcon icon={faCheck} style={{ color:'white' }} className="check"/>}
+                    </span>
                 </div>
             </div>
             <div className="productSize">

@@ -1,124 +1,31 @@
-@media screen and (max-width: 700px) {
-    #prdid{
-        display: block;
-        justify-content: space-around;
-        align-items: center;
-      }
+#prdid .cardDesktop {
+  height: auto;
 }
-@media screen and (min-width: 700px) {
-    #prdid{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
-    #prdid .cardDesktop > img {
-      outline: none;
-      border-radius: 20px;
-    }
-  }
-  #prdid .cardDesktop {
-    height: auto;
-  }
-  #prdid .cardDesktop > img {
-    max-height: inherit;
-    max-width: 30vw;
-    filter: brightness(104%);
-    /* border: 1px dashed black; */
-  }
-  
-  
-  .productDescription {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 20px 60px 20px;
-    width: 100%;
-    height: 100%;
-    gap: 10px;
-  }
-  
-  .productY {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-  
-  @media screen and (min-width: 700px) {
-    .productDescription {
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
-      height: auto;
-      padding: 0;
-    }
-  
-    .productDescription > .productY > .productQuantity > .quantityBtn {
-      max-width: 125px;
-      border-radius: 2px;
-    }
-  
-    .productDescription > .productY > .productButton {
-      max-width: 230px;
-      border-radius: 30px;
-    }
-  
-    .productDescription > h4 {
-      font-size: 0.9rem !important;
-      font-weight: bolder !important;
-    }
-  
-    .productDescription > h2 {
-      font-size: 2rem !important;
-    }
-  
-    .productY {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-  
-  @media screen and (min-width: 900px) {
-    .productDescription {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      height: auto;
-      padding: 40px 0;
-    }
-  
-    .productY {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-  
-  @media screen and (min-width: 1024px) {
-    .productDescription {
-        display: flex;
-      flex-direction: column;
-      max-width: 381px;
-      gap: 30px;
-      padding: 40px 0;
-    }
-    
-  }
-  @media screen and (max-width: 1024px) {
-    #prdid .cardDesktop > img {
-        margin: 0% 25% 0% 25%;
-        max-width: 40vw;
-      }
-    #prdid{
-        display: block;
-        justify-content: space-around;
-        align-items: center;
-      }
-    
-  }
-  /* .productDescription {
-   padding: 20px;
-  } */
+#prdid .cardDesktop > img {
+  max-height: inherit;
+  width: 34vw;
+  filter: brightness(104%);
+  /* border: 1px solid black; */
+}
+
+
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 60px 20px;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.productY {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
   .productDescription > h4 {
     align-self: flex-start;
     text-transform: uppercase;
@@ -172,8 +79,13 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 1px solid white;
   }
-
+  .productColor > .productCircleColor > .CircleColor >.check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
 
 
   .productDescription > .productSize {
@@ -226,9 +138,6 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-  }
-  .productDescription{
-    /* border: 2px solid #000; */
   }
   .productPrice > .productPriceNew {
     display: flex;
@@ -294,7 +203,10 @@
   
   .productDescription > .productY > .productQuantity > .quantityValue {
     font-weight: bolder;
-    font: 700 1.25rem 'Kumbh Sans', sans-serif;
+    font: 700 1.4rem 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
   
@@ -350,3 +262,448 @@
     color: #fff;
   }
   
+
+  @media screen and (max-width: 700px) {
+    #prdid{
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+      }
+}
+@media screen and (min-width: 700px) {
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+      }
+    #prdid .cardDesktop > img {
+      outline: none;
+      border-radius: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .productDescription {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      height: auto;
+      padding: 0;
+    }
+  
+    .productDescription > .productY > .productQuantity > .quantityBtn {
+      max-width: 125px;
+      border-radius: 2px;
+    }
+  
+    .productDescription > .productY > .productButton {
+      max-width: 230px;
+      border-radius: 30px;
+    }
+  
+    .productDescription > h4 {
+      font-size: 0.9rem !important;
+      font-weight: bolder !important;
+    }
+  
+    .productDescription > h2 {
+      font-size: 2.21rem !important;
+    }
+  
+    .productY {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .productDescription {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .productY {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .productDescription {
+        display: flex;
+        flex-direction: column;
+        max-width: 381px;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    
+  }
+  @media screen and (max-width: 1205px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 5% 0% 5%;
+        width: 45vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    
+  }
+  @media screen and (max-width: 1210px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 10% 0% 10%;
+        width: 45vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .productDescription {
+        display: flex;
+        flex-direction: column;
+        max-width: 381px;
+        gap: 30px;
+        padding: 35px 0px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 5% 0% -10%;
+        width: 45vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .productDescription {
+        display: flex;
+        flex-direction: column;
+        max-width: 381px;
+        gap: 30px;
+        padding: 30px 0px;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 5% 0% -10%;
+        width: 45vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .productDescription {
+        display: flex;
+        flex-direction: column;
+        max-width: 381px;
+        gap: 30px;
+        padding: 35px 0px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 0% 90% 0%;
+        width: 60vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+    .productDescription {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      height: auto;
+      padding: 0% 10%;
+      max-width: 100%;
+      margin-top: 50%;
+    }
+  
+    .productDescription > .productY > .productQuantity > .quantityBtn {
+      max-width: 125px;
+      border-radius: 2px;
+    }
+  
+    .productDescription > .productY > .productButton {
+      max-width: 230px;
+      border-radius: 30px;
+    }
+  
+    .productDescription > h4 {
+      font-size: 0.9rem !important;
+      font-weight: bolder !important;
+    }
+  
+    .productDescription > h2 {
+      font-size: 2.21rem !important;
+    }
+  
+    .productY {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 0% 90% 0%;
+        width: 70vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+    .productDescription {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      height: auto;
+      padding: 0% 10%;
+      max-width: 100%;
+      margin-top: 50%;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 0% 90% 0%;
+        width: 75vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+    .productDescription {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 0% 10%;
+      height: auto;
+      max-width: 100%;
+      margin-top: 50%;
+    }
+    
+  }
+
+  
+  @media screen and (max-width: 750px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 0% 90% 0%;
+        width: 80vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+    .productDescription {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      padding: 0% 6%;
+      gap: 25px;
+      height: auto;
+      max-width: 100%;
+      margin-top: 65%;
+    }
+  }
+
+  
+  @media screen and (max-width: 650px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 0% 100% 0%;
+        width: 85vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+    .productDescription {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      height: auto;
+      max-width: 100%;
+      margin-top: 75%;
+      padding: 0% 6%;
+
+    }
+    .productY {
+      display: flex;
+      flex-direction: column;
+    }
+    .productDescription > .productY > .productButton {
+      max-width: 100vw;
+      border-radius: 30px;
+    }
+  }
+
+  
+  @media screen and (max-width: 550px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 0% 135% 0%;
+        width: 90vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+      
+    .productDescription {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      height: auto;
+      max-width: 100%;
+      padding: 0% 6%;
+      margin-top: 75%;
+      
+    }
+    .productDescription > h2 {
+      font-size: 2.1rem !important;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 0% 165% 0%;
+        width: 95vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+    .productDescription {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      height: auto;
+      max-width: 100%;
+      padding: 0% 10%;
+      margin-top: 75%;
+    }
+    .productDescription > h2 {
+      font-size: 2rem !important;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 0% 230% 0%;
+        width: 100vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+      }
+      
+    .productDescription {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      height: auto;
+      max-width: 100%;
+      padding: 0% 3%;
+      margin-top: 65%;
+    }
+    .productPrice > .productPriceNew {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    .productPrice > .productPriceNew > .newPrice {
+      font-family: 'Montserrat',sans-serif;
+      color: rgb(28, 28, 31);
+      font-size: 1.75rem;
+    }
+    
+    .productPrice > .productPriceNew > .pricePercentage {
+      font-family: 'Montserrat',sans-serif;
+      background-color: rgb(28, 28, 31);
+      color: #ffffff;
+      padding: 4px 8px;
+      border-radius: 5px;
+    }
+  }
+  @media screen and (max-width: 250px) {
+    #prdid .cardDesktop > img {
+        margin: 0% 0% 90% 0%;
+        width: 100vw;
+      }
+    #prdid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+    .productDescription {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      height: auto;
+      max-width: 100%;
+      padding: 0% 2%;
+      margin-top: 190%;
+    }
+    .productPrice > .productPriceNew {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    
+    .productPrice > .productPriceNew > .newPrice {
+      font-family: 'Montserrat',sans-serif;
+      color: rgb(28, 28, 31);
+      font-size: 1.65rem;
+    }
+    
+    .productPrice > .productPriceNew > .pricePercentage {
+      font-family: 'Montserrat',sans-serif;
+      background-color: rgb(28, 28, 31);
+      color: #ffffff;
+      padding: 3px 6px;
+      border-radius: 5px;
+    }
+  }

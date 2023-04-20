@@ -10,8 +10,7 @@ import  Slider  from './components/Firstpg/Slider';
 import ScrollToTop from './Scrolltotop';
 import ProductId from './components/ProductId/ProductId';
 import Product from './Product';
-// import SlideBanner from './components/banner/SlideBanner';
-// import Filter from './components/filter/Filter';
+import SlideBanner from './components/banner/SlideBanner';
 
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<><Slider/><Card/><Services/><Reviews/><Support/></>}/>
             <Route path='/product'  element={<><Product/></> }/>
-            <Route path='/productid'  element={<><ProductId/></> }/>
+            <Route path='/productid'  element={<><SlideBanner/><ProductId/></> }/>
           </Routes>
         <Footer/>
       </BrowserRouter>
