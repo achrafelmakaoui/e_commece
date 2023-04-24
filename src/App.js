@@ -11,6 +11,7 @@ import ScrollToTop from './Scrolltotop';
 import ProductId from './components/ProductId/ProductId';
 import Product from './Product';
 import SlideBanner from './components/banner/SlideBanner';
+import Cart from './components/Cart/Cart';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" exact element={<><Slider/><Card/><Services/><Reviews/><Support/></>}/>
             <Route path='/product'  element={<><Product/></> }/>
             <Route path='/productid'  element={<><SlideBanner/><ProductId/></> }/>
+            <Route path='/cart'  element={<><Cart/></> }/>
           </Routes>
         <Footer/>
       </BrowserRouter>

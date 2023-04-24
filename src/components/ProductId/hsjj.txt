@@ -1,0 +1,269 @@
+[
+    {
+		"title":"Air Jordan 1",
+		"desc":"The Air Jordan 1 Low is a classic leather sneaker with a comfortable fit and iconic logo. Its stylish colorways make it a standout shoe that can be dressed up or down for any occasion.",
+		"imgid":"https://i.ibb.co/4RJ3bGm/air-jordan-1-elevate-low-mens-shoes-black-red-3.png",
+		"imgprod":"https://i.ibb.co/nz3pDMQ/air-jordan-1-black-men.png",
+		"categories":["men"],
+		"size":["40","41","42"],
+		"color":["#242323","#4BACDA","#418B4D","#81848C"],
+		"specifcolor":"#242323",
+		"price":99
+    },
+    {
+		"title":"Air Jordan 1",
+		"desc":"The Air Jordan 1 Low is a classic leather sneaker with a comfortable fit and iconic logo. Its stylish colorways make it a standout shoe that can be dressed up or down for any occasion.",
+		"imgid":"https://i.ibb.co/ws0SydH/51281cfb-9172-44c6-9c10-be37e7b9dffa.png",
+		"imgprod":"https://i.ibb.co/5WqcsXL/7721e342-bd9b-45af-9836-72bf9d729b9e.png",
+		"categories":["men"],
+		"size":["40","41","42"],
+		"color":["#4BACDA","#242323","#418B4D","#81848C"],
+		"specifcolor":"#4BACDA",
+		"price":99
+		
+    },
+    {
+		"title":"Air Jordan 1",
+		"desc":"The Air Jordan 1 Low is a classic leather sneaker with a comfortable fit and iconic logo. Its stylish colorways make it a standout shoe that can be dressed up or down for any occasion.",
+		"imgid":"https://i.ibb.co/BNQvDBN/air-jordan-1-elevate-low-se-mens-shoes-green-1.png",
+		"imgprod":"https://i.ibb.co/5Tdkg7R/test1.png",
+		"categories":["men"],
+		"size":["40","41","42"],
+		"color":["#418B4D","#242323","#4BACDA","#81848C"],
+		"specifcolor":"#418B4D",
+		"price":99
+    },
+    {
+		"title":"Air Jordan 1",
+		"desc":"The Air Jordan 1 Low is a classic leather sneaker with a comfortable fit and iconic logo. Its stylish colorways make it a standout shoe that can be dressed up or down for any occasion.",
+		"imgid":"https://i.ibb.co/mcwLspq/596f9d18-eca1-4cd2-bcd4-6c8ed70e98ae.png",
+		"imgprod":"https://i.ibb.co/NpkTCmh/252b6f0d-7871-48a3-8d7f-075fa30d7970.png",
+		"categories":["men"],
+		"size":["40","41","42"],
+		"color":["#81848C","#242323","#4BACDA","#418B4D"],
+		"specifcolor":"#81848C",
+		"price":99
+    },
+    {
+		"title":"Air Jordan 1",
+		"desc":"The Air Jordan 1 Low is a classic leather sneaker with a comfortable fit and iconic logo. Its stylish colorways make it a standout shoe that can be dressed up or down for any occasion.",
+		"imgid":"https://i.ibb.co/Fhjm1tB/fa011502-52f8-4e56-b890-b188631dbec0.png",
+		"imgprod":"https://i.ibb.co/t4FrmD5/34b64f8a-60fe-42d5-8724-ab5c303e62f5.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["pink","#4BACDA","#D7B130","#B91E3D"],
+		"specifcolor":"pink",
+		"price":99
+	},
+	{
+		"title":"Air Jordan 1",
+		"desc":"The Air Jordan 1 Low is a classic leather sneaker with a comfortable fit and iconic logo. Its stylish colorways make it a standout shoe that can be dressed up or down for any occasion.",
+		"imgid":"https://i.ibb.co/ws0SydH/51281cfb-9172-44c6-9c10-be37e7b9dffa.png",
+		"imgprod":"https://i.ibb.co/5WqcsXL/7721e342-bd9b-45af-9836-72bf9d729b9e.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["#4BACDA","pink","#D7B130","#B91E3D"],
+		"specifcolor":"#4BACDA",
+		"price":99
+	},
+	{
+		"title":"Air Jordan 1",
+		"desc":"The Air Jordan 1 Low is a classic leather sneaker with a comfortable fit and iconic logo. Its stylish colorways make it a standout shoe that can be dressed up or down for any occasion.",
+		"imgid":"https://i.ibb.co/GFLs6r3/air-jordan-1-elevate-low-womens-shoes-yellow.png",
+		"imgprod":"https://i.ibb.co/FW7J3Jt/6cc3b5d4-3a76-4226-86e0-7943716b4a1b.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["#D7B130","pink","#4BACDA","#B91E3D"],
+		"specifcolor":"#D7B130",
+		"price":99
+	},
+	{
+		"title":"Air Jordan 1",
+		"desc":"The Air Jordan 1 Low is a classic leather sneaker with a comfortable fit and iconic logo. Its stylish colorways make it a standout shoe that can be dressed up or down for any occasion.",
+		"imgid":"https://i.ibb.co/rMLncTg/air-jordan-1-elevate-low-womens-shoes-red-4.png",
+		"imgprod":"https://i.ibb.co/syCQXkv/test3.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["#B91E3D","pink","#4BACDA","#D7B130"],
+		"specifcolor":"#B91E3D",
+		"price":99
+	},
+	{
+		"title":"Air Jordan 1 Elevate high",
+		"desc":"Air Jordan 1 Elevate High: stylish, supportive shoe with premium leather upper, durable rubber sole, high-top for ankle support, cushioned insole. Perfect for casual or athletic wear, must-have for sneaker fans.",
+		"imgid":"https://i.ibb.co/j8dT5TR/air-jordan-1-elevate-high-womens-shoes-black-orange-gold.png",
+		"imgprod":"https://i.ibb.co/Ks0jMgZ/18feae27-20d6-4ab1-bb12-c02ea4650903.png",
+		"categories":["men"],
+		"size":["39","40","41"],
+		"color":["#7A604B","#37418D","#B91E3D","black"],
+		"specifcolor":"#7A604B",
+		"price":199
+	},
+	{
+		"title":"Air Jordan 1 Elevate high",
+		"desc":"Air Jordan 1 Elevate High: stylish, supportive shoe with premium leather upper, durable rubber sole, high-top for ankle support, cushioned insole. Perfect for casual or athletic wear, must-have for sneaker fans.",
+		"imgid":"https://i.ibb.co/Gc9Qx6x/air-jordan-1-elevate-high-womens-shoes-blue-1.png",
+		"imgprod":"https://i.ibb.co/GJxWQGy/air-jordan-1-elevate-high-shoes-v1-NNXJ.png",
+		"categories":["men"],
+		"size":["39","40","41"],
+		"color":["#37418D","#7A604B","#B91E3D","black"],
+		"specifcolor":"#37418D",
+		"price":199
+	},
+	{
+		"title":"Air Jordan 1 Elevate high",
+		"desc":"Air Jordan 1 Elevate High: stylish, supportive shoe with premium leather upper, durable rubber sole, high-top for ankle support, cushioned insole. Perfect for casual or athletic wear, must-have for sneaker fans.",
+		"imgid":"https://i.ibb.co/fkkw8Nz/air-jordan-1-elevate-high-womens-shoes-red.png",
+		"imgprod":"https://i.ibb.co/wRhLYrr/30e8a9cb-09fd-4b17-9d2a-46c62024cf96.png",
+		"categories":["men"],
+		"size":["39","40","41"],
+		"color":["#B91E3D","#37418D","#7A604B","black"],
+		"specifcolor":"#B91E3D",
+		"price":199
+	},
+	{
+		"title":"Air Jordan 1 Elevate high",
+		"desc":"Air Jordan 1 Elevate High: stylish, supportive shoe with premium leather upper, durable rubber sole, high-top for ankle support, cushioned insole. Perfect for casual or athletic wear, must-have for sneaker fans.",
+		"imgid":"https://i.ibb.co/b23cLRM/47a3d8ce-181f-4263-9ff4-339e14fc9207.png",
+		"imgprod":"https://i.ibb.co/ZfqvRJz/6dd45492-c258-4483-9062-82a963ba646a.png",
+		"categories":["men"],
+		"size":["39","40","41"],
+		"color":["black","#B91E3D","#37418D","#7A604B"],
+		"specifcolor":"black",
+		"price":199
+	},
+	{
+		"title":"Air Jordan 1 Elevate high",
+		"desc":"Air Jordan 1 Elevate High: stylish, supportive shoe with premium leather upper, durable rubber sole, high-top for ankle support, cushioned insole. Perfect for casual or athletic wear, must-have for sneaker fans.",
+		"imgid":"https://i.ibb.co/Gc9Qx6x/air-jordan-1-elevate-high-womens-shoes-blue-1.png",
+		"imgprod":"https://i.ibb.co/GJxWQGy/air-jordan-1-elevate-high-shoes-v1-NNXJ.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["#37418D","#7A604B","#B91E3D","black"],
+		"specifcolor":"#37418D",
+		"price":199
+	},
+	{
+		"title":"Air Jordan 1 Elevate high",
+		"desc":"Air Jordan 1 Elevate High: stylish, supportive shoe with premium leather upper, durable rubber sole, high-top for ankle support, cushioned insole. Perfect for casual or athletic wear, must-have for sneaker fans.",
+		"imgid":"https://i.ibb.co/j8dT5TR/air-jordan-1-elevate-high-womens-shoes-black-orange-gold.png",
+		"imgprod":"https://i.ibb.co/Ks0jMgZ/18feae27-20d6-4ab1-bb12-c02ea4650903.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["#7A604B","#37418D","#B91E3D","black"],
+		"specifcolor":"#7A604B",
+		"price":199
+	},
+	{
+		"title":"Air Jordan 1 Elevate high",
+		"desc":"Air Jordan 1 Elevate High: stylish, supportive shoe with premium leather upper, durable rubber sole, high-top for ankle support, cushioned insole. Perfect for casual or athletic wear, must-have for sneaker fans.",
+		"imgid":"https://i.ibb.co/fkkw8Nz/air-jordan-1-elevate-high-womens-shoes-red.png",
+		"imgprod":"https://i.ibb.co/wRhLYrr/30e8a9cb-09fd-4b17-9d2a-46c62024cf96.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["#B91E3D","#7A604B","#37418D","black"],
+		"specifcolor":"#B91E3D",
+		"price":199
+	},
+	{
+		"title":"Air Jordan 1 Elevate high",
+		"desc":"Air Jordan 1 Elevate High: stylish, supportive shoe with premium leather upper, durable rubber sole, high-top for ankle support, cushioned insole. Perfect for casual or athletic wear, must-have for sneaker fans.",
+		"imgid":"https://i.ibb.co/b23cLRM/47a3d8ce-181f-4263-9ff4-339e14fc9207.png",
+		"imgprod":"https://i.ibb.co/ZfqvRJz/6dd45492-c258-4483-9062-82a963ba646a.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["black","#B91E3D","#37418D","#7A604B"],
+		"specifcolor":"black",
+		"price":199
+	},
+	{
+		"title":"Air Jordan 1 Mid",
+		"desc":"Air Jordan 1 mid sneaker: classic, popular design with leather/synthetic upper, Air-Sole unit, rubber outsole for comfort/traction. Available in multiple colors; must-have for sneakerheads/casual wearers.",
+		"imgid":"https://i.ibb.co/r31wj7y/air-jordan-1-mid-mens-shoes-blue-2.png",
+		"imgprod":"https://i.ibb.co/N2Vdx5Z/fd5bb2e8-2384-4aa5-a01b-5e6f3684f4e2.png",
+		"categories":["men"],
+		"size":["39","40","41"],
+		"color":["#494DA3","#6B6A70","#37824D","#B91E3D"],
+		"specifcolor":"#494DA3",
+		"price":149
+	},
+	{
+		"title":"Air Jordan 1 Mid",
+		"desc":"Air Jordan 1 mid sneaker: classic, popular design with leather/synthetic upper, Air-Sole unit, rubber outsole for comfort/traction. Available in multiple colors; must-have for sneakerheads/casual wearers.",
+		"imgid":"https://i.ibb.co/sP7RZhH/air-jordan-1-mid-mens-shoes-gray.png",
+		"imgprod":"https://i.ibb.co/HNcc5Lq/7815ef11-1c6f-482e-92cc-012c26d38271.png",
+		"categories":["men"],
+		"size":["39","40","41"],
+		"color":["#6B6A70","#494DA3","#37824D","#B91E3D"],
+		"specifcolor":"#6B6A70",
+		"price":149
+	},
+	
+	{
+		"title":"Air Jordan 1 Mid",
+		"desc":"Air Jordan 1 mid sneaker: classic, popular design with leather/synthetic upper, Air-Sole unit, rubber outsole for comfort/traction. Available in multiple colors; must-have for sneakerheads/casual wearers.",
+		"imgid":"https://i.ibb.co/gMg8w1j/5125af7e-5d70-484b-9b6e-6557c73b4b78.png",
+		"imgprod":"https://i.ibb.co/fHpnGPC/de847542-b387-4b1e-9968-15cae80180a1.png",
+		"categories":["men"],
+		"size":["39","40","41"],
+		"color":["#37824D","#494DA3","#6B6A70","#B91E3D"],
+		"specifcolor":"#37824D",
+		"price":149
+	},
+	{
+		"title":"Air Jordan 1 Mid",
+		"desc":"Air Jordan 1 mid sneaker: classic, popular design with leather/synthetic upper, Air-Sole unit, rubber outsole for comfort/traction. Available in multiple colors; must-have for sneakerheads/casual wearers.",
+		"imgid":"https://i.ibb.co/LZXsWJq/air-jordan-1-mid-mens-shoes-red-3.png",
+		"imgprod":"https://i.ibb.co/mqQShHn/4b5264a2-7885-44b6-8e5d-7074e28289bf.png",
+		"categories":["men"],
+		"size":["39","40","41"],
+		"color":["#B91E3D","#494DA3","#6B6A70","#37824D"],
+		"specifcolor":"#B91E3D",
+		"price":149
+	},
+	{
+		"title":"Air Jordan 1 Mid",
+		"desc":"Air Jordan 1 mid sneaker: classic, popular design with leather/synthetic upper, Air-Sole unit, rubber outsole for comfort/traction. Available in multiple colors; must-have for sneakerheads/casual wearers.",
+		"imgid":"https://i.ibb.co/gMg8w1j/5125af7e-5d70-484b-9b6e-6557c73b4b78.png",
+		"imgprod":"https://i.ibb.co/fHpnGPC/de847542-b387-4b1e-9968-15cae80180a1.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["#37824D","#494DA3","pink","#B91E3D"],
+		"specifcolor":"#37824D",
+		"price":149
+	},
+	{
+		"title":"Air Jordan 1 Mid",
+		"desc":"Air Jordan 1 mid sneaker: classic, popular design with leather/synthetic upper, Air-Sole unit, rubber outsole for comfort/traction. Available in multiple colors; must-have for sneakerheads/casual wearers.",
+		"imgid":"https://i.ibb.co/LZXsWJq/air-jordan-1-mid-mens-shoes-red-3.png",
+		"imgprod":"https://i.ibb.co/mqQShHn/4b5264a2-7885-44b6-8e5d-7074e28289bf.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["#B91E3D","#494DA3","pink","#37824D"],
+		"specifcolor":"#B91E3D",
+		"price":149
+	},
+	{
+		"title":"Air Jordan 1 Mid",
+		"desc":"Air Jordan 1 mid sneaker: classic, popular design with leather/synthetic upper, Air-Sole unit, rubber outsole for comfort/traction. Available in multiple colors; must-have for sneakerheads/casual wearers.",
+		"imgid":"https://i.ibb.co/Ws69tqF/aee74f8f-3b76-4f14-acbb-0c4c76064462.png",
+		"imgprod":"https://i.ibb.co/VTzdgZp/b97ce999-afd0-4b62-8684-ce5c2a2fa8eb.png",
+		"categories":["women"],
+		"size":["38","39","40"],
+		"color":["pink","#494DA3","#37824D","#B91E3D"],
+		"specifcolor":"pink",
+		"price":149
+	},
+	{
+		"title":"Air Jordan 1 Mid",
+		"desc":"Air Jordan 1 mid sneaker: classic, popular design with leather/synthetic upper, Air-Sole unit, rubber outsole for comfort/traction. Available in multiple colors; must-have for sneakerheads/casual wearers.",
+		"imgid":"https://i.ibb.co/r31wj7y/air-jordan-1-mid-mens-shoes-blue-2.png",
+		"imgprod":"https://i.ibb.co/N2Vdx5Z/fd5bb2e8-2384-4aa5-a01b-5e6f3684f4e2.png",
+		"categories":["women"],
+		"size":["38","39","40""],
+		"color":["#494DA3","pink","#37824D","#B91E3D"],
+		"specifcolor":"#494DA3",
+		"price":149
+	}
+	
+]

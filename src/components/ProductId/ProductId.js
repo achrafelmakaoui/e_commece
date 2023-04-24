@@ -36,10 +36,7 @@ const ProductId=()=>{
         <div className="productDescription">
             <h2>Air Jordan 1 Elevate High</h2>
             <p>
-                These low-profile sneakers are your perfect
-                casual wear companion. Featuring a durable rubber
-                outer sole, they will withstand everything the
-                weather can offer.
+            The Air Jordan 1 Low is a classic leather sneaker with a comfortable fit and iconic logo. Its stylish colorways make it a standout shoe that can be dressed up or down for any occasion.
             </p>
             <div className="productColor">
                 <div className="productColorH3">

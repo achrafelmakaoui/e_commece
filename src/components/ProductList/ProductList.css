@@ -38,32 +38,30 @@
 .productrows{
   width: 33.33333333333333%;
   display: inline-block;
-  padding: 7px;
+  padding: 12px;
   padding-bottom: 30px;
 }
 .carddd {
   position: relative;
-  width: 97%;
-  height: 400px;
+  width: 100%;
+  height: inherit;
   background: #F6F6F6;
   overflow: hidden;
   border-radius: 8px;
   transition: .6s;
 }
 .carddd:hover{
-  /* box-shadow: 0 5px 10px rgba(0, 0, 0, .2); */
   transition: .6s;
 }
 
 .img-div {
-  padding: 6px 12px;
   display: flex;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   justify-content: center;
   align-items: center;
 }  
 .productimg{
-  width: 70%;
+  width: 80%;
   position: relative;
   transition: .6s;
 }
@@ -77,25 +75,19 @@
 }
 .discont{
   float: left;
-  font-size: 20px;
-  font-weight: 700;
   padding: 0 5px;
 }
 .discont p{
-  font-size: 15px;
-    color: #ffc104;
-    /* color: #2BAD72; */
+  font-size: 17px;
+  color: #ffc104;
   font-family: 'Montserrat',sans-serif;
 }
 .rating{
   float: right;
   padding: 0 5px;
 }
-.card_title {
-  font-weight: 500;
-  font-size: 16px;
-  font-family: 'Montserrat',sans-serif;
-}  
+
+ 
 .card_content p{
   font: inherit;
   font-size: 12px;
@@ -106,7 +98,7 @@
   bottom: 0;
   width: 100%;
   padding: 20px;
-  background: #F6F6F6;
+  background: #f6f6f600;
   color: #131313;
   border-top-left-radius: 20px;
   transform: translateY(0);
@@ -114,45 +106,51 @@
 }  
 .title-price{
   width: 100%;
-  padding: 2%;
+  padding: 2% 1%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .card_title {
   display: inline;
   color: #131313;
-  line-height: 15px;
   float: left;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Montserrat',sans-serif;
 }
 .price{
   display: inline;
   float: right;
   color: #131313;
-  margin-top: -4px;
   font-size: 17px;
   font-family: 'Montserrat',sans-serif;
 }
 .card_subtitle {
   display: inline-block;
-  font-size: 12px;
-  padding: 0 0 0 20px;
-  margin-bottom: 10px;
+  font-size: 5px;
+  padding: 0px 0 0 20px;
+  margin-bottom: 0px;
+  display: block;
 }
-.card_description {
-  font-size: 14px;
-  background: #f5f5f5ff;
-  opacity: 1;
-  transition: opacity .5s;
+.botton-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .SHOW{
   border: 1px solid  #131313;
-  width: 45%;
+  width: 100%;
   font-size: 13px;
   text-align: center;
   background: #f5f5f5ff;
   border-radius: 4px;
-  padding: 6px 0px 6px 0px;
+  padding: 4px 0px 4px 0px;
   float: left;
   transition: .6s;
   font-family: 'Montserrat',sans-serif;
+  margin: 0% 2% 0% 0%;
 }
 .SHOW:hover{
   color: #f5f5f5ff;
@@ -165,19 +163,21 @@
 .SHOW #eye{
   float: left;
   font-size: 17px;
-  padding: 1px 0px 0px 10px ;
+  padding: 1px 0px 0px 8px ;
 }
 .ADD{
   border: 1px solid  #131313;
   font-size: 13px;
-  width: 45%;
+  width: 100%;
   text-align: center;
   background: #f5f5f5ff;
   border-radius: 4px;
-  padding: 6px 0px 6px 0px;
+  padding: 4px 0px 4px 0px;
   float: right;
   transition: .6s;
   font-family: 'Montserrat',sans-serif;
+  margin: 0% 0% 0% 2%;
+
   
 }
 .ADD:hover{
@@ -192,7 +192,7 @@
 .ADD #basket{
   float: left;
   font-size: 17px;
-  padding: 1px 0px 0px 10px ;
+  padding: 1px 0px 0px 8px ;
 }
 .content-button{
   padding: 0px 0px 0px 0px ;
@@ -201,7 +201,8 @@
 
 @media (max-width: 1211px){
   .productimg{
-    width: 85%;
+    width: 80%;
+    padding-bottom: 15%;
   }
   .botton-icon{
     display: block;
@@ -216,15 +217,31 @@
   .basket{
     float: left;
   }
+  
 }
 @media (max-width: 1200px){
   .productimg{
-    width: 75%;
+    width: 80%;
   }
 }
 @media (max-width: 1150px){
   .productimg{
-    width: 83%;
+    width: 85%;
+  }
+}
+@media (max-width: 1139px){
+  .productrows{
+    width: 48%;
+  }
+  .productimg{
+    width: 80%;
+    padding-bottom: 5%;
+  }
+  .card_title{
+    font-size: 18px;
+  }
+  .price{
+    font-size: 17px;
   }
 }
 @media (max-width: 1069px){
@@ -246,6 +263,9 @@
   .productimg{
     width: 110%;
   }
+  .title-price{
+    display: grid;
+  }
 }
 
 @media (max-width: 768px){
@@ -259,7 +279,7 @@
   }
   .productimg{
     width: 70%;
-    margin-top: -90px;
+    margin-top: -30px;
   }
   .SHOW{
     width: 45%;
@@ -267,22 +287,37 @@
   .ADD{
     width: 45%;
   }
+  .title-price{
+    display: flex;
+  }
+  .card_title{
+    font-size: 25px;
+  }
+  .price{
+    font-size: 23px;
+  }
 }
 @media (max-width: 720px){
   .productimg{
     width: 70%;
-    margin-top: -60px;
+    margin-top: -40px;
   }
 }
 @media (max-width: 680px){
   .productimg{
     width: 75%;
-    margin-top: -65px;
+    margin-top: -45px;
   }
 }
 @media (max-width: 640px){
   .productimg{
     width: 80%;
+  }
+  .card_title{
+    font-size: 20px;
+  }
+  .price{
+    font-size: 19px;
   }
 }
 @media (max-width: 600px){
@@ -293,20 +328,20 @@
 @media (max-width: 570px){
   .productimg{
     width: 90%;
+    margin-top: -5%;
+  }
+  .containerproduct{
+    padding-left: 4%;
+    padding-right: 4%;
   }
 }
 @media (max-width: 520px){
   .productimg{
     width: 95%;
   }
-  .SHOW .show{
-    padding-left: 30px;
-  }
-  .SHOW #eye{
-    margin-top: -20px;
-  }
+  
 }
-@media (max-width: 486px){
+@media (max-width: 488px){
   .ADD{
     width: 48%;
   }
@@ -334,7 +369,7 @@
   }
   .productimg{
     width: 95%;
-    margin-top: -30px;
+    margin-top: -15px;
   }
   .SHOW #eye{
     margin-top:-1px ;
@@ -343,69 +378,78 @@
 @media (max-width: 459px){
   .productimg{
     width: 95%;
-    margin-top: -70px;
   }
   .containerproduct{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 @media (max-width: 420px){
   .productimg{
-    margin-top: -40px;
+    margin-top: 20px;
+    margin-bottom: 15%;
+  }
+  .title-price{
+    display: grid;
   }
 }
 @media (max-width: 400px){
   .productimg{
-    margin-top: -25px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 380px){
   .productimg{
     width: 105%;
-    margin-top: -35px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 360px){
   .productimg{
-    margin-top: -20px;
+    margin-top: 20px;
+    margin-bottom: 25%;
+
   }
 }
 @media (max-width: 340px){
   .productimg{
-    margin-top: -30px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 320px){
   .productimg{
-    margin-top: -10px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 310px){
   .productimg{
     width: 110%;
-    margin-top: -10px;
+    margin-top: 25px;
+    margin-bottom: 35%;
+
   }
 }
 @media (max-width: 300px){
   .productimg{
     width: 110%;
-    margin-top: -5px;
+    margin-top: 25px;
   }
 }
 @media (max-width: 290px){
   .productimg{
-    margin-top: 0;
+    margin-top: 25;
   }
 }
 @media (max-width: 280px){
   .productimg{
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 270px){
   .productimg{
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 50%;
+
   }
   .SHOW #eye{
     margin-top: -20px;

@@ -12,7 +12,7 @@ const StartRating = () =>{
                     <label>
                         <input type="radio" 
                         name="rating" 
-                        valeu={ratingValue}
+                        value={ratingValue}
                         onClick={() => setRating(ratingValue)} />
                         <FaStar size={18} className={ratingValue <= rating ? "on" : "off"} />
                     </label>

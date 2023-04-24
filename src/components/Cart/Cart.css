@@ -1,0 +1,1134 @@
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("../fonts/Gilroy-Medium.ttf");
+}
+@font-face {
+    font-family: "GilroySemiBold";
+    src: url("../fonts/Gilroy-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Myriad Semibold";
+  src: url("../fonts/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+  
+@font-face {
+  font-family: "Myriad Bold";
+  src: url("../fonts/MYRIADPRO-BOLD.woff") format("woff");
+}
+@font-face {
+  font-family: "Myriad Bold Italic";
+  src: url("../fonts/MYRIADPRO-BOLDIT.woff") format("woff");
+}
+@font-face {
+  font-family: "Gruppo";
+  src: url("../fonts/Gruppo-Regular.ttf");
+}
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/futur.ttf");
+  }
+  @font-face {
+    font-family: "Futura bold italic";
+    src: url("../fonts/Futura\ Bold\ Italic\ font.ttf");
+  }
+  @font-face {
+    font-family: "Futura bold";
+    src: url("../fonts/Futura\ Bold\ font.ttf");
+  }
+  @font-face {
+    font-family: "Futura Medium";
+    src: url("../fonts/Futura\ Medium\ Italic\ font.ttf");
+  }
+.cart{
+  margin: 0;
+  padding: 0;
+  padding-top: 7%;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 100%;
+}
+.cart .cart_title{
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+}  
+
+.cart .cart_banner{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cart_banner .contu_shoop{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+}
+.cart_banner .static_shoop{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+.cart_banner .checkout_butt{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.cart_banner .contu_shoop .cntbtncartshop{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: "GilroySemiBold";
+    transition: .6s;
+}
+.cart_banner .contu_shoop button:hover{
+    background: #000000;
+    color: white;
+    transition: .6s;
+}
+
+.cart_banner .static_shoop{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.cart_banner .static_shoop .static_title{
+    padding: 10px;    
+    font-family: 'Montserrat',sans-serif;
+
+}
+
+.cart_banner .checkout_butt button{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: "GilroyMedium";
+    transition: .6s; 
+
+}
+.cart_banner .checkout_butt button:hover{
+    opacity: 70%;
+    transition: all 0.25s;
+}
+
+.cart .cart_line{
+    width: 100%;
+    opacity: 100%;
+}
+
+.lst_produc{
+    display: flex;
+    width: 100%;
+}
+.lst_produc .maping{
+    flex-direction: column;
+    width: 60%;
+    height: 62vh;
+    overflow-y: scroll;
+}
+.lst_produc .product_cbanner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 5%;
+}
+.lst_produc .product_cbanner .cart_product_info img{
+    width: 200px;
+    height: 220px;
+    filter: brightness(99%);
+    border-radius: 6px;
+}
+
+.product_cbanner .cart_product_info{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+}
+.product_cbanner .cart_product_info .infobnner_crt{
+    margin: 0px 20px 0px 30px;
+    width: 100%;
+}
+.product_cbanner .cart_product_info .title_cartinfo{
+    padding-bottom: 10px;
+}
+.product_cbanner .cart_product_info .title_cartinfo h3{
+        font-family: "Futura Medium";
+
+}
+.product_cbanner .cart_product_info .ref_prdinfo{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.product_cbanner .cart_product_info .ref_prdinfo h5{
+        font-family: "Futura Medium";
+
+}
+
+.product_cbanner .cart_product_info .size_colorinfo{
+    display: flex;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+.product_cbanner .cart_product_info .size_colorinfo .sizeinfo{
+    display: flex;
+    gap: 20px;
+}
+.product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizeh5{
+    font-family: "Futura Medium";
+}
+.product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizenumb{
+    padding: 1px 7px 1px 7px;
+    color: rgb(0, 0, 0);
+    background-color: #F3F3F3;
+    border-radius: 3px;
+    border: 1PX solid rgba(0, 0, 0, 0.263);
+    cursor: pointer;
+    font-family: "Futura";
+    margin-left: 11px;
+    margin-right: 13px;
+    
+}
+.product_cbanner .cart_product_info .size_colorinfo .colorinfo{
+    display: flex;
+    gap: 20px;
+    
+
+}
+.product_cbanner .cart_product_info .size_colorinfo .colorinfo .colorh5{
+        font-family: "Futura Medium";
+
+}
+.product_cbanner .cart_product_info .size_colorinfo .colorinfo .CarprodColor{
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11px;
+    cursor: pointer;
+
+}
+
+.product_cbanner .cart_product_info .prdpricecart{
+    display: flex;
+    padding-bottom: 10px;
+    gap: 20px;
+
+}
+.product_cbanner .cart_product_info .prdpricecart .pricetitlcrt{
+    font-family: "Futura Medium";
+    padding: 0px 15px 0px 0px;
+}
+
+.product_cbanner .cart_product_info .prdpricecart .priceprdcrt{
+    font-family: "Futura Medium";
+    padding: 0px 15px 0px 0px;
+    color:#3EBB80 ;
+}
+
+.product_cbanner .cart_product_info .quantity_cart_genr{
+    display: flex;
+    gap: 20px;
+}
+.product_cbanner .cart_product_info .quantity_cart_genr .qnt_cart{
+    font-family: "Futura Medium";
+}
+
+.product_cbanner .cart_product_info .quantity_cart_genr .plusqtn{
+    background: #F3F3F3;
+    color: black;
+    width: 40px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1PX solid rgba(0, 0, 0, 0.263);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.product_cbanner .cart_product_info .quantity_cart_genr .plusqtn:hover{
+    background: black;
+    color: white;
+}
+.product_cbanner .cart_product_info .quantity_cart_genr .minisqtn{
+    background: #F3F3F3;
+    color: black;
+    width: 40px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1PX solid rgba(0, 0, 0, 0.263);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.product_cbanner .cart_product_info .quantity_cart_genr .minisqtn:hover{
+    background: black;
+    color: white;
+}
+.product_cbanner .xmark{
+    padding: 0px 20px 0px 0px ;
+    cursor: pointer;
+}
+.lst_produc .checkoutdivbnn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+}
+.lst_produc .chekout_cbnn{
+    width: 80%;
+    display: grid;
+    flex-direction: column;
+    background-color: #F3F3F3;
+    padding: 4%;
+    border-radius: 8px;
+    height: 100%;
+}
+.lst_produc .chekout_cbnn h2{
+  font-family: 'Montserrat',sans-serif;
+}
+.lst_produc .chekout_cbnn .checkoutrw1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.lst_produc .chekout_cbnn button{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: "GilroyMedium";
+    transition: .6s; 
+    margin-top: 15px;
+}
+
+.lst_produc .chekout_cbnn button:hover{
+    opacity: 70%;
+    transition: all 0.25s;
+}
+
+@media screen and (max-width: 1021px) {
+    .cart{
+        padding-top: 10%;
+    }
+    .lst_produc .maping{
+        width: 65%;
+    }
+    .lst_produc .checkoutdivbnn{
+        width: 35%;
+    }
+    .lst_produc .chekout_cbnn{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 932px){
+    .lst_produc{
+        flex-direction: column;
+    }
+    .lst_produc .maping{
+        width: 100%;
+        height: 100%;
+    }
+    .lst_produc .checkoutdivbnn{
+        justify-content: start;
+        width: 100%;
+    }
+    .lst_produc .chekout_cbnn{
+        width: 100%;
+    }
+    .product_cbanner .xmark{
+        padding: 0px 0px 0px 0px ;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 866px){
+    .cart .cart_banner{
+       display: block;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       width: 100%;
+    }
+    .cart_banner .contu_shoop{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cart_banner .static_shoop{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .cart_banner .checkout_butt{
+        width: 100%;
+        display: none;
+    }
+    .cart_banner .contu_shoop button{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+        font-family: "GilroyMedium";
+        transition: .6s;
+        width: 100%;
+    }
+    .product_cbanner .xmark{
+        padding: 0px 0px 0px 0px ;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 584px){
+    .lst_produc .product_cbanner .cart_product_info img{
+        width: 140px;
+        height: 175px;        
+    }
+    .product_cbanner .cart_product_info{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+    .product_cbanner .cart_product_info .infobnner_crt{
+        margin: 0px 0px 0px 15px;
+        width: 100%;
+    }
+    .product_cbanner .cart_product_info .title_cartinfo{
+        padding-bottom: 5px;
+    }
+    .product_cbanner .cart_product_info .title_cartinfo h3{
+            font-family: "Futura Medium";
+            font-size: 1.3rem;
+    
+    }
+    .product_cbanner .cart_product_info .ref_prdinfo{
+        display: flex;
+        gap: 5px;
+        padding-bottom: 5px;
+    }
+    .product_cbanner .cart_product_info .ref_prdinfo h5{
+        font-family: "Futura Medium";
+        font-size: 1.1rem;
+    }
+    
+    .product_cbanner .cart_product_info .size_colorinfo{
+        display: flex;
+        padding-bottom: 5px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo{
+        display: flex;
+        gap: 5px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizeh5{
+        font-family: "Futura Medium";
+        font-size: 1.1rem;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizenumb{
+        color: rgb(0, 0, 0);
+        
+        border: 1px solid rgba(0, 0, 0, 0.263);
+        cursor: pointer;
+        font-family: "Futura";
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 1rem;
+        padding: 2px 4px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo{
+        display: flex;
+        gap: 5px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo .colorh5{
+        font-family: "Futura Medium";
+        font-size: 1.1rem;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo .CarprodColor{
+        width: 1px;
+        height: 1px;
+        padding: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid white;
+        margin-left: 7px;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .prdpricecart{
+        display: flex;
+        padding-bottom: 7px;
+        gap: 5px;
+    
+    }
+    .product_cbanner .cart_product_info .prdpricecart .pricetitlcrt{
+        font-family: "Futura Medium";
+        font-size: 1.1rem;
+        padding: 0px 5px 0px 0px;
+    }
+    
+    .product_cbanner .cart_product_info .prdpricecart .priceprdcrt{
+        font-family: "Futura Medium";
+        font-size: 1.2rem;
+        padding: 0px 0px 0px 0px;
+        color:#3EBB80 ;
+    }
+    
+    .product_cbanner .cart_product_info .quantity_cart_genr{
+        display: flex;
+        gap: 10px;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .qnt_cart{
+        font-family: "Futura Medium";
+        font-size: 1.1rem;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .plusqtn{
+        color: black;
+        width: 25px;
+        height: 25px;
+        border-radius: 3px;
+        border: 1PX solid rgba(0, 0, 0, 0.263);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .minisqtn{
+        color: black;
+        width: 25px;
+        height: 25px;
+        border-radius: 4px;
+        border: 1PX solid rgba(0, 0, 0, 0.263);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .product_cbanner .xmark{
+        padding: 0px 0px 0px 0px ;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .lst_produc .product_cbanner .cart_product_info img{
+        width: 130px;
+        height: 150px;        
+    }
+    .product_cbanner .cart_product_info{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+    .product_cbanner .cart_product_info .infobnner_crt{
+        margin: 0px 0px 0px 10px;
+        width: 100%;
+    }
+    .product_cbanner .cart_product_info .title_cartinfo{
+        padding-bottom: 3px;
+    }
+    .product_cbanner .cart_product_info .title_cartinfo h3{
+        font-family: "Futura Medium";
+        font-size: 1.1rem;
+
+    }
+    .product_cbanner .cart_product_info .ref_prdinfo{
+        display: flex;
+        gap: 3px;
+        padding-bottom: 3px;
+    }
+    .product_cbanner .cart_product_info .ref_prdinfo h5{
+        font-family: "Futura Medium";
+        font-size: 1rem;
+    }
+    
+    .product_cbanner .cart_product_info .size_colorinfo{
+        display: flex;
+        padding-bottom: 3px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo{
+        display: flex;
+        gap: 3px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizeh5{
+        font-family: "Futura Medium";
+        font-size: 1rem;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizenumb{
+        color: rgb(0, 0, 0);
+        border: 1px solid rgba(0, 0, 0, 0.263);
+        cursor: pointer;
+        font-family: "Futura";
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 1rem;
+        padding: 1px 3px 1px 3px;
+        
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo{
+        display: flex;
+        gap: 3px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo .colorh5{
+        font-family: "Futura Medium";
+        font-size: 1rem;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo .CarprodColor{
+        width: 1px;
+        height: 1px;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid white;
+        margin-left: 3px;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .prdpricecart{
+        display: flex;
+        padding-bottom: 5px;
+        gap: 3px;
+    
+    }
+    .product_cbanner .cart_product_info .prdpricecart .pricetitlcrt{
+        font-family: "Futura Medium";
+        font-size: 1rem;
+        padding: 0px 5px 0px 0px;
+    }
+    
+    .product_cbanner .cart_product_info .prdpricecart .priceprdcrt{
+        font-family: "Futura Medium";
+        font-size: 1.1rem;
+        padding: 0px 0px 0px 0px;
+        color:#3EBB80 ;
+    }
+    
+    .product_cbanner .cart_product_info .quantity_cart_genr{
+        display: flex;
+        gap: 8px;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .qnt_cart{
+        font-family: "Futura Medium";
+        font-size: 1rem;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .plusqtn{
+        color: black;
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        border: 1PX solid rgba(0, 0, 0, 0.263);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .plusqtn .quantityBtnPlusCart{
+        width: 0.70em;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .minisqtn{
+        color: black;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1PX solid rgba(0, 0, 0, 0.263);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr h5{
+        font-size: 1.1rem;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .minisqtn .quantityBtnMinusCart{
+        width: 0.70em;
+    }
+    .product_cbanner .xmark{
+        padding: 0px 0px 0px 0px ;
+        cursor: pointer;
+    }
+    .product_cbanner .xmark .xmarkicon{
+        width: 0.8em;
+    }
+}
+
+@media screen and (max-width: 434px){
+    .cart_banner .static_shoop .static_title{
+        padding: 8px;    
+        font-size: 1.1rem;
+    }
+    .product_cbanner .xmark{
+        padding: 0px 0px 0px 0px ;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 428px){
+    .cart_banner .static_shoop .static_title{
+        padding: 8px;  
+        font-size: 1.05rem;
+    }
+    .lst_produc .product_cbanner .cart_product_info img{
+        width: 120px;
+        height: 125px; 
+    }
+    .product_cbanner .cart_product_info{
+        display: flex;
+        flex-direction: row;
+        width: 99%;
+    }
+    .product_cbanner .cart_product_info .infobnner_crt{
+        margin: 0px 0px 0px 6px;
+        width: 100%;
+    }
+    .product_cbanner .cart_product_info .title_cartinfo{
+        padding-bottom: 1px;
+    }
+    .product_cbanner .cart_product_info .title_cartinfo h3{
+        font-family: "Futura Medium";
+        font-size: 0.95rem;
+
+    }
+    .product_cbanner .cart_product_info .ref_prdinfo{
+        display: flex;
+        gap: 1px;
+        padding-bottom: 1px;
+    }
+    .product_cbanner .cart_product_info .ref_prdinfo h5{
+        font-family: "Futura Medium";
+        font-size: 0.85rem;
+    }
+    
+    .product_cbanner .cart_product_info .size_colorinfo{
+        display: flex;
+        padding-bottom: 1px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo{
+        display: flex;
+        gap: 1px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizeh5{
+        font-family: "Futura Medium";
+        font-size: 0.85rem;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizenumb{
+        color: rgb(0, 0, 0);
+        background-color: #f6f6f600;
+        border: 0px solid rgba(0, 0, 0, 0.263);
+        cursor: pointer;
+        font-family: "Futura";
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 0.88rem;
+        /* padding: 2px 3px 0px 3px; */
+        
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo{
+        display: flex;
+        gap: 1px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo .colorh5{
+        font-family: "Futura Medium";
+        font-size: 0.85rem;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo .CarprodColor{
+        width: 1px;
+        height: 1px;
+        padding: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid white;
+        margin-left: 3px;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .prdpricecart{
+        display: flex;
+        padding-bottom: 1px;
+        gap: 1px;
+    
+    }
+    .product_cbanner .cart_product_info .prdpricecart .pricetitlcrt{
+        font-family: "Futura Medium";
+        font-size: 0.85rem;
+        padding: 0px 3px 0px 0px;
+    }
+    
+    .product_cbanner .cart_product_info .prdpricecart .priceprdcrt{
+        font-family: "Futura Medium";
+        font-size: 0.95rem;
+        padding: 0px 0px 0px 0px;
+        color:#3EBB80 ;
+    }
+    
+    .product_cbanner .cart_product_info .quantity_cart_genr{
+        display: flex;
+        gap: 5px;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .qnt_cart{
+        font-family: "Futura Medium";
+        font-size: 0.85rem;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .plusqtn{
+        color: black;
+        width: 18px;
+        height: 18px;
+        border-radius: 2px;
+        border: 1PX solid rgba(0, 0, 0, 0.263);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .plusqtn .quantityBtnPlusCart{
+        width: 0.70em;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .minisqtn{
+        color: black;
+        width: 18px;
+        height: 18px;
+        border-radius: 2px;
+        border: 1PX solid rgba(0, 0, 0, 0.263);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr h5{
+        font-size: 1rem;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .minisqtn .quantityBtnMinusCart{
+        width: 0.70em;
+    }
+    .product_cbanner .xmark{
+        padding: 0px 0px 0px 0px ;
+        cursor: pointer;
+    }
+    .product_cbanner .xmark .xmarkicon{
+        width: 0.7em;
+    }
+}
+
+
+@media screen and (max-width: 362px){
+    .cart_banner .static_shoop .static_title{
+        padding: 6px;    
+        font-size: 0.8rem;
+    }
+    .cart_banner .static_shoop .static_title{
+        padding: 8px;  
+        font-size: 0.9rem;
+    }
+    .lst_produc .product_cbanner .cart_product_info img{
+        width: 110px;
+        height: 115px; 
+    }
+    .product_cbanner .cart_product_info{
+        display: flex;
+        flex-direction: row;
+        width: 96%;
+    }
+    .product_cbanner .cart_product_info .infobnner_crt{
+        margin: 0px 0px 0px 4px;
+        width: 100%;
+    }
+    .product_cbanner .cart_product_info .title_cartinfo{
+        padding-bottom: 0px;
+    }
+    .product_cbanner .cart_product_info .title_cartinfo h3{
+        font-family: "Futura Medium";
+        font-size: 0.85rem;
+
+    }
+    .product_cbanner .cart_product_info .ref_prdinfo{
+        display: flex;
+        gap: 1px;
+        padding-bottom: 0px;
+    }
+    .product_cbanner .cart_product_info .ref_prdinfo h5{
+        font-family: "Futura Medium";
+        font-size: 0.75rem;
+    }
+    
+    .product_cbanner .cart_product_info .size_colorinfo{
+        display: flex;
+        padding-bottom: 0px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo{
+        display: flex;
+        gap: 1px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizeh5{
+        font-family: "Futura Medium";
+        font-size: 0.75rem;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizenumb{
+        color: rgb(0, 0, 0);
+        background-color: #f6f6f600;
+        border: 0px solid rgba(0, 0, 0, 0.263);
+        cursor: pointer;
+        font-family: "Futura";
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 0.77rem;
+        /* padding: 2px 3px 0px 3px; */
+        
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo{
+        display: flex;
+        gap: 1px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo .colorh5{
+        font-family: "Futura Medium";
+        font-size: 0.75rem;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo .CarprodColor{
+        width: 1px;
+        height: 1px;
+        padding: 7px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid white;
+        margin-left: 2px;
+        cursor: pointer;
+        font-size: 1px;
+    }
+    .product_cbanner .cart_product_info .prdpricecart{
+        display: flex;
+        padding-bottom: 0px;
+        gap: 1px;
+    
+    }
+    .product_cbanner .cart_product_info .prdpricecart .pricetitlcrt{
+        font-family: "Futura Medium";
+        font-size: 0.75rem;
+        padding: 0px 3px 0px 0px;
+    }
+    
+    .product_cbanner .cart_product_info .prdpricecart .priceprdcrt{
+        font-family: "Futura Medium";
+        font-size: 0.85rem;
+        padding: 0px 0px 0px 0px;
+        color:#3EBB80 ;
+    }
+    
+    .product_cbanner .cart_product_info .quantity_cart_genr{
+        display: flex;
+        gap: 4px;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .qnt_cart{
+        font-family: "Futura Medium";
+        font-size: 0.75rem;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .plusqtn{
+        color: black;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        border: 1PX solid rgba(0, 0, 0, 0.263);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .plusqtn .quantityBtnPlusCart{
+        width: 0.60em;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .minisqtn{
+        color: black;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        border: 1PX solid rgba(0, 0, 0, 0.263);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr h5{
+        font-size: 0.85rem;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .minisqtn .quantityBtnMinusCart{
+        width: 0.60em;
+    }
+    .product_cbanner .xmark{
+        padding: 0px 0px 0px 0px ;
+        cursor: pointer;
+        width: 4%;
+    }
+    .product_cbanner .xmark .xmarkicon{
+        width: 0.6em;
+    }
+}
+
+@media screen and (max-width: 318px){
+    .cart{
+        padding-top: 50px;
+    }
+    .cart_banner .static_shoop{
+        display: grid;
+        padding-top: 20px;
+    }
+    .cart_banner .static_shoop .static_title{
+        padding: 3px;    
+        font-size: 1rem;
+    }
+    
+    .lst_produc .product_cbanner .cart_product_info img{
+        width: 110px;
+        height: 105px; 
+    }
+    .product_cbanner .cart_product_info{
+        display: flex;
+        flex-direction: row;
+        width: 96%;
+    }
+    .product_cbanner .cart_product_info .infobnner_crt{
+        margin: 0px 0px 0px 3px;
+        width: 100%;
+    }
+    .product_cbanner .cart_product_info .title_cartinfo{
+        padding-bottom: 0px;
+    }
+    .product_cbanner .cart_product_info .title_cartinfo h3{
+        font-family: "Futura Medium";
+        font-size: 0.75rem;
+
+    }
+    .product_cbanner .cart_product_info .ref_prdinfo{
+        display: flex;
+        gap: 1px;
+        padding-bottom: 0px;
+    }
+    .product_cbanner .cart_product_info .ref_prdinfo h5{
+        font-family: "Futura Medium";
+        font-size: 0.65rem;
+    }
+    
+    .product_cbanner .cart_product_info .size_colorinfo{
+        display: flex;
+        padding-bottom: 0px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo{
+        display: flex;
+        gap: 1px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizeh5{
+        font-family: "Futura Medium";
+        font-size: 0.65rem;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .sizeinfo .sizenumb{
+        color: rgb(0, 0, 0);
+        background-color: #f6f6f600;
+        border: 0px solid rgba(0, 0, 0, 0.263);
+        cursor: pointer;
+        font-family: "Futura";
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 0.66rem;
+        /* padding: 2px 3px 0px 3px; */
+        
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo{
+        display: flex;
+        gap: 1px;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo .colorh5{
+        font-family: "Futura Medium";
+        font-size: 0.65rem;
+    }
+    .product_cbanner .cart_product_info .size_colorinfo .colorinfo .CarprodColor{
+        width: 1px;
+        height: 1px;
+        padding: 6px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid white;
+        margin-left: 2px;
+        cursor: pointer;
+        font-size: 1px;
+
+    }
+    .product_cbanner .cart_product_info .prdpricecart{
+        display: flex;
+        padding-bottom: 0px;
+        gap: 1px;
+    
+    }
+    .product_cbanner .cart_product_info .prdpricecart .pricetitlcrt{
+        font-family: "Futura Medium";
+        font-size: 0.65rem;
+        padding: 0px 2px 0px 0px;
+    }
+    
+    .product_cbanner .cart_product_info .prdpricecart .priceprdcrt{
+        font-family: "Futura Medium";
+        font-size: 0.75rem;
+        padding: 0px 0px 0px 0px;
+        color:#3EBB80 ;
+    }
+    
+    .product_cbanner .cart_product_info .quantity_cart_genr{
+        display: flex;
+        gap: 5px;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .qnt_cart{
+        font-family: "Futura Medium";
+        font-size: 0.65rem;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .plusqtn{
+        color: black;
+        width: 14px;
+        height: 14px;
+        border-radius: 2px;
+        border: 1PX solid rgba(0, 0, 0, 0.263);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .plusqtn .quantityBtnPlusCart{
+        width: 0.60em;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .minisqtn{
+        color: black;
+        width: 14px;
+        height: 14px;
+        border-radius: 2px;
+        border: 1PX solid rgba(0, 0, 0, 0.263);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr h5{
+        font-size: 0.75rem;
+    }
+    .product_cbanner .cart_product_info .quantity_cart_genr .minisqtn .quantityBtnMinusCart{
+        width: 0.50em;
+    }
+    .product_cbanner .xmark{
+        padding: 0px 0px 0px 0px ;
+        cursor: pointer;
+        width: 4%;
+        display: flex;
+        justify-content: center;
+    }
+    .product_cbanner .xmark .xmarkicon{
+        width: 0.5em;
+    }
+}

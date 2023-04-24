@@ -48,6 +48,8 @@ form{
     display: inline-block;
     font-weight: 800;
     padding-right: 250px;
+  font-family: 'Montserrat',sans-serif;
+
 }
 
 .icon-search{
@@ -98,7 +100,10 @@ form{
     padding-left: 15px;
     padding-right: 300px;
 }
+.title h5{
+  font-family: 'Montserrat',sans-serif;
 
+}
 .sort{
     float: left;
     padding-left: 15px;

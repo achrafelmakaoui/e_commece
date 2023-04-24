@@ -61,7 +61,7 @@ const Navbar = () => {
       </div>
       <ul className="headerProfile">
         <li>
-          <CartButton/>
+          <Link to='/cart'><CartButton/></Link>
         </li>
         <li>
           <img src={Profil} alt="avatar"/>
