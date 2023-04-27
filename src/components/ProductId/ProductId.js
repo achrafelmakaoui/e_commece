@@ -1,60 +1,100 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './ProductId.css';
 import { ReactComponent as IconMinus } from '../pictures/icon-minus.svg';
 import { ReactComponent as IconPlus } from '../pictures/icon-plus.svg';
 import { ReactComponent as IconCart } from '../pictures/icon-cart.svg';
-import product from '../pictures/shoes/Air Jordan 1/air-jordan-1-elevate-low.png';
-// import product2 from '../pictures/shoes/Air Jordan 1 Elevate High/air-jordan-1-elevate-high-womens-shoes-0Fw6bf (1).png';
-// import product3 from '../pictures/shoes/air-jordan-1-zoom/air-jordan-1-retro-high-og-womens-shoes-LcJVSj.png';
-// import { FaCheck } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { useDispatch } from "react-redux";
+import { addProduct } from "../redux/cartRedux";
+
 const ProductId=()=>{
+  const dispatch =useDispatch();
+  const [quantity, setQuantity] = useState(1);
+  const [product, setProduct] = useState();
+  const location = useLocation();
+  const id = location.pathname.split("/")[2];
+  const [selectedColor, setSelectedColor] = useState('');
+  const [selectedSize, setSelectedSize] = useState('');
+  
 
-    const [selectedColor, setSelectedColor] = useState('');
 
-    function handleColorOptionClick(color) {
-      setSelectedColor(color);
+  useEffect(() => {
+    const getProduct = async () => {
+      try {
+        const res = await axios.get(`http://localhost:5000/api/products/find/${id}`);
+        setProduct(res.data);
+      } catch(err){
+          console.log(err)
+      }
+    };
+    getProduct();
+  }, [id]);
+  
+  useEffect(() => {
+    const getProductWithColor = async () => {
+      try {
+        const res = await axios.get(`http://localhost:5000/api/products/find/${product.title}/${product.categories}/${selectedColor}`);
+        setProduct(res.data);
+      } catch(err){
+          console.log(err)
+      }
+    };
+    if (selectedColor && product) {
+      getProductWithColor();
     }
-    const [quantity, setQuantity] = useState(0);
+   
+  }, [selectedColor, product]);
+  
+  if (!product) {
+    return <div>Loading...</div>;
+  }
 
-  const incrementQuantity = () => {
-    setQuantity(prevQuantity => prevQuantity + 1);
+  function handleColorOptionClick(color) {
+    setSelectedColor(color);
+  }
+
+  function handleSizeOptionClick(size) {
+    setSelectedSize(size);
+  }
+
+  const handleQuantity = (type) => {
+    if (type === "dec") {
+      quantity > 1 && setQuantity(quantity - 1);
+    } else {
+      setQuantity(quantity + 1);
+    }
   };
 
-  const decrementQuantity = () => {
-    if (quantity > 0) {
-      setQuantity(prevQuantity => prevQuantity - 1);
-    }
-  };
+  
+
+ 
   return (
     <>
+    <div className="returntoproducts">
+        <Link to='/product'><span className="returncirle"><FontAwesomeIcon icon={faArrowLeft} className="iconreturn"/></span></Link>
+    </div>
     <div className="container" id="prdid">
         <div className="cardDesktop">
-            <img src={product} alt='imgid'/>
+            <img src={product.imgid} alt='imgid'/>
         </div>
         <div className="productDescription">
-            <h2>Air Jordan 1 Elevate High</h2>
-            <p>
-            The Air Jordan 1 Low is a classic leather sneaker with a comfortable fit and iconic logo. Its stylish colorways make it a standout shoe that can be dressed up or down for any occasion.
-            </p>
+            <h2>{product.title}</h2>
+            <p>{product.desc}</p>
             <div className="productColor">
                 <div className="productColorH3">
                     <h3>Color</h3>
                 </div>
                 <div className="productCircleColor">
-                    <span className="CircleColor" style={{ backgroundColor:'#3EBB80' }} onClick={() => handleColorOptionClick('yellowgreen')}>
-                        {selectedColor === 'yellowgreen' && <FontAwesomeIcon icon={faCheck} style={{ color:'white' }} className="check"/>}
-                    </span>
-                    <span className="CircleColor" style={{ backgroundColor:'red' }} onClick={() => handleColorOptionClick('red')}>
-                        {selectedColor === 'red' && <FontAwesomeIcon icon={faCheck} style={{ color:'white' }} className="check"/>}
-                    </span>
-                    <span className="CircleColor" style={{ backgroundColor:'pink' }} onClick={() => handleColorOptionClick('pink')}>
-                        {selectedColor === 'pink' && <FontAwesomeIcon icon={faCheck} style={{ color:'white' }} className="check"/>}
-                    </span>
-                    <span className="CircleColor" style={{ backgroundColor:'black' }} onClick={() => handleColorOptionClick('black')}>
-                        {selectedColor === 'black' && <FontAwesomeIcon icon={faCheck} style={{ color:'white' }} className="check"/>}
-                    </span>
+                    {product.color.map((color, index) => (
+                        <span className="CircleColor" style={{ backgroundColor:'#'+color}} onClick={() => handleColorOptionClick(color)} key={index}>
+                            {selectedColor === color && <FontAwesomeIcon icon={faCheck} style={{ color:'white' }} className="check"/>}
+                        </span>
+                    ))}
                 </div>
             </div>
             <div className="productSize">
@@ -62,14 +102,14 @@ const ProductId=()=>{
                     <h3>Size</h3>
                 </div>
                 <div className="productButtonSize">
-                    <span className="buttonSize">39</span>
-                    <span className="buttonSize">40</span>
-                    <span className="buttonSize">41</span>
+                    {product.size.map((size, index) => (
+                        <span className="buttonSize" key={index} onClick={() => handleSizeOptionClick(size)} style={{ backgroundColor: selectedSize === size ? 'black' : '#F6F6F6',color: selectedSize===size ? 'white':'black' }}>{size}</span>
+                    ))}
                 </div>
             </div>
             <div className="productPrice">
                 <div className="productPriceNew">
-                    <span className="newPrice">$125.00</span>
+                    <span className="newPrice">${product.price}</span>
                     <span className="pricePercentage">50%</span>
                 </div>
                 <div className="productPriceOld">
@@ -78,16 +118,16 @@ const ProductId=()=>{
             </div>
             <div className="productY">
                 <div className="productQuantity">
-                    <button type="button" className="quantityBtn quantityBtnMinus" onClick={decrementQuantity}>
+                    <button type="button" className="quantityBtn quantityBtnMinus" onClick={() => handleQuantity("dec")} >
                         <IconMinus  className="quantityBtnMinus" style={{color:'black'}} />
                     </button>
                     <span className="quantityValue">{quantity}</span>
-                    <button type="button" className="quantityBtn quantityBtnPlus" onClick={incrementQuantity}>
+                    <button type="button" className="quantityBtn quantityBtnPlus" onClick={() => handleQuantity("inc")} >
                         <IconPlus  className="quantityBtnPlus" style={{color:'black'}} />
                     </button>
                 </div>
                 <div className="productButton">
-                    <button  className="productButton" type="button">
+                    <button  className="productButton" type="button" onClick={()=>dispatch(addProduct({...product, quantity, selectedColor, selectedSize}))}>
                         <IconCart id="cartBtn"/>
                         <span className="btnbroductadd">Add to cart</span>
                     </button>

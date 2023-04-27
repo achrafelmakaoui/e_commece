@@ -8,8 +8,20 @@ import SneakerLogo from '../pictures/logo.svg';
 import Profil from '../pictures/profil.jpg'
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { Badge } from "@material-ui/core";
+import { logout } from "../redux/userRedux";
+import { useDispatch} from "react-redux";
 
 const Navbar = () => {
+
+  // const quantity = useSelector(state=>state.cart.quantity)
+  
+  const dispatch = useDispatch();
+   
+  const handleLogoutClick = () => {
+    dispatch(logout());
+  };
+
 
   useEffect(() => {
     // Get the element with id "elementId"
@@ -61,25 +73,29 @@ const Navbar = () => {
       </div>
       <ul className="headerProfile">
         <li>
-          <Link to='/cart'><CartButton/></Link>
+          <Link to='/cart'>
+            <Badge badgeContent={1} color="primary" max={9}>
+                <CartButton color="action"/>
+            </Badge>
+          </Link>
         </li>
         <li>
-          <img src={Profil} alt="avatar"/>
+          <img src={Profil} alt="avatar" onClick={handleLogoutClick}/>
         </li>
       </ul>
     </nav>
     <hr className="headerLine" />
 
-  <div class="nav__links" ref={sidebar}>
+  <div className="nav__links" ref={sidebar}>
     <img className='headerMenuCloseIcon' src={MenuCloseIcon} alt='svg' ref={menu} onClick={closesideMenu}/>
     <Link to='/'><img className='smnavlogo' src={SneakerLogo} alt='svg'/></Link>
         <ul>
-          <li><Link to="/"><HashLink to='/#Home' onClick={handleClick}><i class="fi-rr-apps"></i>Home</HashLink></Link></li>
-          <li><Link to="/"><HashLink to='/#Products' onClick={handleClick}><i class="fi-rr-comment-alt"></i>Product</HashLink></Link></li>
-          <li><Link to="/"><HashLink to='/#Services' onClick={handleClick}><i class="fi-rr-browser"></i>Service</HashLink></Link></li>
-          <li><Link to="/"><HashLink to='/#Reviews' onClick={handleClick}><i class="fi-rr-document-signed"></i>Reviews</HashLink></Link></li>
-          <li><Link to="/"><HashLink to='/#Support' onClick={handleClick}><i class="fi-rr-lock"></i>Support</HashLink></Link></li>
-          <li><Link to="/"><HashLink to='/#Contact' onClick={handleClick}><i class="fi-rr-power"></i>Contact</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Home' onClick={handleClick}><i className="fi-rr-apps"></i>Home</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Products' onClick={handleClick}><i className="fi-rr-comment-alt"></i>Product</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Services' onClick={handleClick}><i className="fi-rr-browser"></i>Service</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Reviews' onClick={handleClick}><i className="fi-rr-document-signed"></i>Reviews</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Support' onClick={handleClick}><i className="fi-rr-lock"></i>Support</HashLink></Link></li>
+          <li><Link to="/"><HashLink to='/#Contact' onClick={handleClick}><i className="fi-rr-power"></i>Contact</HashLink></Link></li>
         </ul>
       </div>
     </div>

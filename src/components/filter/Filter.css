@@ -44,7 +44,7 @@ form{
     margin: 0 auto;
 }
 
-.search h2{
+.search .f2flt{
     display: inline-block;
     font-weight: 800;
     padding-right: 250px;
@@ -100,7 +100,7 @@ form{
     padding-left: 15px;
     padding-right: 300px;
 }
-.title h5{
+.title .f5flt{
   font-family: 'Montserrat',sans-serif;
 
 }
@@ -109,10 +109,10 @@ form{
     padding-left: 15px;
 }
 
-.search button:hover{
-    border-color:rgb(88, 88, 88);
-    background: #e5e5e5;
-    transition: .5s;
+
+button:focus{
+    background-color: black;
+    color: white;
 }
 .content-filter-sort{
     display: inline-block;
@@ -141,8 +141,7 @@ form{
 }
 
 .button:hover{
-    border-color:rgb(88, 88, 88);
-    background: #F6F6F6;
+    border-color:rgb(0, 0, 0);
     transition: .5s;
 }
 .button:active{

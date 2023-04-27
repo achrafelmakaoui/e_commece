@@ -30,7 +30,7 @@ function Card() {
   <h3 className='prdtit text-center'>Which type of shoes are you looking for ?</h3>
   <span className='spn'><Link to="/product" className='vmp text- center'>View More <i class="fi-rr-arrow-right"></i></Link></span>
   <br/>
-    <div class="container">
+    <div className="container">
         
     <div className="card card-yellow" data-aos='fade'>
       <img className="logo" src={NIKELG} alt=''/>

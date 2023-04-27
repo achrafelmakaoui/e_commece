@@ -1,3 +1,24 @@
+.returntoproducts{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 30px;
+}
+.returncirle{
+  background-color: #1c1c1f;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.returncirle .iconreturn{
+  width: 1.25em;
+  height: 1.25em;
+  color: white;
+  
+}
+
 #prdid .cardDesktop {
   height: auto;
 }
@@ -81,6 +102,11 @@
     cursor: pointer;
     border: 1px solid white;
   }
+
+  .productColor > .productCircleColor > .CircleColor:focus {
+    border: 2px solid black;
+  }
+
   .productColor > .productCircleColor > .CircleColor >.check {
     width: 20px;
     height: 20px;

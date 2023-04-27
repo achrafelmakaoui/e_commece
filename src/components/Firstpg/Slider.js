@@ -36,7 +36,7 @@ const Slider = () => {
           key={index}
           className={`slide ${index === currentSlide ? "active" : ""}`}
         >  
-          <span class="parallax-text" text={slide.text}>{slide.caption}</span>
+          <span className="parallax-text" text={slide.text}>{slide.caption}</span>
           <img className="shoes" src={slide.image} alt={slide.caption} />
           
         </div>

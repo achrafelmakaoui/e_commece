@@ -6,8 +6,8 @@
 		"imgprod":"https://i.ibb.co/nz3pDMQ/air-jordan-1-black-men.png",
 		"categories":["men"],
 		"size":["40","41","42"],
-		"color":["#242323","#4BACDA","#418B4D","#81848C"],
-		"specifcolor":"#242323",
+		"color":["000000","4BACDA","418B4D","81848C"],
+		"specifcolor":"000000",
 		"price":99
     },
     {
@@ -17,8 +17,8 @@
 		"imgprod":"https://i.ibb.co/5WqcsXL/7721e342-bd9b-45af-9836-72bf9d729b9e.png",
 		"categories":["men"],
 		"size":["40","41","42"],
-		"color":["#4BACDA","#242323","#418B4D","#81848C"],
-		"specifcolor":"#4BACDA",
+		"color":["000000","4BACDA","418B4D","81848C"],
+		"specifcolor":"4BACDA",
 		"price":99
 		
     },
@@ -29,8 +29,8 @@
 		"imgprod":"https://i.ibb.co/5Tdkg7R/test1.png",
 		"categories":["men"],
 		"size":["40","41","42"],
-		"color":["#418B4D","#242323","#4BACDA","#81848C"],
-		"specifcolor":"#418B4D",
+		"color":["000000","4BACDA","418B4D","81848C"],
+		"specifcolor":"418B4D",
 		"price":99
     },
     {
@@ -40,8 +40,8 @@
 		"imgprod":"https://i.ibb.co/NpkTCmh/252b6f0d-7871-48a3-8d7f-075fa30d7970.png",
 		"categories":["men"],
 		"size":["40","41","42"],
-		"color":["#81848C","#242323","#4BACDA","#418B4D"],
-		"specifcolor":"#81848C",
+		"color":["000000","4BACDA","418B4D","81848C"],
+		"specifcolor":"81848C",
 		"price":99
     },
     {
@@ -51,8 +51,8 @@
 		"imgprod":"https://i.ibb.co/t4FrmD5/34b64f8a-60fe-42d5-8724-ab5c303e62f5.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["pink","#4BACDA","#D7B130","#B91E3D"],
-		"specifcolor":"pink",
+		"color":["D16773","4BACDA","D7B130","B91E3D"],
+		"specifcolor":"D16773",
 		"price":99
 	},
 	{
@@ -62,8 +62,8 @@
 		"imgprod":"https://i.ibb.co/5WqcsXL/7721e342-bd9b-45af-9836-72bf9d729b9e.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["#4BACDA","pink","#D7B130","#B91E3D"],
-		"specifcolor":"#4BACDA",
+		"color":["D16773","4BACDA","D7B130","B91E3D"],
+		"specifcolor":"4BACDA",
 		"price":99
 	},
 	{
@@ -73,8 +73,8 @@
 		"imgprod":"https://i.ibb.co/FW7J3Jt/6cc3b5d4-3a76-4226-86e0-7943716b4a1b.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["#D7B130","pink","#4BACDA","#B91E3D"],
-		"specifcolor":"#D7B130",
+		"color":["D16773","4BACDA","D7B130","B91E3D"],
+		"specifcolor":"D7B130",
 		"price":99
 	},
 	{
@@ -84,8 +84,8 @@
 		"imgprod":"https://i.ibb.co/syCQXkv/test3.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["#B91E3D","pink","#4BACDA","#D7B130"],
-		"specifcolor":"#B91E3D",
+		"color":["D16773","4BACDA","D7B130","B91E3D"],
+		"specifcolor":"B91E3D",
 		"price":99
 	},
 	{
@@ -95,8 +95,8 @@
 		"imgprod":"https://i.ibb.co/Ks0jMgZ/18feae27-20d6-4ab1-bb12-c02ea4650903.png",
 		"categories":["men"],
 		"size":["39","40","41"],
-		"color":["#7A604B","#37418D","#B91E3D","black"],
-		"specifcolor":"#7A604B",
+		"color":["7A604B","37418D","B91E3D","000000"],
+		"specifcolor":"7A604B",
 		"price":199
 	},
 	{
@@ -106,8 +106,8 @@
 		"imgprod":"https://i.ibb.co/GJxWQGy/air-jordan-1-elevate-high-shoes-v1-NNXJ.png",
 		"categories":["men"],
 		"size":["39","40","41"],
-		"color":["#37418D","#7A604B","#B91E3D","black"],
-		"specifcolor":"#37418D",
+		"color":["7A604B","37418D","B91E3D","000000"],
+		"specifcolor":"37418D",
 		"price":199
 	},
 	{
@@ -117,8 +117,8 @@
 		"imgprod":"https://i.ibb.co/wRhLYrr/30e8a9cb-09fd-4b17-9d2a-46c62024cf96.png",
 		"categories":["men"],
 		"size":["39","40","41"],
-		"color":["#B91E3D","#37418D","#7A604B","black"],
-		"specifcolor":"#B91E3D",
+		"color":["7A604B","37418D","B91E3D","000000"],
+		"specifcolor":"B91E3D",
 		"price":199
 	},
 	{
@@ -128,8 +128,8 @@
 		"imgprod":"https://i.ibb.co/ZfqvRJz/6dd45492-c258-4483-9062-82a963ba646a.png",
 		"categories":["men"],
 		"size":["39","40","41"],
-		"color":["black","#B91E3D","#37418D","#7A604B"],
-		"specifcolor":"black",
+		"color":["7A604B","37418D","B91E3D","000000"],
+		"specifcolor":"000000",
 		"price":199
 	},
 	{
@@ -139,8 +139,8 @@
 		"imgprod":"https://i.ibb.co/GJxWQGy/air-jordan-1-elevate-high-shoes-v1-NNXJ.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["#37418D","#7A604B","#B91E3D","black"],
-		"specifcolor":"#37418D",
+		"color":["37418D","7A604B","B91E3D","000000"],
+		"specifcolor":"37418D",
 		"price":199
 	},
 	{
@@ -150,8 +150,8 @@
 		"imgprod":"https://i.ibb.co/Ks0jMgZ/18feae27-20d6-4ab1-bb12-c02ea4650903.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["#7A604B","#37418D","#B91E3D","black"],
-		"specifcolor":"#7A604B",
+		"color":["37418D","7A604B","B91E3D","000000"],
+		"specifcolor":"7A604B",
 		"price":199
 	},
 	{
@@ -161,8 +161,8 @@
 		"imgprod":"https://i.ibb.co/wRhLYrr/30e8a9cb-09fd-4b17-9d2a-46c62024cf96.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["#B91E3D","#7A604B","#37418D","black"],
-		"specifcolor":"#B91E3D",
+		"color":["37418D","7A604B","B91E3D","000000"],
+		"specifcolor":"B91E3D",
 		"price":199
 	},
 	{
@@ -172,8 +172,8 @@
 		"imgprod":"https://i.ibb.co/ZfqvRJz/6dd45492-c258-4483-9062-82a963ba646a.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["black","#B91E3D","#37418D","#7A604B"],
-		"specifcolor":"black",
+		"color":["37418D","7A604B","B91E3D","000000"],
+		"specifcolor":"000000",
 		"price":199
 	},
 	{
@@ -183,8 +183,8 @@
 		"imgprod":"https://i.ibb.co/N2Vdx5Z/fd5bb2e8-2384-4aa5-a01b-5e6f3684f4e2.png",
 		"categories":["men"],
 		"size":["39","40","41"],
-		"color":["#494DA3","#6B6A70","#37824D","#B91E3D"],
-		"specifcolor":"#494DA3",
+		"color":["494DA3","6B6A70","37824D","B91E3D"],
+		"specifcolor":"494DA3",
 		"price":149
 	},
 	{
@@ -194,8 +194,8 @@
 		"imgprod":"https://i.ibb.co/HNcc5Lq/7815ef11-1c6f-482e-92cc-012c26d38271.png",
 		"categories":["men"],
 		"size":["39","40","41"],
-		"color":["#6B6A70","#494DA3","#37824D","#B91E3D"],
-		"specifcolor":"#6B6A70",
+		"color":["494DA3","6B6A70","37824D","B91E3D"],
+		"specifcolor":"6B6A70",
 		"price":149
 	},
 	
@@ -206,8 +206,8 @@
 		"imgprod":"https://i.ibb.co/fHpnGPC/de847542-b387-4b1e-9968-15cae80180a1.png",
 		"categories":["men"],
 		"size":["39","40","41"],
-		"color":["#37824D","#494DA3","#6B6A70","#B91E3D"],
-		"specifcolor":"#37824D",
+		"color":["494DA3","6B6A70","37824D","B91E3D"],
+		"specifcolor":"37824D",
 		"price":149
 	},
 	{
@@ -217,8 +217,8 @@
 		"imgprod":"https://i.ibb.co/mqQShHn/4b5264a2-7885-44b6-8e5d-7074e28289bf.png",
 		"categories":["men"],
 		"size":["39","40","41"],
-		"color":["#B91E3D","#494DA3","#6B6A70","#37824D"],
-		"specifcolor":"#B91E3D",
+		"color":["494DA3","6B6A70","37824D","B91E3D"],
+		"specifcolor":"B91E3D",
 		"price":149
 	},
 	{
@@ -228,8 +228,8 @@
 		"imgprod":"https://i.ibb.co/fHpnGPC/de847542-b387-4b1e-9968-15cae80180a1.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["#37824D","#494DA3","pink","#B91E3D"],
-		"specifcolor":"#37824D",
+		"color":["37824D","494DA3","D16773","B91E3D"],
+		"specifcolor":"37824D",
 		"price":149
 	},
 	{
@@ -239,8 +239,8 @@
 		"imgprod":"https://i.ibb.co/mqQShHn/4b5264a2-7885-44b6-8e5d-7074e28289bf.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["#B91E3D","#494DA3","pink","#37824D"],
-		"specifcolor":"#B91E3D",
+		"color":["37824D","494DA3","D16773","B91E3D"],
+		"specifcolor":"B91E3D",
 		"price":149
 	},
 	{
@@ -250,8 +250,8 @@
 		"imgprod":"https://i.ibb.co/VTzdgZp/b97ce999-afd0-4b62-8684-ce5c2a2fa8eb.png",
 		"categories":["women"],
 		"size":["38","39","40"],
-		"color":["pink","#494DA3","#37824D","#B91E3D"],
-		"specifcolor":"pink",
+		"color":["37824D","494DA3","D16773","B91E3D"],
+		"specifcolor":"D16773",
 		"price":149
 	},
 	{
@@ -260,9 +260,9 @@
 		"imgid":"https://i.ibb.co/r31wj7y/air-jordan-1-mid-mens-shoes-blue-2.png",
 		"imgprod":"https://i.ibb.co/N2Vdx5Z/fd5bb2e8-2384-4aa5-a01b-5e6f3684f4e2.png",
 		"categories":["women"],
-		"size":["38","39","40""],
-		"color":["#494DA3","pink","#37824D","#B91E3D"],
-		"specifcolor":"#494DA3",
+		"size":["38","39","40"],
+		"color":["37824D","494DA3","D16773","B91E3D"],
+		"specifcolor":"494DA3",
 		"price":149
 	}
 	

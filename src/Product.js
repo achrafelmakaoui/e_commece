@@ -1,7 +1,7 @@
 import './Product.css';
 import SlideBanner from './components/banner/SlideBanner';
 import Filter from './components/filter/Filter';
-import ProductList from './components/ProductList/ProductList';
+// import ProductList from './components/ProductList/ProductList';
 
 
 function Product() {
@@ -9,7 +9,7 @@ function Product() {
       <div className="Product">
         <SlideBanner/>
         <Filter/>
-        <ProductList/>
+        {/* <ProductList/> */}
       </div>
     );
   };

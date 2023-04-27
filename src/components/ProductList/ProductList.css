@@ -59,6 +59,7 @@
   margin-top: -80px;
   justify-content: center;
   align-items: center;
+  filter: brightness(101%);
 }  
 .productimg{
   width: 80%;
@@ -152,18 +153,29 @@
   font-family: 'Montserrat',sans-serif;
   margin: 0% 2% 0% 0%;
 }
-.SHOW:hover{
-  color: #f5f5f5ff;
-  background: #131313;
+
+.SHOW:hover span, .SHOW:hover #eye {
+  color: #ffffff;
   transition: .6s;
 }
+.SHOW:hover {
+  background-color: #000000;
+  transition: .6s;
+}
+
 .SHOW span{
   font-family: 'Montserrat',sans-serif;
+  text-decoration: none;
+  color: black;
+
 }
 .SHOW #eye{
   float: left;
   font-size: 17px;
   padding: 1px 0px 0px 8px ;
+  text-decoration: none;
+  color: black;
+
 }
 .ADD{
   border: 1px solid  #131313;

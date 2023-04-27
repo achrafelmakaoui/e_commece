@@ -36,6 +36,7 @@
     color: #111;
     opacity: .6;
     text-transform: capitalize;
+    text-align: center;
    }
    .vmp{
     display: flex;
