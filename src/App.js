@@ -31,6 +31,7 @@ function App() {
               <>
                   <Route path="/" exact element={<><Slider/><Card/><Services/><Reviews/><Support/></>}/>
                   <Route path='/product'  element={<><Product/></> }/>
+                  <Route path='/success'  element={<h1 style={{ color:'green' }}>Paimment Succefully</h1> }/>
                   <Route path='/product/:id'  element={<><SlideBanner/><ProductId/></> }/>
                   <Route path='/cart'  element={<><Cart/></> }/>
               </>

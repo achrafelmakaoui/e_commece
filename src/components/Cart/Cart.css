@@ -86,8 +86,9 @@
     text-align: center;
     font-family: "GilroySemiBold";
     transition: .6s;
+    text-decoration: none;
 }
-.cart_banner .contu_shoop button:hover{
+.cart_banner .contu_shoop .cntbtncartshop:hover{
     background: #000000;
     color: white;
     transition: .6s;

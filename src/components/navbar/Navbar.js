@@ -10,11 +10,11 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Badge } from "@material-ui/core";
 import { logout } from "../redux/userRedux";
-import { useDispatch} from "react-redux";
+import { useDispatch, useSelector} from "react-redux";
 
 const Navbar = () => {
 
-  // const quantity = useSelector(state=>state.cart.quantity)
+  const quantity = useSelector(state=>state.cart.quantity)
   
   const dispatch = useDispatch();
    
@@ -74,7 +74,7 @@ const Navbar = () => {
       <ul className="headerProfile">
         <li>
           <Link to='/cart'>
-            <Badge badgeContent={1} color="primary" max={9}>
+            <Badge badgeContent={quantity} color="primary" max={9}>
                 <CartButton color="action"/>
             </Badge>
           </Link>
