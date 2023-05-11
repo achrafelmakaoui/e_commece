@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("../fonts/Gilroy-Medium.ttf");
+  
+  }
+  @font-face {
+    font-family: "GilroySemiBold";
+    src: url("../fonts/Gilroy-SemiBold.ttf");
+  }
+  @font-face {
+  font-family: "Myriad Semibold";
+  src: url("../fonts/MYRIADPRO-SEMIBOLD.woff") format("woff");
+  }
+  
+  @font-face {
+  font-family: "Myriad Bold";
+  src: url("../fonts/MYRIADPRO-BOLD.woff") format("woff");
+  }
+  @font-face {
+  font-family: "Myriad Bold Italic";
+  src: url("../fonts/MYRIADPRO-BOLDIT.woff") format("woff");
+  }
+  @font-face {
+  font-family: "Gruppo";
+  src: url("../fonts/Gruppo-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Futura";
+    src: url("../fonts/futur.ttf");
+  }
+  @font-face {
+    font-family: "Futura bold italic";
+    src: url("../fonts/Futura\ Bold\ Italic\ font.ttf");
+  }
+  @font-face {
+    font-family: "Futura bold";
+    src: url("../fonts/Futura\ Bold\ font.ttf");
+  }
+  @font-face {
+    font-family: "Futura Medium italic";
+    src: url("../fonts/Futura\ Medium\ Italic\ font.ttf");
+  }
+  @font-face {
+    font-family: "Futura Medium";
+    src: url("../fonts/futura\ medium\ bt.ttf");
+  }
+  
+.sectionupdate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+/* .inputrowupd{
+
+} */
+.inputrowupd label{
+    font-family: "GilroyMedium";
+}
+.inputrowupd input{
+    border: 2px solid rgba(22, 22, 22, 0.384);
+    padding: 4px 5px 4px 5px;
+    border-radius: 4px;
+    width: 350px;
+    font-family: 'Futura';
+}
+.inputrowupd input:focus{
+    border: 2px solid #1d1d1db0;
+    padding: 4px 5px 4px 5px;
+    border-radius: 4px;
+    width: 350px;
+    font-family: 'Futura';
+    box-shadow:  0px 5px 10px 0px #1d1d1d22;
+}
+.inputrowupd input:focus , label{
+    color: #1d1d1d;
+}
+.sectionupdatebutton{
+    padding: 0px 20px 0px 20px;
+}
+.sectionupdatebutton .btnsavechange{
+    background-color:#1d1d1d;
+    color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: "Myriad Bold Italic";
+    font-size: 18px;
+    height: 40px;
+    box-shadow:  0px 5px 10px 0px #1d1d1d64;
+    width: 100%;
+}
+@media screen and (max-width: 1273px) {
+    .inputrowupd input{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 944px) {
+    .inputrowupd input{
+        width: 220px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .inputrowupd input{
+        width: 270px;
+    }
+}
+@media screen and (max-width: 596px) {
+    .inputrowupd input{
+        width: 230px;
+    }
+}
+@media screen and (max-width: 516px) {
+    .sectionupdate{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px 0px 20px;
+    }
+    .inputrowupd input{
+        width: 100%;
+    }
+}

@@ -4,24 +4,27 @@ import MenuCloseIcon  from '../pictures/icon-close.svg';
 import MenuIcon  from '../pictures/icon-menu.svg';
 import CartButton from '../CartButton/CartButton';
 import SneakerLogo from '../pictures/logo.svg';
-// import avatar from '../pictures/image-avatar.png';
-import Profil from '../pictures/profil.jpg'
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Badge } from "@material-ui/core";
-import { logout } from "../redux/userRedux";
-import { useDispatch, useSelector} from "react-redux";
+import { useSelector} from "react-redux";
+import axios from "axios";
+
 
 const Navbar = () => {
-
+  const user = useSelector(state=>state.user.currentUser)
   const quantity = useSelector(state=>state.cart.quantity)
-  
-  const dispatch = useDispatch();
-   
-  const handleLogoutClick = () => {
-    dispatch(logout());
-  };
+  const [PerData,setPerData] = useState('')
 
+  useEffect(() => {
+    axios.get(`http://localhost:5000/api/users/find/${user._id}`)
+      .then(response => {
+        setPerData(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  });
 
   useEffect(() => {
     // Get the element with id "elementId"
@@ -80,7 +83,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <img src={Profil} alt="avatar" onClick={handleLogoutClick}/>
+          <img src={PerData.img} alt="avatar"/>
         </li>
       </ul>
     </nav>

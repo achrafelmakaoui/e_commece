@@ -1,41 +1,384 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/Helvetica\ LT\ 93\ Black\ Extended.ttf");
+  }
 .Login{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.Login .LoginDs{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    width: 65%;
+}
+.Login .LoginDs img{
+  height: 100%;
+  width:100%;
 }
 .Login .LogInp{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding: 0px 50px 30px 50px ;
-    background-color: rgba(0, 0, 255, 0.269);
-    border-radius: 10px;
-    width: 25%;
-    /* height: 40%; */
+    background: white;
+    width: 35%;
 }
-.LogInp label{
-  font-family: 'Montserrat',sans-serif;
+.textboxx .h3login{
+    font-family: 'HelveticaNeue';
+    padding: 10px;
+}
+.Login .LogInp .LoginInpDS{
+    width: 100%;
+}
+.buttonjt, #btnshowpwd,
+.inputLg {
+  border: 0;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+.formulaire{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .textbox {
+    position: relative;
+    width: 100%;
+  }
+  .textbox .usr{
+    color: #000000b6;
+    top: 50%;
+    translate: 0 -240%;
+    left: 0;
+    opacity: 0.7;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  .textbox span {
+    color: #000000b6;
+    top: 50%;
+    translate: 0 -155%;
+    left: 0;
+    opacity: 0.7;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .formulaire .textbox .inputLg {
+    padding: 0 24px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+    width: 100%;
 
-}
-.LogInp img{
-    width: 65%;
+  }
+  
+  :is(.textbox .inputLg:focus, .textbox .inputLg:valid) ~ label {
+    translate: -40px -55px;
+    scale: 0.875;
+    color: #000000;
+
+  }
+  :is(.textbox .inputLg:focus, .textbox .inputLg:valid) ~ .usr {
+    color: #000000;
+    opacity: 1;
+  }
+  :is(.textbox .inputLg:focus, .textbox .inputLg:valid) ~ span {
+    color: #000000;
+    opacity: 1;
+  }
+  
+  .formulaire .textbox label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    translate: 0 -115%;
+    color: rgba(0, 0, 0, 0.714);
+    pointer-events: none;
+    transition: 0.5s;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    
+  }
+  
+.buttonjt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0 24px;
+    border-radius: 6px;
+    background: #000000;
+    color: #f9f9f9;
+    border: 0;
+    font-family: inherit;
+    font-weight: 600;
+    margin: 3px;
+  }
+.buttonjt:focus{
+    background: #00000071;
+    color: #f9f9f9;
+  }
+  
+  .btnbnr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #btnshowpwd{
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    padding: 0 24px;
+    border-radius: 6px;
+    background: #000000;
+    color: #f9f9f9;
+    border: 0;
+    font-family: inherit;
+    font-weight: 600;
+    margin: 3px;
+  }
+  #showpwdicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .textbox {
+    margin-bottom: 1.5rem;
+  }
+  .textboxx {
+    margin-bottom: 1.5rem;
+  }
+  
+  #showpwdicon:hover {
+    color: #5d5d5d;
+  }
+  
+  .textbox .inputLg[type="password"]::-ms-reveal,
+  .textbox .inputLg[type="password"]::-ms-clear {
+    display: none;
+  }
+  
+  .textbox .inputLg[type="password"]::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+  }
+  .notalredy{
+    font-size: 13px;
+    text-decoration: underline;
     text-align: center;
-    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .alredy{
+    font-size: 13px;
+    text-decoration: underline;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media screen and (max-width: 1000px) {
+  .Login{
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+  .Login .LoginDs{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+  .Login .LoginDs img{
+    height: 100%;
+    width:100%;
+  }
+  .Login .LogInp{
+      display: grid;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      background: white;
+      width: 100%;
+      padding: 20px;
+  }
+  .formulaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+  }
+  .textbox {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+  }
+  .formulaire .textbox .inputLg {
+    padding: 0 220px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
 }
-.LogInp .username{
-    padding:5px 2px 5px 2px;
+
+
+@media screen and (max-width: 950px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 180px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
 }
-.LogInp .password{
-    padding:5px 2px 5px 2px;
+@media screen and (max-width: 900px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 150px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
 }
-.LogInp .BtnLogin{
-    background-color: rgb(0, 76, 255);
-    padding: 5px 0px 5px 0px;
-    color: white;
-    border-radius: 4px;
+@media screen and (max-width: 850px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 130px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 800px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 110px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 750px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 90px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 700px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 70px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 650px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 50px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 600px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 30px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 550px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 15px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 500px) {
+  .formulaire{
+    display: grid;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+  }
+  .textbox {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+  }
+  .formulaire .textbox .inputLg {
+    padding: 0 180px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 450px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 130px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 400px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 80px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 350px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 30px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
+}
+@media screen and (max-width: 300px) {
+  .formulaire .textbox .inputLg {
+    padding: 0 10px 0 36px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+    height: 50px;
+    font-family: 'Futura';
+  }
 }

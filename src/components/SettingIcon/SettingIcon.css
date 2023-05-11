@@ -1,0 +1,19 @@
+.settingIcon{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 11px;
+    background-color: rgba(0, 0, 0, 0.95);
+    margin: 25px;
+    border-radius: 50%;
+    box-shadow:  0px 5px 10px 0px #0000006a;
+}
+.gearicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.45em;
+    height: 1.45em;
+    color: white;
+    cursor: pointer;
+}

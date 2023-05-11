@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import './Reviews.css'
-import Profil from '../pictures/profil.jpg'
+import Profil1 from '../pictures/face1.jpg'
+import Profil2 from '../pictures/face2.jpg'
+import Profil3 from '../pictures/face3.jpg'
 import StarIcon from '@mui/icons-material/Star';
 import Aos from "aos";
 import "aos/dist/aos.css"
@@ -25,7 +27,7 @@ const Reviews = () => {
   return (
     <div className='reviews' id='Reviews'>
         <br/><br/><br/><br/>
-        <h1 className='prd text-center '>Over 500<sup>+</sup><br/>trust us</h1>
+        <h1 className='prd text-center '>Over 500<sup>+</sup>trust us</h1>
         <h3 className='prdtit text-center'>Some reviews from our clients about our products</h3>
         <br/>
         <div className='containerr' data-aos='fade'>
@@ -34,13 +36,13 @@ const Reviews = () => {
                   <div className="single-box">
                     <span className='star'><StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/></span>
                       <div className="img-text">
-                        <blockquote><p> Because Immer is itself an abstraction layer, it's important to understand why Redux Toolkit uses Immer, and how to use it correctly.</p></blockquote>
+                        <blockquote><p>Selection and delivery excellent. Shoes fit perfectly and look just like the picture. Highly recommend!</p></blockquote>
                         
                         <div className="img-area">
-                          <img src={Profil} alt=''/>
+                          <img src={Profil1} alt=''/>
                         </div>
-                        <h2>Mouad Eliidrissi</h2>
-                        <h6>CEO Largest Fintech Company</h6>
+                        <h2>David Lee</h2>
+                        <h6>Software Developer</h6>
                       </div>
                   </div>
                 </div>
@@ -49,12 +51,12 @@ const Reviews = () => {
                   <div className="single-box">
                     <span className='star'><StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/></span>
                       <div className="img-text">
-                        <blockquote><p> Because Immer is itself an abstraction layer, it's important to understand why Redux Toolkit uses Immer, and how to use it correctly.</p></blockquote>
+                        <blockquote><p>Easy to navigate, quick checkout. Great shopping experience all around. Will definitely be back for more shoes!</p></blockquote>
                         <div className="img-area">
-                          <img src={Profil} alt=''/>
+                          <img src={Profil2} alt=''/>
                           </div>
-                        <h2>Mouad Eliidrissi</h2>
-                        <h6>CEO Largest Fintech Company</h6>
+                        <h2>Sarah Patel</h2>
+                        <h6>Nurse</h6>
                       </div>
                   </div>
                 </div>
@@ -63,12 +65,12 @@ const Reviews = () => {
                   <div className="single-box">
                     <span className='star'><StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/></span>
                       <div className="img-text">
-                        <blockquote><p> Because Immer is itself an abstraction layer, it's important to understand why Redux Toolkit uses Immer, and how to use it correctly.</p></blockquote>
+                        <blockquote><p>Affordable, high-quality shoes. Love the selection and the app. Would recommend to anyone looking for great footwear.</p></blockquote>
                         <div className="img-area">
-                          <img src={Profil} alt=''/>
+                          <img src={Profil3} alt=''/>
                         </div>
-                        <h2>Mouad Eliidrissi</h2>
-                        <h6>CEO Largest Fintech Company</h6>
+                        <h2>Michael Brown</h2>
+                        <h6>Marketing Manager</h6>
                       </div>
                   </div>
                 </div>

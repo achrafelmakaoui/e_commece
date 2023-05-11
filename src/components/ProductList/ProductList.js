@@ -81,8 +81,8 @@ const [products, setProducts] = useState([]);
                 <article className="carddd">
                     <div className="content_card">
                         <div className="discont">
-                            {product.discount && (<p>50% Off</p>)}
-                            {product.inStock && (<p style={{ color:'#478B54' }}>In Stock</p>)}
+                            {product.discount && (<p>{product.discount}% Off</p>)}
+                            {/* {product.inStock && (<p style={{ color:'#478B54' }}>In Stock</p>)} */}
                         </div>
                         <div className="rating">
                             <Rating />
@@ -117,8 +117,9 @@ const [products, setProducts] = useState([]);
                 <article className="carddd">
                     <div className="content_card">
                         <div className="discont">
-                            {product.discount && (<p>50% Off</p>)}
-                            {product.inStock && (<p style={{ color:'#478B54' }}>In Stock</p>)}
+                            {/* {product.discount ? (<p>{product.discount}% Off</p>):({product.inStock && (<p style={{ color:'#478B54' }}>In Stock</p>)})} */}
+                            {product.discount ? (<p>{product.discount}% Off</p>) : (product.inStock && <p style={{ color:'#478B54' }}>In Stock</p>)}
+
                         </div>
                         <div className="rating">
                             <Rating />

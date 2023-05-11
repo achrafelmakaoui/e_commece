@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import './Card.css'
-import { Link } from 'react-router-dom';
 import NIKELG from '../pictures/nike-white.png'
 import img1 from '../pictures/image_1.png'
 import img2 from '../pictures/image_2.png'
 import img3 from '../pictures/image_3.png'
 import Aos from "aos";
 import "aos/dist/aos.css"
-
+import ShopBtn from '../ShopNow/ShopNow';
+import { Link } from 'react-router-dom'
 function Card() {
   useEffect(() => {
 
@@ -28,7 +28,7 @@ function Card() {
   <br id='Products'/><br/><br/><br/>
   <h1 className='prd text-center' id='tit'>PRODUCTS</h1>
   <h3 className='prdtit text-center'>Which type of shoes are you looking for ?</h3>
-  <span className='spn'><Link to="/product" className='vmp text- center'>View More <i class="fi-rr-arrow-right"></i></Link></span>
+  <ShopBtn/>
   <br/>
     <div className="container">
         
@@ -37,11 +37,11 @@ function Card() {
       <h2 className="title">Just <br/> do <br/> it</h2>
       <img className="product" src={img1} alt=''/>
       <div className="price">
-        <h6>DH 419,90</h6>
-        <h4>DH 299,90</h4>            
+        <h6>$ 249,90</h6>
+        <h4>$ 149,90</h4>            
       </div>        
       <div className="button-right">
-        <button>Show Product</button>
+      <Link to='/product'><button>Show Product</button></Link>
       </div>
     </div>
 
@@ -50,11 +50,11 @@ function Card() {
       <h2 className="title">Just <br/> do <br/> it</h2>
       <img className="product" src={img2}  alt=''/>
       <div className="price">
-        <h6>DH 379,59</h6>
-        <h4>DH 249,90</h4>            
+        <h6>$ 249,90</h6>
+        <h4>$ 149,90</h4>
       </div>        
       <div className="button-right">
-        <button>Show Product</button>
+      <Link to='/product'><button>Show Product</button></Link>
       </div>
     </div>
 
@@ -63,11 +63,11 @@ function Card() {
       <h2 className="title">Just <br/> do <br/> it</h2>
       <img className="product" src={img3}  alt=''/>
       <div className="price">
-        <h6>DH 499,49</h6>
-        <h4>DH 389,59</h4>            
+        <h6>$ 249,90</h6>
+        <h4>$ 149,90</h4>            
       </div>        
       <div className="button-right">
-        <button>Show Product</button>
+          <Link to='/product'><button>Show Product</button></Link>
       </div>
     </div>
   </div>

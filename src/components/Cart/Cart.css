@@ -284,6 +284,9 @@
     padding: 0px 20px 0px 0px ;
     cursor: pointer;
 }
+.xmarkicon{
+    color: rgba(241, 28, 28, 0.709);
+}
 .lst_produc .checkoutdivbnn{
     display: flex;
     justify-content: flex-end;

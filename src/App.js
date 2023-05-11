@@ -14,7 +14,10 @@ import SlideBanner from './components/banner/SlideBanner';
 import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 import { useSelector } from 'react-redux';
-
+import Register from './components/Register/Register';
+import SettingIcon from './components/SettingIcon/SettingIcon';
+import Setting from './components/Seting/Setting';
+import Alert from './components/Alert/Alert'
 
 function App() {
 
@@ -25,21 +28,24 @@ function App() {
       <BrowserRouter>
         <ScrollToTop/>
           {user && <Navbar/>}
-        
           <Routes>
             {user ? (
               <>
-                  <Route path="/" exact element={<><Slider/><Card/><Services/><Reviews/><Support/></>}/>
+                  <Route path="/" exact element={<><Slider/><Card/><Services/><Reviews/><Support/><SettingIcon/></>}/>
                   <Route path='/product'  element={<><Product/></> }/>
-                  <Route path='/success'  element={<h1 style={{ color:'green' }}>Paimment Succefully</h1> }/>
+                  <Route path='/success'  element={<><Alert/></> }/>
                   <Route path='/product/:id'  element={<><SlideBanner/><ProductId/></> }/>
                   <Route path='/cart'  element={<><Cart/></> }/>
+                  <Route path='/setting'  element={<><Setting/></> }/>
               </>
             ):(
-               <Route path='/login'  element={<><Login/></> }/>
+            <>
+            <Route path='/login'  element={<><Login/></> }/>
+            <Route path='/register'  element={<><Register/></> }/>
+            </>
             )}
             <Route path='/login' element={user ? <Navigate to='/'/> : <Navigate to="/login" />} />
-            <Route path='/' element={user ? <Navigate to='/'/> : <Navigate to="/login" />} />
+            <Route path='*' element={user ? <Navigate to='/'/> : <Navigate to="/login" />} />
 
           </Routes>
         {user && <Footer/>}

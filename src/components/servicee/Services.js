@@ -50,7 +50,6 @@ function Services(){
      <br/><br/>
   <h1 className='prd text-center '>SERVICES</h1>
   <h3 className='prdtit text-center'>We provide more than shoes products !</h3>
-  <span className='spn'><a className='vmp text-center' href='/#'>View More <i class="fi-rr-arrow-right"></i></a></span>
     <div className="items"  data-aos='fade'>
       {services.map(({ title, image,description }, index) => (
         <div className="wrapper" key={index}>
