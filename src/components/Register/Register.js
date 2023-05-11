@@ -28,7 +28,7 @@ const Register = () => {
     const handleSubmit = async (event) => {
       event.preventDefault();
       try {
-        const response = await axios.post("http://localhost:5000/api/auth/register", {
+        const response = await axios.post("https://sneakers-api-pvhn.onrender.com/api/auth/register", {
           username,
           email,
           password,

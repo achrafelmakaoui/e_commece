@@ -2,6 +2,52 @@
   font-family: "HelveticaNeue";
   src: url("../fonts/Helvetica\ LT\ 93\ Black\ Extended.ttf");
   }
+  @font-face {
+    font-family: "GilroyMedium";
+    src: url("../fonts/Gilroy-Medium.ttf");
+  
+  }
+  @font-face {
+    font-family: "GilroySemiBold";
+    src: url("../fonts/Gilroy-SemiBold.ttf");
+  }
+  @font-face {
+  font-family: "Myriad Semibold";
+  src: url("../fonts/MYRIADPRO-SEMIBOLD.woff") format("woff");
+  }
+  
+  @font-face {
+  font-family: "Myriad Bold";
+  src: url("../fonts/MYRIADPRO-BOLD.woff") format("woff");
+  }
+  @font-face {
+  font-family: "Myriad Bold Italic";
+  src: url("../fonts/MYRIADPRO-BOLDIT.woff") format("woff");
+  }
+  @font-face {
+  font-family: "Gruppo";
+  src: url("../fonts/Gruppo-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Futura";
+    src: url("../fonts/futur.ttf");
+  }
+  @font-face {
+    font-family: "Futura bold italic";
+    src: url("../fonts/Futura\ Bold\ Italic\ font.ttf");
+  }
+  @font-face {
+    font-family: "Futura bold";
+    src: url("../fonts/Futura\ Bold\ font.ttf");
+  }
+  @font-face {
+    font-family: "Futura Medium italic";
+    src: url("../fonts/Futura\ Medium\ Italic\ font.ttf");
+  }
+  @font-face {
+    font-family: "Futura Medium";
+    src: url("../fonts/futura\ medium\ bt.ttf");
+  }
 .Login{
     display: flex;
     width: 100%;
@@ -26,7 +72,7 @@
     width: 35%;
 }
 .textboxx .h3login{
-    font-family: 'HelveticaNeue';
+  font-family: "Myriad Bold Italic";
     padding: 10px;
 }
 .Login .LogInp .LoginInpDS{

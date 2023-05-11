@@ -19,7 +19,7 @@ const Setting = () => {
     const id = useSelector(state => state.user.currentUser._id);
 
     const handleDelete = () => {
-        axios.delete(`http://localhost:5000/api/users/${id}`)
+        axios.delete(`https://sneakers-api-pvhn.onrender.com/api/users/${id}`)
           .then(response => {
             console.log(response.data);
             dispatch(logout());
@@ -30,7 +30,7 @@ const Setting = () => {
       }
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/users/find/${id}`)
+        axios.get(`https://sneakers-api-pvhn.onrender.com/api/users/find/${id}`)
           .then(response => {
             setPerData(response.data);
           })

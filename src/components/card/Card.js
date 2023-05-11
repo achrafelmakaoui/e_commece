@@ -31,14 +31,13 @@ function Card() {
   <ShopBtn/>
   <br/>
     <div className="container">
-        
     <div className="card card-yellow" data-aos='fade'>
       <img className="logo" src={NIKELG} alt=''/>
       <h2 className="title">Just <br/> do <br/> it</h2>
       <img className="product" src={img1} alt=''/>
       <div className="price">
         <h6>$ 249,90</h6>
-        <h4>$ 149,90</h4>            
+        <h4>$ 149,90</h4>
       </div>        
       <div className="button-right">
       <Link to='/product'><button>Show Product</button></Link>

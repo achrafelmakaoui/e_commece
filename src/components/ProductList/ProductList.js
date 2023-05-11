@@ -13,7 +13,7 @@ const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const getProducts = async () => {
-  let url = "http://localhost:5000/api/products";
+  let url = "https://sneakers-api-pvhn.onrender.com/api/products";
   if (filters && cat) {
     url += `?name=${filters}&category=${cat}`;
   } else if (filters) {

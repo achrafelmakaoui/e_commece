@@ -17,7 +17,7 @@ const Navbar = () => {
   const [PerData,setPerData] = useState('')
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/users/find/${user._id}`)
+    axios.get(`https://sneakers-api-pvhn.onrender.com/api/users/find/${user._id}`)
       .then(response => {
         setPerData(response.data);
       })

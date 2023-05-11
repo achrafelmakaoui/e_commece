@@ -26,7 +26,7 @@ const ProductId=()=>{
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/products/find/${id}`);
+        const res = await axios.get(`https://sneakers-api-pvhn.onrender.com/api/products/find/${id}`);
         setProduct(res.data);
       } catch(err){
           console.log(err)
@@ -38,7 +38,7 @@ const ProductId=()=>{
   useEffect(() => {
     const getProductWithColor = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/products/find/${product.title}/${product.categories}/${selectedColor}`);
+        const res = await axios.get(`https://sneakers-api-pvhn.onrender.com/api/products/find/${product.title}/${product.categories}/${selectedColor}`);
         setProduct(res.data);
       } catch(err){
           console.log(err)
